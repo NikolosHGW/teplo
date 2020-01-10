@@ -490,36 +490,36 @@ namespace Core
 
         //                                 ОБЪЯВЛЕНИЕ ОБЪЕКТОВ ЭЛЕМЕНТОВ
         public Pump Pump { get; set; } = new Pump();
-        private Pump Pump2 { get; set; } = new Pump();
+        public Pump Pump2 { get; set; } = new Pump();
         public Pump PumpV1 { get; set; } = new Pump();
-        private Pump PumpV2 { get; set; } = new Pump();
+        public Pump PumpV2 { get; set; } = new Pump();
         public Pump PumpV3 { get; set; } = new Pump();
-        private Pump PumpV4 { get; set; } = new Pump();
-        private Pump PumpV5 { get; set; } = new Pump();
-        private Pump PumpV6 { get; set; } = new Pump();
-        private Pump PumpV7 { get; set; } = new Pump();
-        private Pump PumpV8 { get; set; } = new Pump();
-        private Pump PumpV9 { get; set; } = new Pump();
-        private Pump PumpV10 { get; set; } = new Pump();
+        public Pump PumpV4 { get; set; } = new Pump();
+        public Pump PumpV5 { get; set; } = new Pump();
+        public Pump PumpV6 { get; set; } = new Pump();
+        public Pump PumpV7 { get; set; } = new Pump();
+        public Pump PumpV8 { get; set; } = new Pump();
+        public Pump PumpV9 { get; set; } = new Pump();
+        public Pump PumpV10 { get; set; } = new Pump();
         public Pump PumpV11 { get; set; } = new Pump();
-        private Pump PumpV12 { get; set; } = new Pump();
-        private Pump PumpV13 { get; set; } = new Pump();
-        private Pump PumpV14 { get; set; } = new Pump();
-        private Pump PumpV15 { get; set; } = new Pump();
-        private Pump PumpV16 { get; set; } = new Pump();
-        private Pump PumpV17 { get; set; } = new Pump();
-        private Pump PumpV18 { get; set; } = new Pump();
-        private Pump PumpV19 { get; set; } = new Pump();
+        public Pump PumpV12 { get; set; } = new Pump();
+        public Pump PumpV13 { get; set; } = new Pump();
+        public Pump PumpV14 { get; set; } = new Pump();
+        public Pump PumpV15 { get; set; } = new Pump();
+        public Pump PumpV16 { get; set; } = new Pump();
+        public Pump PumpV17 { get; set; } = new Pump();
+        public Pump PumpV18 { get; set; } = new Pump();
+        public Pump PumpV19 { get; set; } = new Pump();
         public Pump PumpV20 { get; set; } = new Pump();
-        private Pump PumpV21 { get; set; } = new Pump();
-        private Pump PumpV22 { get; set; } = new Pump();
-        private Pump PumpV23 { get; set; } = new Pump();
-        private Pump PumpV24 { get; set; } = new Pump();
-        private Pump PumpV25 { get; set; } = new Pump();
+        public Pump PumpV21 { get; set; } = new Pump();
+        public Pump PumpV22 { get; set; } = new Pump();
+        public Pump PumpV23 { get; set; } = new Pump();
+        public Pump PumpV24 { get; set; } = new Pump();
+        public Pump PumpV25 { get; set; } = new Pump();
         public Pump PumpV26 { get; set; } = new Pump();
-        private Pump PumpV27 { get; set; } = new Pump();
-        private Pump PumpV28 { get; set; } = new Pump();
-        private Pump PumpV29 { get; set; } = new Pump();
+        public Pump PumpV27 { get; set; } = new Pump();
+        public Pump PumpV28 { get; set; } = new Pump();
+        public Pump PumpV29 { get; set; } = new Pump();
     }
     //                                                ЛОГИКА ВОДЫ
 

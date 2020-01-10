@@ -11,6 +11,7 @@ namespace Teplo
     public partial class MainWindow : Window
     {
         private Game Game { get; set; } = new Game();
+        private int circ = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -73,6 +74,11 @@ namespace Teplo
             if (pumpState2) // pumpState == true
             {
                 pump2Image.Source = new BitmapImage(new Uri(@"Resources/nasos_green.png", UriKind.Relative));
+                if (Game.PumpV2.IsActive == true && Game.PumpV16.IsActive == true && Game.PumpV17.IsActive == true && line26.Opacity == 1 && Game.PumpV5.IsActive == false)
+                {
+                    //2
+                    circ += 1;
+                }
             }
             else // pumpState == false
             {
@@ -85,7 +91,7 @@ namespace Teplo
             if (valveState1) // pumpState == true
             {
                 valveImage1.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
-                if (Game.Pump.IsActive == true && Game.PumpV3.IsActive == true && Game.PumpV11.IsActive == true)
+                if (Game.Pump.IsActive == true && Game.PumpV3.IsActive == true && Game.PumpV11.IsActive == true && Game.PumpV20.IsActive == true && Game.PumpV21.IsActive == true && Game.PumpV2.IsActive == false && Game.PumpV6.IsActive == false && Game.PumpV14.IsActive == false && Game.PumpV19.IsActive == false && Game.PumpV22.IsActive == false)
                 {
                     line1.Opacity = 1;
                     line2.Opacity = 1;
@@ -95,6 +101,11 @@ namespace Teplo
                     line6.Opacity = 1;
                     line7.Opacity = 1;
                     line8.Opacity = 1;
+                    line9.Opacity = 1;
+                    line10.Opacity = 1;
+                    line13.Opacity = 1;
+                    line14.Opacity = 1;
+                    line15.Opacity = 1;
                 }
             }
             else // pumpState == false
@@ -107,6 +118,11 @@ namespace Teplo
             if (valveState2) // pumpState == true
             {
                 valveImage2.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
+                if (Game.PumpV16.IsActive == true && Game.PumpV17.IsActive == true && line26.Opacity == 1 && Game.PumpV5.IsActive == false && Game.Pump2.IsActive == false)
+                {
+                    //1
+                    circ += 1;
+                }
             }
             else // pumpState == false
             {
@@ -140,6 +156,11 @@ namespace Teplo
             if (valveState5) // pumpState == true
             {
                 valveImage5.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
+                if (Game.PumpV2.IsActive == true && Game.PumpV16.IsActive == true && Game.PumpV17.IsActive == true && line26.Opacity == 1 && Game.Pump2.IsActive == true)
+                {
+                    //3
+                    circ += 1;
+                }
             }
             else // pumpState == false
             {
@@ -239,6 +260,19 @@ namespace Teplo
             if (valveState14) // pumpState == true
             {
                 valveImage14.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
+                if (Game.PumpV9.IsActive == false && Game.PumpV1.IsActive == true && line7.Opacity == 1)
+                {
+                    line16.Opacity = 1;
+                    line18.Opacity = 1;
+                }
+                if (Game.PumpV9.IsActive == true && line7.Opacity == 1 && Game.PumpV6.IsActive == false && Game.PumpV12.IsActive == false && Game.PumpV22.IsActive == false)
+                {
+                    line12.Opacity = 1;
+                    line16.Opacity = 1;
+                    line18.Opacity = 1;
+                    line20.Opacity = 1;
+                    line23.Opacity = 1;
+                }
             }
             else // pumpState == false
             {
@@ -272,6 +306,11 @@ namespace Teplo
             if (valveState17) // pumpState == true
             {
                 valveImage17.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
+                if (Game.PumpV16.IsActive == true && line25.Opacity == 1)
+                {
+                    line26.Opacity = 1;
+                    line27.Opacity = 1;
+                }
             }
             else // pumpState == false
             {
@@ -294,6 +333,13 @@ namespace Teplo
             if (valveState19) // pumpState == true
             {
                 valveImage19.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
+                if (Game.PumpV11.IsActive == true && line9.Opacity == 1 && line12.Opacity == 1 && Game.PumpV20.IsActive == false && Game.PumpV21.IsActive == false && Game.PumpV22.IsActive == false)
+                {
+                    line9.Opacity = 0;
+                    line10.Opacity = 0;
+                    line14.Opacity = 0;
+                    line15.Opacity = 0;
+                }
             }
             else // pumpState == false
             {
@@ -305,11 +351,11 @@ namespace Teplo
             if (valveState20) // pumpState == true
             {
                 valveImage20.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
-                if (Game.PumpV11.IsActive == true)
-                {
-                    l2line9.Opacity = 1;
-                    l2line10.Opacity = 1;
-                }
+                //if (Game.PumpV11.IsActive == true)
+                //{
+                //    l2line9.Opacity = 1;
+                //    l2line10.Opacity = 1;
+                //}
             }
             else // pumpState == false
             {
@@ -332,6 +378,16 @@ namespace Teplo
             if (valveState22) // pumpState == true
             {
                 valveImage22.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
+                if (Game.PumpV4.IsActive == true && Game.PumpV11.IsActive == true && Game.PumpV19.IsActive == true && line12.Opacity == 1 && Game.PumpV17.IsActive == false && Game.PumpV20.IsActive == false && Game.PumpV21.IsActive == false)
+                {
+                    line11.Opacity = 1;
+                    line24.Opacity = 1;
+                    line25.Opacity = 1;
+                    line9.Opacity = 1;
+                    line10.Opacity = 1;
+                    line14.Opacity = 1;
+                    line15.Opacity = 1;
+                }
             }
             else // pumpState == false
             {
