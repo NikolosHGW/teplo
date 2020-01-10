@@ -1,0 +1,241 @@
+﻿<Window x:Class="Teplo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Teplo"
+        mc:Ignorable="d"
+        Title="TEPLO" Height="700" Width="1200">
+    <Border>
+        <Canvas>
+            <Image Source="Resources/tps.png" Stretch="Uniform"/>
+            <Button x:Name="button1" Width="41" Height="38" Opacity="1" Click="Button_Click" Canvas.Left="380" Canvas.Top="146" RenderTransformOrigin="0.537,0.569">
+                <Image x:Name="pumpImage" Source="Resources/nasos.png" Width="41" Height="37"/>
+            </Button>
+            <Button x:Name="valve1" Opacity="1" Click="Button_ClickValve1" Canvas.Left="437" Canvas.Top="153" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage1" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve2" Opacity="1" Click="Button_ClickValve2" Canvas.Left="396" Canvas.Top="248" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage2" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve3" Opacity="1" Click="Button_ClickValve3" Canvas.Left="558" Canvas.Top="250" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage3" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve4" Opacity="1" Click="Button_ClickValve4" Canvas.Left="661" Canvas.Top="253" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage4" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve5" Opacity="1" Click="Button_ClickValve5" Canvas.Left="272" Canvas.Top="246" RenderTransformOrigin="0.537,0.569" Width="37">
+                <Image x:Name="valveImage5" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve6" Opacity="1" Click="Button_ClickValve6" Canvas.Left="873" Canvas.Top="252" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage6" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve7" Opacity="1" Click="Button_ClickValve7" Canvas.Left="667" Canvas.Top="505" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage7" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve8" Opacity="1" Click="Button_ClickValve8" Canvas.Left="875" Canvas.Top="506" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage8" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve9" Opacity="1" Click="Button_ClickValve9" Canvas.Left="856" Canvas.Top="444" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-88.81"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage9" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve10" Opacity="1" Click="Button_ClickValve10" Canvas.Left="913" Canvas.Top="444" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-89.74"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage10" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve11" Opacity="1" Click="Button_ClickValve11" Canvas.Left="672" Canvas.Top="379" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Image x:Name="valveImage11" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve12" Opacity="1" Click="Button_ClickValve12" Canvas.Left="887" Canvas.Top="378" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Image x:Name="valveImage12" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve13" Opacity="1" Click="Button_ClickValve13" Canvas.Left="277" Canvas.Top="277" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Image x:Name="valveImage13" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve14" Opacity="1" Click="Button_ClickValve14" Canvas.Left="855" Canvas.Top="322" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.32"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage14" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve15" Opacity="1" Click="Button_ClickValve15" Canvas.Left="912" Canvas.Top="321" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.32"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage15" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve16" Opacity="1" Click="Button_ClickValve16" Canvas.Left="165" Canvas.Top="292" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.32"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage16" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve17" Opacity="1" Click="Button_ClickValve17" Canvas.Left="165" Canvas.Top="365" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.32"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage17" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve18" Opacity="1" Click="Button_ClickValve18" Canvas.Left="118" Canvas.Top="330" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Image x:Name="valveImage18" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve19" Opacity="1" Click="Button_ClickValve19" Canvas.Left="634" Canvas.Top="442" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90.028"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage19" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve20" Opacity="1" Click="Button_ClickValve20" Canvas.Left="633" Canvas.Top="319" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90.028"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage20" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve21" Opacity="1" Click="Button_ClickValve21" Canvas.Left="709" Canvas.Top="319" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90.028"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage21" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve22" Opacity="1" Click="Button_ClickValve22" Canvas.Left="709" Canvas.Top="442" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90.028"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage22" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve23" Opacity="1" Click="Button_ClickValve23" Canvas.Left="764" Canvas.Top="579" RenderTransformOrigin="0.537,0.569" Width="35">
+                <Image x:Name="valveImage23" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve24" Opacity="1" Click="Button_ClickValve24" Canvas.Left="764" Canvas.Top="656" RenderTransformOrigin="0.537,0.569" Width="35">
+                <Image x:Name="valveImage24" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>
+            <Button x:Name="valve25" Opacity="1" Click="Button_ClickValve25" Canvas.Left="768" Canvas.Top="625" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Image x:Name="valveImage25" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>
+            <Button x:Name="valve26" Opacity="1" Click="Button_ClickValve26" Canvas.Left="749" Canvas.Top="607" RenderTransformOrigin="0.537,0.569" Width="19" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-88.81"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage26" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="11"/>
+            </Button>
+            <Button x:Name="valve27" Opacity="1" Click="Button_ClickValve27" Canvas.Left="794" Canvas.Top="607" RenderTransformOrigin="0.537,0.569" Width="19" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-88.81"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage27" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="11" Width="13"/>
+            </Button>
+            <Button x:Name="valve28" Opacity="1" Click="Button_ClickValve28" Canvas.Left="794" Canvas.Top="636" RenderTransformOrigin="0.537,0.569" Width="19" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-88.81"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage28" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="11" Width="13"/>
+            </Button>
+            <Button x:Name="valve29" Opacity="1" Click="Button_ClickValve29" Canvas.Left="749" Canvas.Top="636" RenderTransformOrigin="0.537,0.569" Width="19" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-88.81"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage29" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="11" Width="13"/>
+            </Button>
+            <Button x:Name="button2" Click="Button_Click2" Canvas.Left="349" Canvas.Top="246" RenderTransformOrigin="0.5,0.5" Height="34">
+                <Image x:Name="pump2Image" Source="Resources/nasos.png" Width="31" Height="32" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-180.089"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </Button>
+            <Line x:Name="line1" X1="0" Y1="0" X2="0" Y2="25" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="168"/>
+            <Line x:Name="line2" X1="0" Y1="0" X2="0" Y2="40" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="222"/>
+            <Line x:Name="line3" X1="0" Y1="0" X2="-45" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="264"/>
+            <Line x:Name="line4" X1="0" Y1="0" X2="65" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="264"/>
+            <Line x:Name="line5" X1="0" Y1="0" X2="44" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="611" Canvas.Top="264"/>
+            <Line x:Name="line6" X1="0" Y1="0" X2="152" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="715" Canvas.Top="264"/>
+            <Line x:Name="line7" X1="0" Y1="0" X2="0" Y2="111" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="835" Canvas.Top="264"/>
+            <Line x:Name="line8" X1="0" Y1="0" X2="0" Y2="111" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="630" Canvas.Top="264"/>
+            <Line x:Name="l2line9" X1="0" Y1="0" X2="0" Y2="89" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="835" Canvas.Top="430"/>
+            <Line x:Name="l2line10" X1="0" Y1="0" X2="149" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="720" Canvas.Top="521"/>
+            <Line x:Name="l3line11" X1="0" Y1="0" X2="478" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="183" Canvas.Top="521"/>
+            <Line x:Name="l3line12" X1="0" Y1="0" X2="0" Y2="89" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="630" Canvas.Top="430"/>
+            <Line x:Name="l3line13" X1="0" Y1="0" X2="0" Y2="128" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="180" Canvas.Top="390"/>
+        </Canvas>
+    </Border>
+</Window>

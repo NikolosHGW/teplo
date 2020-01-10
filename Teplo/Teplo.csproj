@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\nasos.png" />
+    <None Remove="Resources\nasos_green.png" />
+    <None Remove="Resources\tps.png" />
+    <None Remove="Resources\valveCLS.png" />
+    <None Remove="Resources\valveOPN.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\nasos_green.png" />
+    <Resource Include="Resources\tps.png" />
+    <Resource Include="Resources\nasos.png" />
+    <Resource Include="Resources\valveCLS.png" />
+    <Resource Include="Resources\valveOPN.png" />
+  </ItemGroup>
+
+</Project>
