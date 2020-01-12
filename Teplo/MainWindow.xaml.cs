@@ -16,37 +16,38 @@ namespace Teplo
         {
             InitializeComponent();
 
-            Game.SubscribeOnPumpChanged(UpdatePumpPicture);
-            Game.SubscribeOnPump2Changed(UpdatePump2Picture);
-            Game.SubscribeOnValve1Changed(UpdateValve1Picture);
-            Game.SubscribeOnValve2Changed(UpdateValve2Picture);
-            Game.SubscribeOnValve3Changed(UpdateValve3Picture);
-            Game.SubscribeOnValve4Changed(UpdateValve4Picture);
-            Game.SubscribeOnValve5Changed(UpdateValve5Picture);
-            Game.SubscribeOnValve6Changed(UpdateValve6Picture);
-            Game.SubscribeOnValve7Changed(UpdateValve7Picture);
-            Game.SubscribeOnValve8Changed(UpdateValve8Picture);
-            Game.SubscribeOnValve9Changed(UpdateValve9Picture);
-            Game.SubscribeOnValve10Changed(UpdateValve10Picture);
-            Game.SubscribeOnValve11Changed(UpdateValve11Picture);
-            Game.SubscribeOnValve12Changed(UpdateValve12Picture);
-            Game.SubscribeOnValve13Changed(UpdateValve13Picture);
-            Game.SubscribeOnValve14Changed(UpdateValve14Picture);
-            Game.SubscribeOnValve15Changed(UpdateValve15Picture);
-            Game.SubscribeOnValve16Changed(UpdateValve16Picture);
-            Game.SubscribeOnValve17Changed(UpdateValve17Picture);
-            Game.SubscribeOnValve18Changed(UpdateValve18Picture);
-            Game.SubscribeOnValve19Changed(UpdateValve19Picture);
-            Game.SubscribeOnValve20Changed(UpdateValve20Picture);
-            Game.SubscribeOnValve21Changed(UpdateValve21Picture);
-            Game.SubscribeOnValve22Changed(UpdateValve22Picture);
-            Game.SubscribeOnValve23Changed(UpdateValve23Picture);
-            Game.SubscribeOnValve24Changed(UpdateValve24Picture);
-            Game.SubscribeOnValve25Changed(UpdateValve25Picture);
-            Game.SubscribeOnValve26Changed(UpdateValve26Picture);
-            Game.SubscribeOnValve27Changed(UpdateValve27Picture);
-            Game.SubscribeOnValve28Changed(UpdateValve28Picture);
-            Game.SubscribeOnValve29Changed(UpdateValve29Picture);
+            Game.Pump.StateChanged += UpdatePumpPicture;
+            Game.Pump2.StateChanged += UpdatePump2Picture;
+            Game.Valve1.StateChanged += UpdateValve1Picture;
+            Game.Valve2.StateChanged += UpdateValve2Picture;
+            Game.Valve3.StateChanged += UpdateValve3Picture;
+            Game.Valve4.StateChanged += UpdateValve4Picture;
+            Game.Valve5.StateChanged += UpdateValve5Picture;
+            Game.Valve6.StateChanged += UpdateValve6Picture;
+            Game.Valve7.StateChanged += UpdateValve7Picture;
+            Game.Valve8.StateChanged += UpdateValve8Picture;
+            Game.Valve9.StateChanged += UpdateValve9Picture;
+            Game.Valve10.StateChanged += UpdateValve10Picture;
+            Game.Valve11.StateChanged += UpdateValve11Picture;
+            Game.Valve12.StateChanged += UpdateValve12Picture;
+            Game.Valve13.StateChanged += UpdateValve13Picture;
+            Game.Valve14.StateChanged += UpdateValve14Picture;
+            Game.Valve15.StateChanged += UpdateValve15Picture;
+            Game.Valve16.StateChanged += UpdateValve16Picture;
+            Game.Valve17.StateChanged += UpdateValve17Picture;
+            Game.Valve18.StateChanged += UpdateValve18Picture;
+            Game.Valve19.StateChanged += UpdateValve19Picture;
+            Game.Valve20.StateChanged += UpdateValve20Picture;
+            Game.Valve21.StateChanged += UpdateValve21Picture;
+            Game.Valve22.StateChanged += UpdateValve22Picture;
+            Game.Valve23.StateChanged += UpdateValve23Picture;
+            Game.Valve24.StateChanged += UpdateValve24Picture;
+            Game.Valve25.StateChanged += UpdateValve25Picture;
+            Game.Valve26.StateChanged += UpdateValve26Picture;
+            Game.Valve27.StateChanged += UpdateValve27Picture;
+            Game.Valve28.StateChanged += UpdateValve28Picture;
+            Game.Valve29.StateChanged += UpdateValve29Picture;
+
             //Game.SubscribeOnPumpChanged(ShowMessage);
         }
 
@@ -74,7 +75,7 @@ namespace Teplo
             if (pumpState2) // pumpState == true
             {
                 pump2Image.Source = new BitmapImage(new Uri(@"Resources/nasos_green.png", UriKind.Relative));
-                if (Game.PumpV2.IsActive == true && Game.PumpV16.IsActive == true && Game.PumpV17.IsActive == true && line26.Opacity == 1 && Game.PumpV5.IsActive == false)
+                if (Game.Valve2.IsActive == true && Game.Valve16.IsActive == true && Game.Valve17.IsActive == true && line26.Opacity == 1 && Game.Valve5.IsActive == false)
                 {
                     //2
                     circ += 1;
@@ -91,7 +92,7 @@ namespace Teplo
             if (valveState1) // pumpState == true
             {
                 valveImage1.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
-                if (Game.Pump.IsActive == true && Game.PumpV3.IsActive == true && Game.PumpV11.IsActive == true && Game.PumpV20.IsActive == true && Game.PumpV21.IsActive == true && Game.PumpV2.IsActive == false && Game.PumpV6.IsActive == false && Game.PumpV14.IsActive == false && Game.PumpV19.IsActive == false && Game.PumpV22.IsActive == false)
+                if (Game.Pump.IsActive == true && Game.Valve3.IsActive == true && Game.Valve11.IsActive == true && Game.Valve20.IsActive == true && Game.Valve21.IsActive == true && Game.Valve2.IsActive == false && Game.Valve6.IsActive == false && Game.Valve14.IsActive == false && Game.Valve19.IsActive == false && Game.Valve22.IsActive == false)
                 {
                     line1.Opacity = 1;
                     line2.Opacity = 1;
@@ -118,7 +119,7 @@ namespace Teplo
             if (valveState2) // pumpState == true
             {
                 valveImage2.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
-                if (Game.PumpV16.IsActive == true && Game.PumpV17.IsActive == true && line26.Opacity == 1 && Game.PumpV5.IsActive == false && Game.Pump2.IsActive == false)
+                if (Game.Valve16.IsActive == true && Game.Valve17.IsActive == true && line26.Opacity == 1 && Game.Valve5.IsActive == false && Game.Pump2.IsActive == false)
                 {
                     //1
                     circ += 1;
@@ -156,7 +157,7 @@ namespace Teplo
             if (valveState5) // pumpState == true
             {
                 valveImage5.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
-                if (Game.PumpV2.IsActive == true && Game.PumpV16.IsActive == true && Game.PumpV17.IsActive == true && line26.Opacity == 1 && Game.Pump2.IsActive == true)
+                if (Game.Valve2.IsActive == true && Game.Valve16.IsActive == true && Game.Valve17.IsActive == true && line26.Opacity == 1 && Game.Pump2.IsActive == true)
                 {
                     //3
                     circ += 1;
@@ -260,12 +261,12 @@ namespace Teplo
             if (valveState14) // pumpState == true
             {
                 valveImage14.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
-                if (Game.PumpV9.IsActive == false && Game.PumpV1.IsActive == true && line7.Opacity == 1)
+                if (Game.Valve9.IsActive == false && Game.Valve1.IsActive == true && line7.Opacity == 1)
                 {
                     line16.Opacity = 1;
                     line18.Opacity = 1;
                 }
-                if (Game.PumpV9.IsActive == true && line7.Opacity == 1 && Game.PumpV6.IsActive == false && Game.PumpV12.IsActive == false && Game.PumpV22.IsActive == false)
+                if (Game.Valve9.IsActive == true && line7.Opacity == 1 && Game.Valve6.IsActive == false && Game.Valve12.IsActive == false && Game.Valve22.IsActive == false)
                 {
                     line12.Opacity = 1;
                     line16.Opacity = 1;
@@ -306,7 +307,7 @@ namespace Teplo
             if (valveState17) // pumpState == true
             {
                 valveImage17.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
-                if (Game.PumpV16.IsActive == true && line25.Opacity == 1)
+                if (Game.Valve16.IsActive == true && line25.Opacity == 1)
                 {
                     line26.Opacity = 1;
                     line27.Opacity = 1;
@@ -333,7 +334,7 @@ namespace Teplo
             if (valveState19) // pumpState == true
             {
                 valveImage19.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
-                if (Game.PumpV11.IsActive == true && line9.Opacity == 1 && line12.Opacity == 1 && Game.PumpV20.IsActive == false && Game.PumpV21.IsActive == false && Game.PumpV22.IsActive == false)
+                if (Game.Valve11.IsActive == true && line9.Opacity == 1 && line12.Opacity == 1 && Game.Valve20.IsActive == false && Game.Valve21.IsActive == false && Game.Valve22.IsActive == false)
                 {
                     line9.Opacity = 0;
                     line10.Opacity = 0;
@@ -351,7 +352,7 @@ namespace Teplo
             if (valveState20) // pumpState == true
             {
                 valveImage20.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
-                //if (Game.PumpV11.IsActive == true)
+                //if (Game.Valve11.IsActive == true)
                 //{
                 //    l2line9.Opacity = 1;
                 //    l2line10.Opacity = 1;
@@ -378,7 +379,7 @@ namespace Teplo
             if (valveState22) // pumpState == true
             {
                 valveImage22.Source = new BitmapImage(new Uri(@"Resources/valveOPN.png", UriKind.Relative));
-                if (Game.PumpV4.IsActive == true && Game.PumpV11.IsActive == true && Game.PumpV19.IsActive == true && line12.Opacity == 1 && Game.PumpV17.IsActive == false && Game.PumpV20.IsActive == false && Game.PumpV21.IsActive == false)
+                if (Game.Valve4.IsActive == true && Game.Valve11.IsActive == true && Game.Valve19.IsActive == true && line12.Opacity == 1 && Game.Valve17.IsActive == false && Game.Valve20.IsActive == false && Game.Valve21.IsActive == false)
                 {
                     line11.Opacity = 1;
                     line24.Opacity = 1;
@@ -474,144 +475,62 @@ namespace Teplo
 
         //                                 КНОПКИ
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Game.TogglePumpState();
-        }
+        private void Button_Click(object sender, RoutedEventArgs e) => Game.Pump.ToggleState();
 
-        private void Button_Click2(object sender, RoutedEventArgs e)
-        {
-            Game.TogglePump2State();
-        }
+        private void Button_Click2(object sender, RoutedEventArgs e) => Game.Pump2.ToggleState();
 
-        private void Button_ClickValve1(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve1State();
-        }
+        private void Button_ClickValve1(object sender, RoutedEventArgs e) => Game.Valve1.ToggleState();
 
-        private void Button_ClickValve2(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve2State();
-        }
+        private void Button_ClickValve2(object sender, RoutedEventArgs e) => Game.Valve2.ToggleState();
 
-        private void Button_ClickValve3(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve3State();
-        }
-        private void Button_ClickValve4(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve4State();
-        }
-        private void Button_ClickValve5(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve5State();
-        }
+        private void Button_ClickValve3(object sender, RoutedEventArgs e) => Game.Valve3.ToggleState();
 
-        private void Button_ClickValve6(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve6State();
-        }
+        private void Button_ClickValve4(object sender, RoutedEventArgs e) => Game.Valve4.ToggleState();
 
-        private void Button_ClickValve7(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve7State();
-        }
-        private void Button_ClickValve8(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve8State();
-        }
-        private void Button_ClickValve9(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve9State();
-        }
+        private void Button_ClickValve5(object sender, RoutedEventArgs e) => Game.Valve5.ToggleState();
 
-        private void Button_ClickValve10(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve10State();
-        }
+        private void Button_ClickValve6(object sender, RoutedEventArgs e) => Game.Valve6.ToggleState();
 
-        private void Button_ClickValve11(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve11State();
-        }
-        private void Button_ClickValve12(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve12State();
-        }
-        private void Button_ClickValve13(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve13State();
-        }
+        private void Button_ClickValve7(object sender, RoutedEventArgs e) => Game.Valve7.ToggleState();
 
-        private void Button_ClickValve14(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve14State();
-        }
+        private void Button_ClickValve8(object sender, RoutedEventArgs e) => Game.Valve8.ToggleState();
 
-        private void Button_ClickValve15(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve15State();
-        }
-        private void Button_ClickValve16(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve16State();
-        }
-        private void Button_ClickValve17(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve17State();
-        }
+        private void Button_ClickValve9(object sender, RoutedEventArgs e) => Game.Valve9.ToggleState();
 
-        private void Button_ClickValve18(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve18State();
-        }
+        private void Button_ClickValve10(object sender, RoutedEventArgs e) => Game.Valve10.ToggleState();
 
-        private void Button_ClickValve19(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve19State();
-        }
-        private void Button_ClickValve20(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve20State();
-        }
-        private void Button_ClickValve21(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve21State();
-        }
+        private void Button_ClickValve11(object sender, RoutedEventArgs e) => Game.Valve11.ToggleState();
 
-        private void Button_ClickValve22(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve22State();
-        }
-        private void Button_ClickValve23(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve23State();
-        }
-        private void Button_ClickValve24(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve24State();
-        }
+        private void Button_ClickValve12(object sender, RoutedEventArgs e) => Game.Valve12.ToggleState();
 
-        private void Button_ClickValve25(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve25State();
-        }
-        private void Button_ClickValve26(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve26State();
-        }
-        private void Button_ClickValve27(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve27State();
-        }
+        private void Button_ClickValve13(object sender, RoutedEventArgs e) => Game.Valve13.ToggleState();
 
-        private void Button_ClickValve28(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve28State();
-        }
-        private void Button_ClickValve29(object sender, RoutedEventArgs e)
-        {
-            Game.ToggleValve29State();
-        }
+        private void Button_ClickValve14(object sender, RoutedEventArgs e) => Game.Valve14.ToggleState();
+
+        private void Button_ClickValve15(object sender, RoutedEventArgs e) => Game.Valve15.ToggleState();
+
+        private void Button_ClickValve16(object sender, RoutedEventArgs e) => Game.Valve16.ToggleState();
+
+        private void Button_ClickValve17(object sender, RoutedEventArgs e) => Game.Valve17.ToggleState();
+
+        private void Button_ClickValve18(object sender, RoutedEventArgs e) => Game.Valve18.ToggleState();
+
+        private void Button_ClickValve19(object sender, RoutedEventArgs e) => Game.Valve19.ToggleState();
+
+        private void Button_ClickValve20(object sender, RoutedEventArgs e) => Game.Valve20.ToggleState();
+
+        private void Button_ClickValve21(object sender, RoutedEventArgs e) => Game.Valve21.ToggleState();
+
+        private void Button_ClickValve22(object sender, RoutedEventArgs e) => Game.Valve22.ToggleState();
+
+        private void Button_ClickValve23(object sender, RoutedEventArgs e) => Game.Valve23.ToggleState();
+        private void Button_ClickValve24(object sender, RoutedEventArgs e) => Game.Valve24.ToggleState();
+
+        private void Button_ClickValve25(object sender, RoutedEventArgs e) => Game.Valve25.ToggleState();
+        private void Button_ClickValve26(object sender, RoutedEventArgs e) => Game.Valve26.ToggleState();
+        private void Button_ClickValve27(object sender, RoutedEventArgs e) => Game.Valve27.ToggleState();
+
+        private void Button_ClickValve28(object sender, RoutedEventArgs e) => Game.Valve28.ToggleState();
+        private void Button_ClickValve29(object sender, RoutedEventArgs e) => Game.Valve29.ToggleState();
     }
 }

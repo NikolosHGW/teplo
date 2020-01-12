@@ -1,7 +1,7 @@
 ﻿namespace Core
 {
-    public class Pump
+    public class Pump : WaterControlElement
     {
-        public bool IsActive { get; set; } = false;
+        public Pump(int number) : base(number) {}
     }
 }
