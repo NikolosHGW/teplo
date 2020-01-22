@@ -535,10 +535,7 @@ namespace Teplo
         private void Button_Info(object sender, RoutedEventArgs e)
         {
             ViewModelINFO infoshka = (ViewModelINFO)this.Resources["abc"];
-            if (infoshka.Opa == 0)
-                infoshka.Opa = 1;
-            else
-                infoshka.Opa = 0;
+            infoshka.ChngOpa();
         }
     }
 }
