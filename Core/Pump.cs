@@ -1,4 +1,4 @@
-﻿namespace Core
+﻿namespace Teplo
 {
     public class Pump : WaterControlElement
     {

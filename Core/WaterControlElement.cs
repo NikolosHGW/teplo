@@ -1,4 +1,4 @@
-﻿namespace Core
+﻿namespace Teplo
 {
     public delegate void StateDelegate(bool state);
 

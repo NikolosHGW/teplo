@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:Teplo"
         mc:Ignorable="d"
         Title="TEPLO" Height="700" Width="1200">
-    <Border>
+    <Window.Resources>
+        <local:ViewModelINFO x:Key="abc" Opa="0"/>
+    </Window.Resources>
+    <Border DataContext="{StaticResource abc}">
         <Canvas>
             <Image Source="Resources/tps.png" Stretch="Uniform"/>
             <Button x:Name="button1" Width="41" Height="38" Opacity="1" Click="Button_Click" Canvas.Left="380" Canvas.Top="146" RenderTransformOrigin="0.537,0.569">
@@ -256,6 +259,38 @@
             <Line x:Name="line31" X1="0" Y1="0" X2="44" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="2" Canvas.Left="923" Canvas.Top="521"/>
             <Line x:Name="line32" X1="0" Y1="0" X2="166" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="2" Canvas.Left="800" Canvas.Top="593"/>
             <Line x:Name="line33" X1="0" Y1="0" X2="270" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="2" Canvas.Left="800" Canvas.Top="672"/>
+            <TextBlock Text="Pump1" Opacity="{Binding Opa}" Canvas.Left="382" Canvas.Top="122"/>
+            <TextBlock Text="Pump2" Opacity="{Binding Opa}" Canvas.Left="348" Canvas.Top="222"/>
+            <TextBlock Text="Valve1" Opacity="{Binding Opa}" Canvas.Left="444" Canvas.Top="124"/>
+            <TextBlock Text="Valve2" Opacity="{Binding Opa}" Canvas.Left="403" Canvas.Top="217"/>
+            <TextBlock Text="Valve3" Opacity="{Binding Opa}" Canvas.Left="565" Canvas.Top="222"/>
+            <TextBlock Text="Valve4" Opacity="{Binding Opa}" Canvas.Left="668" Canvas.Top="225"/>
+            <TextBlock Text="Valve5" Opacity="{Binding Opa}" Canvas.Left="274" Canvas.Top="217"/>
+            <TextBlock Text="Valve6" Opacity="{Binding Opa}" Canvas.Left="881" Canvas.Top="221"/>
+            <TextBlock Text="Valve7" Opacity="{Binding Opa}" Canvas.Left="674" Canvas.Top="481"/>
+            <TextBlock Text="Valve8" Opacity="{Binding Opa}" Canvas.Left="882" Canvas.Top="482"/>
+            <TextBlock Text="Valve9" Opacity="{Binding Opa}" Canvas.Left="821" Canvas.Top="445"/>
+            <TextBlock Text="Valve10" Opacity="{Binding Opa}" Canvas.Left="942" Canvas.Top="445"/>
+            <TextBlock Text="Valve11" Opacity="{Binding Opa}" Canvas.Left="666" Canvas.Top="355"/>
+            <TextBlock Text="Valve12" Opacity="{Binding Opa}" Canvas.Left="879" Canvas.Top="357"/>
+            <TextBlock Text="Valve13" Opacity="{Binding Opa}" Canvas.Left="270" Canvas.Top="297"/>
+            <TextBlock Text="Valve14" Opacity="{Binding Opa}" Canvas.Left="817" Canvas.Top="322"/>
+            <TextBlock Text="Valve15" Opacity="{Binding Opa}" Canvas.Left="941" Canvas.Top="319"/>
+            <TextBlock Text="Valve16" Opacity="{Binding Opa}" Canvas.Left="125" Canvas.Top="292"/>
+            <TextBlock Text="Valve17" Opacity="{Binding Opa}" Canvas.Left="127" Canvas.Top="365"/>
+            <TextBlock Text="Valve18" Opacity="{Binding Opa}" Canvas.Left="73" Canvas.Top="329"/>
+            <TextBlock Text="Valve19" Opacity="{Binding Opa}" Canvas.Left="593" Canvas.Top="441"/>
+            <TextBlock Text="Valve20" Opacity="{Binding Opa}" Canvas.Left="595" Canvas.Top="318"/>
+            <TextBlock Text="Valve21" Opacity="{Binding Opa}" Canvas.Left="741" Canvas.Top="319"/>
+            <TextBlock Text="Valve22" Opacity="{Binding Opa}" Canvas.Left="740" Canvas.Top="442"/>
+            <TextBlock Text="Valve23" Opacity="{Binding Opa}" Canvas.Left="762" Canvas.Top="560"/>
+            <TextBlock Text="Valve24" Opacity="{Binding Opa}" Canvas.Left="762" Canvas.Top="682"/>
+            <TextBlock Text="V25" Opacity="{Binding Opa}" Canvas.Left="771" Canvas.Top="609"/>
+            <TextBlock Text="Valve26" Opacity="{Binding Opa}" Canvas.Left="706" Canvas.Top="607"/>
+            <TextBlock Text="Valve27" Opacity="{Binding Opa}" Canvas.Left="815" Canvas.Top="608"/>
+            <TextBlock Text="Valve28" Opacity="{Binding Opa}" Canvas.Left="813" Canvas.Top="638"/>
+            <TextBlock Text="Valve29" Opacity="{Binding Opa}" Canvas.Left="706" Canvas.Top="638"/>
+            <Button x:Name="INFO" Content="Info" Click="Button_Info" Canvas.Left="279" Canvas.Top="72"/>
         </Canvas>
     </Border>
 </Window>

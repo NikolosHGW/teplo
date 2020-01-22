@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Media.Imaging;
-using Core;
+using Teplo;
 
 namespace Teplo
 {
@@ -532,5 +532,13 @@ namespace Teplo
 
         private void Button_ClickValve28(object sender, RoutedEventArgs e) => Game.Valve28.ToggleState();
         private void Button_ClickValve29(object sender, RoutedEventArgs e) => Game.Valve29.ToggleState();
+        private void Button_Info(object sender, RoutedEventArgs e)
+        {
+            ViewModelINFO infoshka = (ViewModelINFO)this.Resources["abc"];
+            if (infoshka.Opa == 0)
+                infoshka.Opa = 1;
+            else
+                infoshka.Opa = 0;
+        }
     }
 }
