@@ -11,7 +11,7 @@ namespace Teplo
     public partial class MainWindow : Window
     {
         private Game Game { get; set; } = new Game();
-        private int circ = 0;
+        //private int circ = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -78,7 +78,7 @@ namespace Teplo
                 if (Game.Valve2.IsActive == true && Game.Valve16.IsActive == true && Game.Valve17.IsActive == true && line26.Opacity == 1 && Game.Valve5.IsActive == false)
                 {
                     //2
-                    circ += 1;
+                    //circ += 1;
                 }
             }
             else // pumpState == false
@@ -122,7 +122,7 @@ namespace Teplo
                 if (Game.Valve16.IsActive == true && Game.Valve17.IsActive == true && line26.Opacity == 1 && Game.Valve5.IsActive == false && Game.Pump2.IsActive == false)
                 {
                     //1
-                    circ += 1;
+                    //circ += 1;
                 }
             }
             else // pumpState == false
@@ -160,7 +160,7 @@ namespace Teplo
                 if (Game.Valve2.IsActive == true && Game.Valve16.IsActive == true && Game.Valve17.IsActive == true && line26.Opacity == 1 && Game.Pump2.IsActive == true)
                 {
                     //3
-                    circ += 1;
+                    //circ += 1;
                 }
             }
             else // pumpState == false
