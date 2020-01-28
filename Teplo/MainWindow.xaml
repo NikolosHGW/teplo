@@ -8,6 +8,17 @@
         Title="TEPLO" Height="700" Width="1200">
     <Window.Resources>
         <local:ViewModelINFO x:Key="abc" Opa="0"/>
+        <local:ButtonVM x:Key="qwe"/>
+        <Style x:Key="image">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsFirstImage}" Value="False">
+                    <Setter Property="Image.Source" Value="Resources/nasos.png" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding IsFirstImage}" Value="True">
+                    <Setter Property="Image.Source" Value="Resources/nasos_green.png" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
     </Window.Resources>
     <Border DataContext="{StaticResource abc}">
         <Canvas>
@@ -291,6 +302,9 @@
             <TextBlock Text="Valve28" Opacity="{Binding Opa}" Canvas.Left="813" Canvas.Top="638"/>
             <TextBlock Text="Valve29" Opacity="{Binding Opa}" Canvas.Left="706" Canvas.Top="638"/>
             <Button x:Name="INFO" Content="Info" Click="Button_Info" Canvas.Left="279" Canvas.Top="72"/>
+            <Button x:Name="button3" Width="41" Height="38" DataContext="{StaticResource qwe}" Opacity="1" Command="{Binding ToggleCommand}" Canvas.Left="100" Canvas.Top="146" RenderTransformOrigin="0.537,0.569">
+                <Image x:Name="pump3Image" Style="{StaticResource ResourceKey=image}" Width="41" Height="37"/>
+            </Button>
         </Canvas>
     </Border>
 </Window>
