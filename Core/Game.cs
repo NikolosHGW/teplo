@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Teplo
+﻿namespace Teplo
 {
     public class Game
     {
