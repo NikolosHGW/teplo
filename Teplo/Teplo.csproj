@@ -10,7 +10,9 @@
     <None Remove="Resources\nasos.png" />
     <None Remove="Resources\nasos_green.png" />
     <None Remove="Resources\tps.png" />
+    <None Remove="Resources\valveCLS%28v%29.png" />
     <None Remove="Resources\valveCLS.png" />
+    <None Remove="Resources\valveOPN%28v%29.png" />
     <None Remove="Resources\valveOPN.png" />
   </ItemGroup>
 
@@ -22,7 +24,9 @@
     <Resource Include="Resources\nasos_green.png" />
     <Resource Include="Resources\tps.png" />
     <Resource Include="Resources\nasos.png" />
+    <Resource Include="Resources\valveCLS(v).png" />
     <Resource Include="Resources\valveCLS.png" />
+    <Resource Include="Resources\valveOPN(v).png" />
     <Resource Include="Resources\valveOPN.png" />
   </ItemGroup>
 
