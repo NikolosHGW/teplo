@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="TEPLO" Height="700" Width="1200">
     <Window.Resources>
-        <local:ViewModelINFO x:Key="abc" Opa="0"/>
+        <!--<local:ViewModelINFO x:Key="abc" Opa="0"/>-->
         <local:ButtonVM x:Key="qwe"/>
         <Style x:Key="image">
             <Style.Triggers>
@@ -20,37 +20,52 @@
             </Style.Triggers>
         </Style>
     </Window.Resources>
-    <Border DataContext="{StaticResource abc}">
+    <Window.DataContext>
+        <local:GameViewModel/>
+    </Window.DataContext>
+    <Border>
         <Canvas>
             <Image Source="Resources/tps.png" Stretch="Uniform"/>
-            <Button x:Name="button1" Width="41" Height="38" Opacity="1" Click="Button_Click" Canvas.Left="380" Canvas.Top="146" RenderTransformOrigin="0.537,0.569">
-                <Image x:Name="pumpImage" Source="Resources/nasos.png" Width="41" Height="37"/>
+            <Button 
+                    x:Name="button1"
+                    Width="41"
+                    Height="38"
+                    Opacity="1"
+                    Canvas.Left="380"
+                    Canvas.Top="146"
+                    RenderTransformOrigin="0.537,0.569"
+                    Command="{Binding TogglePumpStateCommand}"
+                    CommandParameter="0"
+                >
+                <Image x:Name="pumpImage" Source="{Binding PumpImageSources[0]}" Width="41" Height="37"/>
             </Button>
-            <Button x:Name="valve1" Opacity="1" Click="Button_ClickValve1" Canvas.Left="437" Canvas.Top="153" RenderTransformOrigin="0.537,0.569" Width="48">
-                <Image x:Name="valveImage1" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+
+
+            <Button x:Name="valve1" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="0" Canvas.Left="437" Canvas.Top="153" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage1" Source="{Binding ValveImageSources[0]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve2" Opacity="1" Click="Button_ClickValve2" Canvas.Left="396" Canvas.Top="248" RenderTransformOrigin="0.537,0.569" Width="48">
-                <Image x:Name="valveImage2" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            <Button x:Name="valve2" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="1" Canvas.Left="396" Canvas.Top="248" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage2" Source="{Binding ValveImageSources[1]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve3" Opacity="1" Click="Button_ClickValve3" Canvas.Left="558" Canvas.Top="250" RenderTransformOrigin="0.537,0.569" Width="48">
-                <Image x:Name="valveImage3" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            <Button x:Name="valve3" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="2" Canvas.Left="558" Canvas.Top="250" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage3" Source="{Binding ValveImageSources[2]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve4" Opacity="1" Click="Button_ClickValve4" Canvas.Left="661" Canvas.Top="253" RenderTransformOrigin="0.537,0.569" Width="48">
-                <Image x:Name="valveImage4" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            <Button x:Name="valve4" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="3" Canvas.Left="661" Canvas.Top="253" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage4" Source="{Binding ValveImageSources[3]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve5" Opacity="1" Click="Button_ClickValve5" Canvas.Left="272" Canvas.Top="246" RenderTransformOrigin="0.537,0.569" Width="37">
-                <Image x:Name="valveImage5" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            <Button x:Name="valve5" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="4" Canvas.Left="272" Canvas.Top="246" RenderTransformOrigin="0.537,0.569" Width="37">
+                <Image x:Name="valveImage5" Source="{Binding ValveImageSources[4]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve6" Opacity="1" Click="Button_ClickValve6" Canvas.Left="873" Canvas.Top="252" RenderTransformOrigin="0.537,0.569" Width="48">
-                <Image x:Name="valveImage6" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            <Button x:Name="valve6" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="5" Canvas.Left="873" Canvas.Top="252" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage6" Source="{Binding ValveImageSources[5]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve7" Opacity="1" Click="Button_ClickValve7" Canvas.Left="667" Canvas.Top="505" RenderTransformOrigin="0.537,0.569" Width="48">
-                <Image x:Name="valveImage7" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            <Button x:Name="valve7" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="6" Canvas.Left="667" Canvas.Top="505" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage7" Source="{Binding ValveImageSources[6]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve8" Opacity="1" Click="Button_ClickValve8" Canvas.Left="875" Canvas.Top="506" RenderTransformOrigin="0.537,0.569" Width="48">
-                <Image x:Name="valveImage8" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            <Button x:Name="valve8" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="7" Canvas.Left="875" Canvas.Top="506" RenderTransformOrigin="0.537,0.569" Width="48">
+                <Image x:Name="valveImage8" Source="{Binding ValveImageSources[7]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve9" Opacity="1" Click="Button_ClickValve9" Canvas.Left="856" Canvas.Top="444" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+            <Button x:Name="valve9" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="8" Canvas.Left="856" Canvas.Top="444" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -59,9 +74,9 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage9" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+                <Image x:Name="valveImage9" Source="{Binding ValveImageSources[8]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve10" Opacity="1" Click="Button_ClickValve10" Canvas.Left="913" Canvas.Top="444" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+            <Button x:Name="valve10" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="9"  Canvas.Left="913" Canvas.Top="444" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -70,18 +85,18 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage10" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+                <Image x:Name="valveImage10" Source="{Binding ValveImageSources[9]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve11" Opacity="1" Click="Button_ClickValve11" Canvas.Left="672" Canvas.Top="379" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
-                <Image x:Name="valveImage11" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            <Button x:Name="valve11" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="10" Canvas.Left="672" Canvas.Top="379" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Image x:Name="valveImage11" Source="{Binding ValveImageSources[10]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve12" Opacity="1" Click="Button_ClickValve12" Canvas.Left="887" Canvas.Top="378" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
-                <Image x:Name="valveImage12" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            <Button x:Name="valve12" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="11" Canvas.Left="887" Canvas.Top="378" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Image x:Name="valveImage12" Source="{Binding ValveImageSources[11]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve13" Opacity="1" Click="Button_ClickValve13" Canvas.Left="277" Canvas.Top="277" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
-                <Image x:Name="valveImage13" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            <Button x:Name="valve13" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="12" Canvas.Left="277" Canvas.Top="277" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Image x:Name="valveImage13" Source="{Binding ValveImageSources[12]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve14" Opacity="1" Click="Button_ClickValve14" Canvas.Left="855" Canvas.Top="322" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+            <Button x:Name="valve14" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="13" Canvas.Left="855" Canvas.Top="322" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -90,9 +105,9 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage14" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+                <Image x:Name="valveImage14" Source="{Binding ValveImageSources[13]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve15" Opacity="1" Click="Button_ClickValve15" Canvas.Left="912" Canvas.Top="321" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+            <Button x:Name="valve15" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="14" Canvas.Left="912" Canvas.Top="321" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -101,9 +116,9 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage15" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+                <Image x:Name="valveImage15" Source="{Binding ValveImageSources[14]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve16" Opacity="1" Click="Button_ClickValve16" Canvas.Left="165" Canvas.Top="292" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+            <Button x:Name="valve16" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="15" Canvas.Left="165" Canvas.Top="292" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -112,9 +127,9 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage16" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+                <Image x:Name="valveImage16" Source="{Binding ValveImageSources[15]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve17" Opacity="1" Click="Button_ClickValve17" Canvas.Left="165" Canvas.Top="365" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+            <Button x:Name="valve17" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="16" Canvas.Left="165" Canvas.Top="365" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -123,12 +138,12 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage17" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+                <Image x:Name="valveImage17" Source="{Binding ValveImageSources[16]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve18" Opacity="1" Click="Button_ClickValve18" Canvas.Left="118" Canvas.Top="330" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
-                <Image x:Name="valveImage18" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            <Button x:Name="valve18" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="17" Canvas.Left="118" Canvas.Top="330" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Image x:Name="valveImage18" Source="{Binding ValveImageSources[17]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve19" Opacity="1" Click="Button_ClickValve19" Canvas.Left="634" Canvas.Top="442" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+            <Button x:Name="valve19" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="18" Canvas.Left="634" Canvas.Top="442" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -137,9 +152,9 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage19" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+                <Image x:Name="valveImage19" Source="{Binding ValveImageSources[18]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve20" Opacity="1" Click="Button_ClickValve20" Canvas.Left="633" Canvas.Top="319" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+            <Button x:Name="valve20" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="19" Canvas.Left="633" Canvas.Top="319" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -148,9 +163,9 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage20" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+                <Image x:Name="valveImage20" Source="{Binding ValveImageSources[19]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve21" Opacity="1" Click="Button_ClickValve21" Canvas.Left="709" Canvas.Top="319" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+            <Button x:Name="valve21" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="20"  Canvas.Left="709" Canvas.Top="319" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -159,9 +174,9 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage21" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+                <Image x:Name="valveImage21" Source="{Binding ValveImageSources[20]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve22" Opacity="1" Click="Button_ClickValve22" Canvas.Left="709" Canvas.Top="442" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+            <Button x:Name="valve22" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="21" Canvas.Left="709" Canvas.Top="442" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -170,18 +185,18 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage22" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+                <Image x:Name="valveImage22" Source="{Binding ValveImageSources[21]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve23" Opacity="1" Click="Button_ClickValve23" Canvas.Left="764" Canvas.Top="579" RenderTransformOrigin="0.537,0.569" Width="35">
-                <Image x:Name="valveImage23" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            <Button x:Name="valve23" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="22" Canvas.Left="764" Canvas.Top="579" RenderTransformOrigin="0.537,0.569" Width="35">
+                <Image x:Name="valveImage23" Source="{Binding ValveImageSources[22]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve24" Opacity="1" Click="Button_ClickValve24" Canvas.Left="764" Canvas.Top="656" RenderTransformOrigin="0.537,0.569" Width="35">
-                <Image x:Name="valveImage24" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            <Button x:Name="valve24" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="23" Canvas.Left="764" Canvas.Top="656" RenderTransformOrigin="0.537,0.569" Width="35">
+                <Image x:Name="valveImage24"  Source="{Binding ValveImageSources[23]}" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>
-            <Button x:Name="valve25" Opacity="1" Click="Button_ClickValve25" Canvas.Left="768" Canvas.Top="625" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
-                <Image x:Name="valveImage25" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            <Button x:Name="valve25" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="24" Canvas.Left="768" Canvas.Top="625" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Image x:Name="valveImage25" Source="{Binding ValveImageSources[24]}" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>
-            <Button x:Name="valve26" Opacity="1" Click="Button_ClickValve26" Canvas.Left="749" Canvas.Top="607" RenderTransformOrigin="0.537,0.569" Width="19" Height="15">
+            <Button x:Name="valve26" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="25" Canvas.Left="749" Canvas.Top="607" RenderTransformOrigin="0.537,0.569" Width="19" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -190,9 +205,9 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage26" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="11"/>
+                <Image x:Name="valveImage26" Source="{Binding ValveImageSources[25]}"  RenderTransformOrigin="0.532,0.489" Height="11"/>
             </Button>
-            <Button x:Name="valve27" Opacity="1" Click="Button_ClickValve27" Canvas.Left="794" Canvas.Top="607" RenderTransformOrigin="0.537,0.569" Width="19" Height="15">
+            <Button x:Name="valve27" Opacity="1" Command="{Binding ToggleValveStateCommand}" CommandParameter="26" Canvas.Left="794" Canvas.Top="607" RenderTransformOrigin="0.537,0.569" Width="19" Height="15">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -201,9 +216,19 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage27" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="11" Width="13"/>
+                <Image x:Name="valveImage27" Source="{Binding ValveImageSources[26]}" RenderTransformOrigin="0.532,0.489" Height="11" Width="13"/>
             </Button>
-            <Button x:Name="valve28" Opacity="1" Click="Button_ClickValve28" Canvas.Left="794" Canvas.Top="636" RenderTransformOrigin="0.537,0.569" Width="19" Height="15">
+            <Button 
+                x:Name="valve28"
+                Opacity="1"
+                Command="{Binding ToggleValveStateCommand}"
+                CommandParameter="27"
+                Canvas.Left="794"
+                Canvas.Top="636"
+                RenderTransformOrigin="0.537,0.569"
+                Width="19"
+                Height="15"
+                >
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -212,9 +237,19 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage28" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="11" Width="13"/>
+                <Image x:Name="valveImage28" Source="{Binding ValveImageSources[27]}" RenderTransformOrigin="0.532,0.489" Height="11" Width="13"/>
             </Button>
-            <Button x:Name="valve29" Opacity="1" Click="Button_ClickValve29" Canvas.Left="749" Canvas.Top="636" RenderTransformOrigin="0.537,0.569" Width="19" Height="15">
+            <Button 
+                x:Name="valve29"
+                Opacity="1"
+                Canvas.Left="749"
+                Canvas.Top="636"
+                RenderTransformOrigin="0.537,0.569"
+                Width="19"
+                Height="15"
+                Command="{Binding ToggleValveStateCommand}"
+                CommandParameter="28"
+                >
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -223,10 +258,17 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Button.RenderTransform>
-                <Image x:Name="valveImage29" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="11" Width="13"/>
+                <Image x:Name="valveImage29" Source="{Binding ValveImageSources[28]}" RenderTransformOrigin="0.532,0.489" Height="11" Width="13"/>
             </Button>
-            <Button x:Name="button2" Click="Button_Click2" Canvas.Left="349" Canvas.Top="246" RenderTransformOrigin="0.5,0.5" Height="34">
-                <Image x:Name="pump2Image" Source="Resources/nasos.png" Width="31" Height="32" RenderTransformOrigin="0.5,0.5">
+            <Button 
+                x:Name="button2"
+                Command="{Binding TogglePumpStateCommand}"
+                CommandParameter="1"
+                Canvas.Left="349"
+                Canvas.Top="246"
+                RenderTransformOrigin="0.5,0.5"
+                Height="34">
+                <Image x:Name="pump2Image" Source="{Binding PumpImageSources[1]}" Width="31" Height="32" RenderTransformOrigin="0.5,0.5">
                     <Image.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -237,39 +279,39 @@
                     </Image.RenderTransform>
                 </Image>
             </Button>
-            <Line x:Name="line1" X1="0" Y1="0" X2="0" Y2="30" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="489" Canvas.Top="164"/>
-            <Line x:Name="line2" X1="0" Y1="0" X2="0" Y2="40" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="222"/>
-            <Line x:Name="line3" X1="0" Y1="0" X2="-47" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="261"/>
-            <Line x:Name="line4" X1="0" Y1="0" X2="68" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="261"/>
-            <Line x:Name="line5" X1="0" Y1="0" X2="54" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="606" Canvas.Top="261"/>
-            <Line x:Name="line6" X1="0" Y1="0" X2="159" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="709" Canvas.Top="261"/>
-            <Line x:Name="line7" X1="0" Y1="0" X2="0" Y2="55" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="260"/>
-            <Line x:Name="line8" X1="0" Y1="0" X2="0" Y2="55" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="648" Canvas.Top="260"/>
-            <Line x:Name="line9" X1="0" Y1="0" X2="0" Y2="96" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="648" Canvas.Top="340"/>
-            <Line x:Name="line10" X1="0" Y1="0" X2="0" Y2="96" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="340"/>
-            <Line x:Name="line11" X1="0" Y1="0" X2="0" Y2="59" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="648" Canvas.Top="464"/>
-            <Line x:Name="line12" X1="0" Y1="0" X2="0" Y2="59" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="464"/>
-            <Line x:Name="line13" X1="0" Y1="0" X2="0" Y2="52" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="261"/>
-            <Line x:Name="line14" X1="0" Y1="0" X2="22" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="650" Canvas.Top="387"/>
-            <Line x:Name="line15" X1="0" Y1="0" X2="22" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="699" Canvas.Top="387"/>
-            <Line x:Name="line16" X1="0" Y1="0" X2="0" Y2="96" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="344"/>
-            <Line x:Name="line17" X1="0" Y1="0" X2="0" Y2="96" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="926" Canvas.Top="344"/>
-            <Line x:Name="line18" X1="0" Y1="0" X2="18" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="386"/>
-            <Line x:Name="line19" X1="0" Y1="0" X2="15" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="913" Canvas.Top="386"/>
-            <Line x:Name="line20" X1="0" Y1="0" X2="0" Y2="57" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="869" Canvas.Top="466"/>
-            <Line x:Name="line21" X1="0" Y1="0" X2="0" Y2="57" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="926" Canvas.Top="466"/>
-            <Line x:Name="line22" X1="0" Y1="0" X2="0" Y2="55" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="926" Canvas.Top="260"/>
-            <Line x:Name="line23" X1="0" Y1="0" X2="160" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="715" Canvas.Top="521"/>
-            <Line x:Name="line24" X1="0" Y1="0" X2="487" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="6" Canvas.Left="180" Canvas.Top="520"/>
-            <Line x:Name="line25" X1="0" Y1="0" X2="0" Y2="133" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="180" Canvas.Top="387"/>
-            <Line x:Name="line26" X1="0" Y1="0" X2="92" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="6" Canvas.Left="180" Canvas.Top="262"/>
-            <Line x:Name="line27" X1="0" Y1="0" X2="0" Y2="24" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="180" Canvas.Top="261"/>
-            <Line x:Name="line28" X1="0" Y1="0" X2="150" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="2" Canvas.Left="920" Canvas.Top="262"/>
-            <Line x:Name="line29" X1="0" Y1="0" X2="0" Y2="412" Opacity="0" Stroke="Blue" StrokeThickness="2" Canvas.Left="1069" Canvas.Top="261"/>
-            <Line x:Name="line30" X1="0" Y1="0" X2="0" Y2="73" Opacity="0" Stroke="Blue" StrokeThickness="2" Canvas.Left="966" Canvas.Top="520"/>
-            <Line x:Name="line31" X1="0" Y1="0" X2="44" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="2" Canvas.Left="923" Canvas.Top="521"/>
-            <Line x:Name="line32" X1="0" Y1="0" X2="166" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="2" Canvas.Left="800" Canvas.Top="593"/>
-            <Line x:Name="line33" X1="0" Y1="0" X2="270" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="2" Canvas.Left="800" Canvas.Top="672"/>
+            <Line x:Name="line1" X1="0" Y1="0" X2="0" Y2="30" Opacity="{Binding LineOpacities[0]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="489" Canvas.Top="164"/>
+            <Line x:Name="line2" X1="0" Y1="0" X2="0" Y2="40" Opacity="{Binding LineOpacities[1]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="222"/>
+            <Line x:Name="line3" X1="0" Y1="0" X2="-47" Y2="0" Opacity="{Binding LineOpacities[2]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="261"/>
+            <Line x:Name="line4" X1="0" Y1="0" X2="68" Y2="0" Opacity="{Binding LineOpacities[3]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="261"/>
+            <Line x:Name="line5" X1="0" Y1="0" X2="54" Y2="0" Opacity="{Binding LineOpacities[4]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="606" Canvas.Top="261"/>
+            <Line x:Name="line6" X1="0" Y1="0" X2="159" Y2="0" Opacity="{Binding LineOpacities[5]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="709" Canvas.Top="261"/>
+            <Line x:Name="line7" X1="0" Y1="0" X2="0" Y2="55" Opacity="{Binding LineOpacities[6]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="260"/>
+            <Line x:Name="line8" X1="0" Y1="0" X2="0" Y2="55" Opacity="{Binding LineOpacities[7]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="648" Canvas.Top="260"/>
+            <Line x:Name="line9" X1="0" Y1="0" X2="0" Y2="96" Opacity="{Binding LineOpacities[8]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="648" Canvas.Top="340"/>
+            <Line x:Name="line10" X1="0" Y1="0" X2="0" Y2="96" Opacity="{Binding LineOpacities[9]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="340"/>
+            <Line x:Name="line11" X1="0" Y1="0" X2="0" Y2="59" Opacity="{Binding LineOpacities[10]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="648" Canvas.Top="464"/>
+            <Line x:Name="line12" X1="0" Y1="0" X2="0" Y2="59" Opacity="{Binding LineOpacities[11]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="464"/>
+            <Line x:Name="line13" X1="0" Y1="0" X2="0" Y2="52" Opacity="{Binding LineOpacities[12]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="261"/>
+            <Line x:Name="line14" X1="0" Y1="0" X2="22" Y2="0" Opacity="{Binding LineOpacities[13]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="650" Canvas.Top="387"/>
+            <Line x:Name="line15" X1="0" Y1="0" X2="22" Y2="0" Opacity="{Binding LineOpacities[14]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="699" Canvas.Top="387"/>
+            <Line x:Name="line16" X1="0" Y1="0" X2="0" Y2="96" Opacity="{Binding LineOpacities[15]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="344"/>
+            <Line x:Name="line17" X1="0" Y1="0" X2="0" Y2="96" Opacity="{Binding LineOpacities[16]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="926" Canvas.Top="344"/>
+            <Line x:Name="line18" X1="0" Y1="0" X2="18" Y2="0" Opacity="{Binding LineOpacities[17]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="386"/>
+            <Line x:Name="line19" X1="0" Y1="0" X2="15" Y2="0" Opacity="{Binding LineOpacities[18]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="913" Canvas.Top="386"/>
+            <Line x:Name="line20" X1="0" Y1="0" X2="0" Y2="57" Opacity="{Binding LineOpacities[19]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="869" Canvas.Top="466"/>
+            <Line x:Name="line21" X1="0" Y1="0" X2="0" Y2="57" Opacity="{Binding LineOpacities[20]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="926" Canvas.Top="466"/>
+            <Line x:Name="line22" X1="0" Y1="0" X2="0" Y2="55" Opacity="{Binding LineOpacities[21]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="926" Canvas.Top="260"/>
+            <Line x:Name="line23" X1="0" Y1="0" X2="160" Y2="0" Opacity="{Binding LineOpacities[22]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="715" Canvas.Top="521"/>
+            <Line x:Name="line24" X1="0" Y1="0" X2="487" Y2="0" Opacity="{Binding LineOpacities[23]}" Stroke="Blue" StrokeThickness="6" Canvas.Left="180" Canvas.Top="520"/>
+            <Line x:Name="line25" X1="0" Y1="0" X2="0" Y2="133" Opacity="{Binding LineOpacities[24]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="180" Canvas.Top="387"/>
+            <Line x:Name="line26" X1="0" Y1="0" X2="92" Y2="0" Opacity="{Binding LineOpacities[25]}" Stroke="Blue" StrokeThickness="6" Canvas.Left="180" Canvas.Top="262"/>
+            <Line x:Name="line27" X1="0" Y1="0" X2="0" Y2="24" Opacity="{Binding LineOpacities[26]}" Stroke="Blue" StrokeThickness="4" Canvas.Left="180" Canvas.Top="261"/>
+            <Line x:Name="line28" X1="0" Y1="0" X2="150" Y2="0" Opacity="{Binding LineOpacities[27]}" Stroke="Blue" StrokeThickness="2" Canvas.Left="920" Canvas.Top="262"/>
+            <Line x:Name="line29" X1="0" Y1="0" X2="0" Y2="412" Opacity="{Binding LineOpacities[28]}" Stroke="Blue" StrokeThickness="2" Canvas.Left="1069" Canvas.Top="261"/>
+            <Line x:Name="line30" X1="0" Y1="0" X2="0" Y2="73" Opacity="{Binding LineOpacities[29]}" Stroke="Blue" StrokeThickness="2" Canvas.Left="966" Canvas.Top="520"/>
+            <Line x:Name="line31" X1="0" Y1="0" X2="44" Y2="0" Opacity="{Binding LineOpacities[30]}" Stroke="Blue" StrokeThickness="2" Canvas.Left="923" Canvas.Top="521"/>
+            <Line x:Name="line32" X1="0" Y1="0" X2="166" Y2="0" Opacity="{Binding LineOpacities[31]}" Stroke="Blue" StrokeThickness="2" Canvas.Left="800" Canvas.Top="593"/>
+            <Line x:Name="line33" X1="0" Y1="0" X2="270" Y2="0" Opacity="{Binding LineOpacities[32]}" Stroke="Blue" StrokeThickness="2" Canvas.Left="800" Canvas.Top="672"/>
             <TextBlock Text="Pump1" Opacity="{Binding Opa}" Canvas.Left="382" Canvas.Top="122"/>
             <TextBlock Text="Pump2" Opacity="{Binding Opa}" Canvas.Left="348" Canvas.Top="222"/>
             <TextBlock Text="Valve1" Opacity="{Binding Opa}" Canvas.Left="444" Canvas.Top="124"/>

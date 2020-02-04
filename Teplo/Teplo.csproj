@@ -26,4 +26,8 @@
     <Resource Include="Resources\valveOPN.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
+  </ItemGroup>
+
 </Project>
