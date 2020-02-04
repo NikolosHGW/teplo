@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Teplo">
+    <Style x:Key="imagePump">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsState}" Value="False">
+                <Setter Property="Image.Source" Value="Resources/nasos.png" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsState}" Value="True">
+                <Setter Property="Image.Source" Value="Resources/nasos_green.png" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>
