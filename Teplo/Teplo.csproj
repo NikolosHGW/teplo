@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Button.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Resources\nasos.png" />
     <None Remove="Resources\nasos_green.png" />
     <None Remove="Resources\tps.png" />
