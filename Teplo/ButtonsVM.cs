@@ -7,6 +7,15 @@ namespace Teplo
 {
     class ButtonsVM : INotifyPropertyChanged
     {
+        private GetButtons GetButtons { get; set; } = new GetButtons();
+        public ButtonsVM()
+        {
+            GetButtons.ButtonsC = Buttons;
+            GetButtons.ButtonsVC = Buttons;
+            GetButtons.ButtonsSmlC = Buttons;
+            GetButtons.ButtonsPmpRC = Buttons;
+            GetButtons.ButtonsPmpLC = Buttons;
+        }
         public ObservableCollection<Button> Buttons { get; } = new ObservableCollection<Button>
         {
             new Button(437, 153), // valve 1
