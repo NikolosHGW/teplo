@@ -13,9 +13,9 @@
             <Line x:Name="line1" X1="0" Y1="0" X2="0" Y2="40" Style="{StaticResource line1}" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="222"/>
             <Line x:Name="line2" X1="0" Y1="0" X2="-65" Y2="0" Style="{StaticResource line2}" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="262"/>
             <Line x:Name="line3" X1="0" Y1="0" X2="68" Y2="0" Style="{StaticResource line3}" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="262"/>
-            <Line x:Name="line4" X1="0" Y1="0" X2="46" Y2="0" Style="{StaticResource line3}" Stroke="Blue" StrokeThickness="4" Canvas.Left="600" Canvas.Top="262"/>
-            <Line x:Name="line5" X1="0" Y1="0" X2="20" Y2="0" Style="{StaticResource line3}" Stroke="Blue" StrokeThickness="4" Canvas.Left="646" Canvas.Top="262"/>
-            <Line x:Name="line6" X1="0" Y1="0" X2="0" Y2="50" Style="{StaticResource line0}" Stroke="Blue" StrokeThickness="4" Canvas.Left="648" Canvas.Top="262"/>
+            <Line x:Name="line4" X1="0" Y1="0" X2="46" Y2="0" Style="{StaticResource line4}" Stroke="Blue" StrokeThickness="4" Canvas.Left="600" Canvas.Top="262"/>
+            <Line x:Name="line5" X1="0" Y1="0" X2="20" Y2="0" Style="{StaticResource line5}" Stroke="Blue" StrokeThickness="4" Canvas.Left="646" Canvas.Top="262"/>
+            <Line x:Name="line6" X1="0" Y1="0" X2="0" Y2="55" Style="{StaticResource line6}" Stroke="Blue" StrokeThickness="4" Canvas.Left="648" Canvas.Top="262"/>
             <!--ЗАДВИЖКИ ГОРИЗОНТАЛЬНЫЕ-->
             <ItemsControl ItemsSource="{Binding Buttons}">
                 <ItemsControl.ItemsPanel>
