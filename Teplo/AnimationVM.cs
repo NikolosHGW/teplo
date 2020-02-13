@@ -66,6 +66,16 @@ namespace Teplo
                 Line4.BeginAnimation(System.Windows.Shapes.Line.X2Property, Lin4);
                 Lin4 = null;
             }
+            if (GetButtons.ButtonsC[3].IsState == true && GetLines.LinesC[5].State == true)
+            {
+                Game.ChangeForAnim(7);
+                if (Lin7 != null)
+                {
+                    Lin7.Completed += new EventHandler(Lin7a1_Completed);
+                }
+                Line7.BeginAnimation(System.Windows.Shapes.Line.X2Property, Lin7);
+                Lin7 = null;
+            }
         }
         private static void Lin0_Completed(object sender, EventArgs e)
         {
@@ -107,24 +117,103 @@ namespace Teplo
         private static void Lin4_Completed(object sender, EventArgs e)/*При заранее открытой задвижки Button[2]*/
         {
             Game.ChangeForAnim(5);
-            //Lin5.Completed += new EventHandler(Lin5_Completed);
+            if (Lin5 != null)
+            {
+                Lin5.Completed += new EventHandler(Lin5_Completed);//после пятой потечет в левую сторону вода 7 линия
+            }
             Line5.BeginAnimation(System.Windows.Shapes.Line.X2Property, Lin5);
             Lin5 = null;
             Game.ChangeForAnim(6);
-            //Lin6.Completed += new EventHandler(Lin6_Completed);
+            //if (Lin6 != null)
+            //{
+            //    Lin6.Completed += new EventHandler(Lin6_Completed);//после шестой потечет в нижнюю часть вода
+            //}
             Line6.BeginAnimation(System.Windows.Shapes.Line.Y2Property, Lin6);
             Lin6 = null;
         }
-        private static void Lin4a1_Completed(object sender, EventArgs e)/*Если закрыта задвижка Button[2]*/
+        private static void Lin4a1_Completed(object sender, EventArgs e)/*Если закрыта задвижка Button[2], то при ее открытии запускается этот метод*/
         {
             Game.ChangeForAnim(5);
-            //Lin5.Completed += new EventHandler(Lin5_Completed);
+            //if (Lin5 != null)
+            //{
+            //    Lin5.Completed += new EventHandler(Lin5a1_Completed);
+            //}
             Line5.BeginAnimation(System.Windows.Shapes.Line.X2Property, Lin5);
             Lin5 = null;
             Game.ChangeForAnim(6);
-            //Lin6.Completed += new EventHandler(Lin6_Completed);
+            //Lin6.Completed += new EventHandler(Lin6a1_Completed);
             Line6.BeginAnimation(System.Windows.Shapes.Line.Y2Property, Lin6);
             Lin6 = null;
+        }
+        private static void Lin5_Completed(object sender, EventArgs e)/*При заранее открытой задвижки Button[2]*/
+        {
+            Game.ChangeForAnim(7);
+            if (Lin7 != null)
+            {
+                Lin7.Completed += new EventHandler(Lin7_Completed);//после седьмой потечет 8 и 9
+            }
+            Line7.BeginAnimation(System.Windows.Shapes.Line.X2Property, Lin7);
+            Lin7 = null;
+        }
+        private static void Lin7_Completed(object sender, EventArgs e)/*При заранее открытой задвижки Button[2]*/
+        {
+            Game.ChangeForAnim(8);
+            if (Lin8 != null)
+            {
+                Lin8.Completed += new EventHandler(Lin8_Completed);//после восьмой потечет 10 и 11
+            }
+            Line8.BeginAnimation(System.Windows.Shapes.Line.X2Property, Lin8);
+            Lin8 = null;
+            Game.ChangeForAnim(9);
+            //if (Lin9 != null)
+            //{
+            //    Lin9.Completed += new EventHandler(Lin9_Completed);
+            //}
+            Line9.BeginAnimation(System.Windows.Shapes.Line.Y2Property, Lin9);
+            Lin9 = null;
+        }
+        private static void Lin8_Completed(object sender, EventArgs e)/*При заранее открытой задвижки Button[2]*/
+        {
+            Game.ChangeForAnim(10);
+            //if (Lin10 != null)
+            //{
+            //    Lin10.Completed += new EventHandler(Lin10_Completed);//после десятой потечет ? и ?
+            //}
+            Line10.BeginAnimation(System.Windows.Shapes.Line.X2Property, Lin10);
+            Lin10 = null;
+            Game.ChangeForAnim(11);
+            //if (Lin11 != null)
+            //{
+            //    Lin11.Completed += new EventHandler(Lin11_Completed);
+            //}
+            Line11.BeginAnimation(System.Windows.Shapes.Line.Y2Property, Lin11);
+            Lin11 = null;
+        }
+        private static void Lin7a1_Completed(object sender, EventArgs e)/*При заранее открытой задвижки Button[2]*/
+        {
+            Game.ChangeForAnim(8);
+            if (Lin8 != null)
+            {
+                Lin8.Completed += new EventHandler(Lin8a1_Completed);//после восьмой потечет 10 и 11
+            }
+            Line8.BeginAnimation(System.Windows.Shapes.Line.X2Property, Lin8);
+            Lin8 = null;
+            Game.ChangeForAnim(9);
+            //if (Lin9 != null)
+            //{
+            //    Lin9.Completed += new EventHandler(Lin9a1_Completed);
+            //}
+            Line9.BeginAnimation(System.Windows.Shapes.Line.Y2Property, Lin9);
+            Lin9 = null;
+        }
+        private static void Lin8a1_Completed(object sender, EventArgs e)/*При заранее открытой задвижки Button[2]*/
+        {
+            Game.ChangeForAnim(10);
+            Line10.BeginAnimation(System.Windows.Shapes.Line.X2Property, Lin10);
+            Lin10 = null;
+            Game.ChangeForAnim(11);
+            Line11.BeginAnimation(System.Windows.Shapes.Line.Y2Property, Lin11);
+            Lin11 = null;
         }
     }
 }
