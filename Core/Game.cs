@@ -8,12 +8,17 @@ namespace Core
     public class Game
     {
         public static bool l0 = true;
-        public void Pusk()
+        public static bool l4 = true;
+        public void StartGame()
         {
             if (GetButtons.ButtonsPmpRC[0].IsState == true && GetButtons.ButtonsC[0].IsState == true)
             {
                 GetLines.LinesC[0].State = true;
             }
+        }
+        public static void ChangeForAnim(int i)
+        {
+            GetLines.LinesC[i].State = true;
         }
     }
 }

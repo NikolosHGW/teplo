@@ -40,7 +40,10 @@ namespace Teplo
             new Line(), // line 0
             new Line(), // line 1
             new Line(), // line 2
-            new Line() // line 3
+            new Line(), // line 3
+            new Line(), // line 4
+            new Line(), // line 5
+            new Line() // line 6
         };
         public ObservableCollection<Button> Buttons { get; } = new ObservableCollection<Button>
         {
@@ -103,7 +106,7 @@ namespace Teplo
         void ChangeState(Button button)
         {
             button.IsState = !button.IsState;
-            Game.Pusk();
+            Game.StartGame();
             AnimationVM.Push();
         }
 

@@ -26,7 +26,7 @@ namespace Teplo
             lin0.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     25, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(1))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3/*была 1*/))) // KeyTime
                 );
             AnimationVM.Lin0 = lin0;
             AnimationVM.Line0 = line0;
@@ -42,7 +42,7 @@ namespace Teplo
             lin1.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     40, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(1))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
             AnimationVM.Lin1 = lin1;
             AnimationVM.Line1 = line1;
@@ -58,7 +58,7 @@ namespace Teplo
             lin2.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     -65, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(1))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
             AnimationVM.Lin2 = lin2;
             AnimationVM.Line2 = line2;
@@ -74,10 +74,58 @@ namespace Teplo
             lin3.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     68, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(1))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
             AnimationVM.Lin3 = lin3;
             AnimationVM.Line3 = line3;
+
+
+            //                                              Анимация Line4
+            DoubleAnimationUsingKeyFrames lin4 = new DoubleAnimationUsingKeyFrames();
+            lin4.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            lin4.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    46, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            AnimationVM.Lin4 = lin4;
+            AnimationVM.Line4 = line4;
+
+
+            //                                              Анимация Line5
+            DoubleAnimationUsingKeyFrames lin5 = new DoubleAnimationUsingKeyFrames();
+            lin5.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            lin5.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    20, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            AnimationVM.Lin5 = lin5;
+            AnimationVM.Line5 = line5;
+
+
+            //                                              Анимация Line6
+            DoubleAnimationUsingKeyFrames lin6 = new DoubleAnimationUsingKeyFrames();
+            lin6.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            lin6.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    55, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            AnimationVM.Lin6 = lin6;
+            AnimationVM.Line6 = line6;
         }
     }
 }
