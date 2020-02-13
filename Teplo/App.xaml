@@ -15,6 +15,11 @@
                 <ResourceDictionary Source="Dic/Dictionary4.xaml"/>
                 <ResourceDictionary Source="Dic/Dictionary5.xaml"/>
                 <ResourceDictionary Source="Dic/Dictionary6.xaml"/>
+                <ResourceDictionary Source="Dic/Dictionary7.xaml"/>
+                <ResourceDictionary Source="Dic/Dictionary8.xaml"/>
+                <ResourceDictionary Source="Dic/Dictionary9.xaml"/>
+                <ResourceDictionary Source="Dic/Dictionary10.xaml"/>
+                <ResourceDictionary Source="Dic/Dictionary11.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

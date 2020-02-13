@@ -43,7 +43,12 @@ namespace Teplo
             new Line(), // line 3
             new Line(), // line 4
             new Line(), // line 5
-            new Line() // line 6
+            new Line(), // line 6
+            new Line(), // line 7
+            new Line(), // line 8
+            new Line(), // line 9
+            new Line(), // line 10
+            new Line() // line 11
         };
         public ObservableCollection<Button> Buttons { get; } = new ObservableCollection<Button>
         {
