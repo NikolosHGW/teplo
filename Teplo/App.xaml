@@ -8,6 +8,10 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="StyleHor.xaml"/>
                 <ResourceDictionary Source="StyleVer.xaml"/>
+                <ResourceDictionary Source="Dic/Dictionary0.xaml"/>
+                <ResourceDictionary Source="Dic/Dictionary1.xaml"/>
+                <ResourceDictionary Source="Dic/Dictionary2.xaml"/>
+                <ResourceDictionary Source="Dic/Dictionary3.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -9,7 +9,11 @@
     <Border>
         <Canvas>
             <Image Source="Resources/tps.png" Stretch="Uniform"/>
-                                               <!--ЗАДВИЖКИ ГОРИЗОНТАЛЬНЫЕ-->
+            <Line x:Name="line0" X1="0" Y1="0" X2="0" Y2="25" Style="{StaticResource line0}" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="168"/>
+            <Line x:Name="line1" X1="0" Y1="0" X2="0" Y2="40" Style="{StaticResource line1}" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="222"/>
+            <Line x:Name="line2" X1="0" Y1="0" X2="-65" Y2="0" Style="{StaticResource line2}" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="262"/>
+            <Line x:Name="line3" X1="0" Y1="0" X2="68" Y2="0" Style="{StaticResource line3}" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="262"/>
+            <!--ЗАДВИЖКИ ГОРИЗОНТАЛЬНЫЕ-->
             <ItemsControl ItemsSource="{Binding Buttons}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -32,7 +36,7 @@
                     </Style>
                 </ItemsControl.ItemContainerStyle>
             </ItemsControl>
-                                                 <!--ЗАДВИЖКИ ВЕРТИКАЛЬНЫЕ-->
+            <!--ЗАДВИЖКИ ВЕРТИКАЛЬНЫЕ-->
             <ItemsControl ItemsSource="{Binding ButtonsV}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -63,7 +67,7 @@
                     </Style>
                 </ItemsControl.ItemContainerStyle>
             </ItemsControl>
-                                                   <!--ЗАДВИЖКИ МАЛЕНЬКИЕ-->
+            <!--ЗАДВИЖКИ МАЛЕНЬКИЕ-->
             <ItemsControl ItemsSource="{Binding ButtonsSml}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -86,7 +90,7 @@
                     </Style>
                 </ItemsControl.ItemContainerStyle>
             </ItemsControl>
-                                                               <!--КНОПКИ НАСОСОВ ПРАВО-->
+            <!--КНОПКИ НАСОСОВ ПРАВО-->
             <ItemsControl ItemsSource="{Binding ButtonsPmpR}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -109,7 +113,7 @@
                     </Style>
                 </ItemsControl.ItemContainerStyle>
             </ItemsControl>
-                                                   <!--КНОПКИ НАСОСОВ ЛЕВО-->
+            <!--КНОПКИ НАСОСОВ ЛЕВО-->
             <ItemsControl ItemsSource="{Binding ButtonsPmpL}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -141,40 +145,40 @@
                     </Style>
                 </ItemsControl.ItemContainerStyle>
             </ItemsControl>
-                                               <!--ВРЕМЕННЫЙ КОД ИНФО-->
-            <TextBlock Text="Pump1" Opacity="{Binding Opa}" Canvas.Left="382" Canvas.Top="122"/>
-            <TextBlock Text="Pump2" Opacity="{Binding Opa}" Canvas.Left="348" Canvas.Top="222"/>
-            <TextBlock Text="Valve1" Opacity="{Binding Opa}" Canvas.Left="444" Canvas.Top="124"/>
-            <TextBlock Text="Valve2" Opacity="{Binding Opa}" Canvas.Left="403" Canvas.Top="217"/>
-            <TextBlock Text="Valve3" Opacity="{Binding Opa}" Canvas.Left="565" Canvas.Top="222"/>
-            <TextBlock Text="Valve4" Opacity="{Binding Opa}" Canvas.Left="668" Canvas.Top="225"/>
-            <TextBlock Text="Valve5" Opacity="{Binding Opa}" Canvas.Left="274" Canvas.Top="217"/>
-            <TextBlock Text="Valve6" Opacity="{Binding Opa}" Canvas.Left="881" Canvas.Top="221"/>
-            <TextBlock Text="Valve7" Opacity="{Binding Opa}" Canvas.Left="674" Canvas.Top="481"/>
-            <TextBlock Text="Valve8" Opacity="{Binding Opa}" Canvas.Left="882" Canvas.Top="482"/>
-            <TextBlock Text="Valve9" Opacity="{Binding Opa}" Canvas.Left="821" Canvas.Top="445"/>
-            <TextBlock Text="Valve10" Opacity="{Binding Opa}" Canvas.Left="942" Canvas.Top="445"/>
-            <TextBlock Text="Valve11" Opacity="{Binding Opa}" Canvas.Left="666" Canvas.Top="355"/>
-            <TextBlock Text="Valve12" Opacity="{Binding Opa}" Canvas.Left="879" Canvas.Top="357"/>
-            <TextBlock Text="Valve13" Opacity="{Binding Opa}" Canvas.Left="270" Canvas.Top="297"/>
-            <TextBlock Text="Valve14" Opacity="{Binding Opa}" Canvas.Left="817" Canvas.Top="322"/>
-            <TextBlock Text="Valve15" Opacity="{Binding Opa}" Canvas.Left="941" Canvas.Top="319"/>
-            <TextBlock Text="Valve16" Opacity="{Binding Opa}" Canvas.Left="125" Canvas.Top="292"/>
-            <TextBlock Text="Valve17" Opacity="{Binding Opa}" Canvas.Left="127" Canvas.Top="365"/>
-            <TextBlock Text="Valve18" Opacity="{Binding Opa}" Canvas.Left="73" Canvas.Top="329"/>
-            <TextBlock Text="Valve19" Opacity="{Binding Opa}" Canvas.Left="593" Canvas.Top="441"/>
-            <TextBlock Text="Valve20" Opacity="{Binding Opa}" Canvas.Left="595" Canvas.Top="318"/>
-            <TextBlock Text="Valve21" Opacity="{Binding Opa}" Canvas.Left="741" Canvas.Top="319"/>
-            <TextBlock Text="Valve22" Opacity="{Binding Opa}" Canvas.Left="740" Canvas.Top="442"/>
-            <TextBlock Text="Valve23" Opacity="{Binding Opa}" Canvas.Left="762" Canvas.Top="560"/>
-            <TextBlock Text="Valve24" Opacity="{Binding Opa}" Canvas.Left="762" Canvas.Top="682"/>
-            <TextBlock Text="V25" Opacity="{Binding Opa}" Canvas.Left="771" Canvas.Top="609"/>
-            <TextBlock Text="Valve26" Opacity="{Binding Opa}" Canvas.Left="706" Canvas.Top="607"/>
-            <TextBlock Text="Valve27" Opacity="{Binding Opa}" Canvas.Left="815" Canvas.Top="608"/>
-            <TextBlock Text="Valve28" Opacity="{Binding Opa}" Canvas.Left="813" Canvas.Top="638"/>
-            <TextBlock Text="Valve29" Opacity="{Binding Opa}" Canvas.Left="706" Canvas.Top="638"/>
+            <!--ВРЕМЕННЫЙ КОД ИНФО-->
+            <TextBlock Text="ButtonPmpR[0]" Opacity="{Binding Opa}" Canvas.Left="365" Canvas.Top="117"/>
+            <TextBlock Text="ButtonPmpL[0]" Opacity="{Binding Opa}" Canvas.Left="322" Canvas.Top="206"/>
+            <TextBlock Text="Button[0]" Opacity="{Binding Opa}" Canvas.Left="443" Canvas.Top="132"/>
+            <TextBlock Text="Button[1]" Opacity="{Binding Opa}" Canvas.Left="395" Canvas.Top="222"/>
+            <TextBlock Text="Button[2]" Opacity="{Binding Opa}" Canvas.Left="556" Canvas.Top="223"/>
+            <TextBlock Text="Button[3]" Opacity="{Binding Opa}" Canvas.Left="660" Canvas.Top="224"/>
+            <TextBlock Text="Button[4]" Opacity="{Binding Opa}" Canvas.Left="265" Canvas.Top="220"/>
+            <TextBlock Text="Button[5]" Opacity="{Binding Opa}" Canvas.Left="873" Canvas.Top="221"/>
+            <TextBlock Text="Button[6]" Opacity="{Binding Opa}" Canvas.Left="662" Canvas.Top="480"/>
+            <TextBlock Text="Button[7]" Opacity="{Binding Opa}" Canvas.Left="875" Canvas.Top="483"/>
+            <TextBlock Text="ButtonV[0]" Opacity="{Binding Opa}" Canvas.Left="798" Canvas.Top="443"/>
+            <TextBlock Text="ButtonV[1]" Opacity="{Binding Opa}" Canvas.Left="942" Canvas.Top="445"/>
+            <TextBlock Text="ButtonSml[2]" Opacity="{Binding Opa}" Canvas.Left="651" Canvas.Top="352"/>
+            <TextBlock Text="ButtonSml[3]" Opacity="{Binding Opa}" Canvas.Left="873" Canvas.Top="354"/>
+            <TextBlock Text="ButtonSml[1]" Opacity="{Binding Opa}" Canvas.Left="255" Canvas.Top="306"/>
+            <TextBlock Text="ButtonV[2]" Opacity="{Binding Opa}" Canvas.Left="800" Canvas.Top="322"/>
+            <TextBlock Text="ButtonV[3]" Opacity="{Binding Opa}" Canvas.Left="941" Canvas.Top="319"/>
+            <TextBlock Text="ButtonV[4]" Opacity="{Binding Opa}" Canvas.Left="98" Canvas.Top="291"/>
+            <TextBlock Text="ButtonV[5]" Opacity="{Binding Opa}" Canvas.Left="101" Canvas.Top="366"/>
+            <TextBlock Text="ButtonSml[0]" Opacity="{Binding Opa}" Canvas.Left="33" Canvas.Top="328"/>
+            <TextBlock Text="ButtonV[6]" Opacity="{Binding Opa}" Canvas.Left="569" Canvas.Top="438"/>
+            <TextBlock Text="ButtonV[7]" Opacity="{Binding Opa}" Canvas.Left="568" Canvas.Top="318"/>
+            <TextBlock Text="ButtonV[8]" Opacity="{Binding Opa}" Canvas.Left="741" Canvas.Top="319"/>
+            <TextBlock Text="ButtonV[9]" Opacity="{Binding Opa}" Canvas.Left="740" Canvas.Top="442"/>
+            <TextBlock Text="ButtonSml[4]" Opacity="{Binding Opa}" Canvas.Left="746" Canvas.Top="557"/>
+            <TextBlock Text="ButtonSml[5]" Opacity="{Binding Opa}" Canvas.Left="751" Canvas.Top="681"/>
+            <TextBlock Text="Sml[6]" Opacity="{Binding Opa}" Canvas.Left="764" Canvas.Top="606"/>
+            <TextBlock Text="ButtonV[10]" Opacity="{Binding Opa}" Canvas.Left="676" Canvas.Top="604"/>
+            <TextBlock Text="ButtonV[11]" Opacity="{Binding Opa}" Canvas.Left="815" Canvas.Top="608"/>
+            <TextBlock Text="ButtonV[12]" Opacity="{Binding Opa}" Canvas.Left="813" Canvas.Top="638"/>
+            <TextBlock Text="ButtonV[13]" Opacity="{Binding Opa}" Canvas.Left="677" Canvas.Top="639"/>
             <Button x:Name="INFO" Content="Info" Command="{Binding InfoCommand}" Canvas.Left="279" Canvas.Top="72"/>
-                                                  <!--ВРЕМЕННЫЙ КОД ИНФО-->
+            <!--ВРЕМЕННЫЙ КОД ИНФО-->
         </Canvas>
     </Border>
 </Window>

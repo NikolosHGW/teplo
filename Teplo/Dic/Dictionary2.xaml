@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Teplo.Dic">
+    <Style x:Key="line2">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Lines[2].State}" Value="False">
+                <Setter Property="Line.Opacity" Value="0" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Lines[2].State}" Value="True">
+                <Setter Property="Line.Opacity" Value="1" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

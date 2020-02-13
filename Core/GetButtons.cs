@@ -7,10 +7,10 @@ namespace Core
 {
     public class GetButtons
     {
-        public ObservableCollection<Button> ButtonsC { get; set; }
-        public ObservableCollection<Button> ButtonsVC { get; set; }
-        public ObservableCollection<Button> ButtonsSmlC { get; set; }
-        public ObservableCollection<Button> ButtonsPmpRC { get; set; }
-        public ObservableCollection<Button> ButtonsPmpLC { get; set; }
+        static public ObservableCollection<Button> ButtonsC { get; set; } = new ObservableCollection<Button>();
+        static public ObservableCollection<Button> ButtonsVC { get; set; } = new ObservableCollection<Button>();
+        static public ObservableCollection<Button> ButtonsSmlC { get; set; } = new ObservableCollection<Button>();
+        static public ObservableCollection<Button> ButtonsPmpRC { get; set; } = new ObservableCollection<Button>();
+        static public ObservableCollection<Button> ButtonsPmpLC { get; set; } = new ObservableCollection<Button>();
     }
 }
