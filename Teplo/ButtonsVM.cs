@@ -93,7 +93,10 @@ namespace Teplo
         {
             button.IsState = !button.IsState;
             Game.StartGame();
-            LineVM.Push();
+            for(int i = 0; i < 5; i++)
+            {
+                LineVM.Push();
+            }
         }
 
         //                                            ВРЕМЕННЫЙ КОД ДЛЯ ИНФО

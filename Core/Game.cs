@@ -27,17 +27,25 @@ namespace Core
             }
             return 0;
         }
-        public static int Verification(int b)
+        public static int Verification(int i)
         {
-            if (GetButtons.ButtonsC[b].IsState == true)
+            if (GetButtons.ButtonsC[i].IsState == true)
             {
                 return 1;
             }
             return 0;
         }
-        public static int VerificationV(int b)
+        public static int VerificationV(int i)
         {
-            if (GetButtons.ButtonsVC[b].IsState == true)
+            if (GetButtons.ButtonsVC[i].IsState == true)
+            {
+                return 1;
+            }
+            return 0;
+        }
+        public static int VerificationSml(int i)
+        {
+            if (GetButtons.ButtonsSmlC[i].IsState == true)
             {
                 return 1;
             }
