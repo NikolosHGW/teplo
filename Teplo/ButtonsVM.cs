@@ -10,10 +10,6 @@ namespace Teplo
         public Game Game { get; set; } = new Game();
         public ButtonsVM()
         {
-            foreach (var item in Lines)
-            {
-                GetLines.LinesC.Add(item);
-            }
             foreach (var item in Buttons)
             {
                 GetButtons.ButtonsC.Add(item);
@@ -35,21 +31,6 @@ namespace Teplo
                 GetButtons.ButtonsPmpLC.Add(item);
             }
         }
-        public ObservableCollection<Line> Lines { get; set; } = new ObservableCollection<Line>
-        {
-            new Line(), // line 0
-            new Line(), // line 1
-            new Line(), // line 2
-            new Line(), // line 3
-            new Line(), // line 4
-            new Line(), // line 5
-            new Line(), // line 6
-            new Line(), // line 7
-            new Line(), // line 8
-            new Line(), // line 9
-            new Line(), // line 10
-            new Line() // line 11
-        };
         public ObservableCollection<Button> Buttons { get; } = new ObservableCollection<Button>
         {
             new Button(437, 153), // valve 1 // Button[0]
@@ -112,7 +93,6 @@ namespace Teplo
         {
             button.IsState = !button.IsState;
             Game.StartGame();
-            AnimationVM.Push();
         }
 
         //                                            ВРЕМЕННЫЙ КОД ДЛЯ ИНФО

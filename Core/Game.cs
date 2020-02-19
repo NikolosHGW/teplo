@@ -11,12 +11,12 @@ namespace Core
         {
             if (GetButtons.ButtonsPmpRC[0].IsState == true && GetButtons.ButtonsC[0].IsState == true)
             {
-                GetLines.LinesC[0].State = true;
+                //GetLines.LinesC[0].State = true;
             }
         }
         public static void ChangeForAnim(int i)
         {
-            GetLines.LinesC[i].State = true;
+            //GetLines.LinesC[i].State = true;
         }
     }
 }
