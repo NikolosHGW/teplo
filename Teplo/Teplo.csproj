@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="AnimationVM.cs" />
     <Compile Remove="Button.cs" />
   </ItemGroup>
 

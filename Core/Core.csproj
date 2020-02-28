@@ -4,9 +4,4 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="GetLines.cs" />
-    <Compile Remove="Line.cs" />
-  </ItemGroup>
-
 </Project>
