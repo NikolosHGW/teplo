@@ -57,8 +57,7 @@ namespace Teplo
             new Button(745, 607), // valve 26 // ButtonV[10]
             new Button(790, 607), // valve 27 // ButtonV[11]
             new Button(790, 636), // valve 28 // ButtonV[12]
-            new Button(745, 636),  // valve 29 // ButtonV[13]
-            new Button(200, 200)
+            new Button(745, 636)  // valve 29 // ButtonV[13]
         };
         public ObservableCollection<Button> ButtonsSml { get; } = new ObservableCollection<Button>
         {
@@ -87,21 +86,17 @@ namespace Teplo
                   (stateCommand = new RelayCommand(obj =>
                   {
                       ChangeState((Button)obj);
-                      Game.StartGame();
-                      if (Buttons[0].IsState == true && ButtonsPmpR[0].IsState == true)
-                      {
-                          for (int i = 0; i < 5; i++)
-                          {
-                              LineVM.Push();
-                          }
-                      }
-                      LineVM.PushDrain();
                   }));
             }
         }
         void ChangeState(Button button)
         {
             button.IsState = !button.IsState;
+            Game.StartGame();
+            for(int i = 0; i < 5; i++)
+            {
+                LineVM.Push();
+            }
         }
 
         //                                            ВРЕМЕННЫЙ КОД ДЛЯ ИНФО

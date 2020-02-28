@@ -243,15 +243,5 @@ namespace Teplo
             }
 
         }
-        public static void PushDrain()
-        {
-            if (GetButtons.ButtonsVC[14].IsState == true)
-            {
-                Lines[0].Opacity = 0;
-                Lines[1].Opacity = 0;
-                Lines[2].Opacity = 0;
-                Lines[3].Opacity = 0;
-            }
-        }
     }
 }
