@@ -98,11 +98,60 @@ namespace Teplo
         {
             if (AnLines[15] != null)
             {
-                //AnLines[15].Completed += new EventHandler(AnLines15_Completed);
+                AnLines[15].Completed += new EventHandler(AnLines15_Completed);
             }
             Lines[15].Opacity = 1;
             Lines[15].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[15]);
             AnLines[15] = null;
+        }
+        private static void AnLines15_Completed(object sender, EventArgs e)
+        {
+            Lines[16].Opacity = 1;
+            Lines[16].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[16]);
+            AnLines[16] = null;
+            if (AnLines[17] != null)
+            {
+                AnLines[17].Completed += new EventHandler(AnLines17_Completed);
+            }
+            Lines[17].Opacity = 1;
+            Lines[17].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[17]);
+            AnLines[17] = null;
+        }
+        private static void AnLines17_Completed(object sender, EventArgs e)
+        {
+            if (AnLines[9] != null)
+            {
+                AnLines[9].Completed += new EventHandler(AnLines9_Completed);
+            }
+            Lines[9].Opacity = 1;
+            Lines[9].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[9]);
+            AnLines[9] = null;
+        }
+        private static void AnLines9_Completed(object sender, EventArgs e)
+        {
+            Lines[7].Opacity = 1;
+            Lines[7].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[7]);
+            AnLines[7] = null;
+            if (AnLines[8] != null)
+            {
+                AnLines[8].Completed += new EventHandler(AnLines8_Completed);
+            }
+            Lines[8].Opacity = 1;
+            Lines[8].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[8]);
+            AnLines[8] = null;
+        }
+        private static void AnLines8_Completed(object sender, EventArgs e)
+        {
+            Lines[10].Opacity = 1;
+            Lines[10].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[10]);
+            AnLines[10] = null;
+            if (AnLines[11] != null)
+            {
+                //AnLines[11].Completed += new EventHandler(AnLines11_Completed);
+            }
+            Lines[11].Opacity = 1;
+            Lines[11].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[11]);
+            AnLines[11] = null;
         }
     }
 }

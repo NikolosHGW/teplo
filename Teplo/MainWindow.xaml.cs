@@ -124,7 +124,7 @@ namespace Teplo
                 );
             anLine7.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
-                    14, // Target value (KeyValue)
+                    -14, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
 
@@ -152,7 +152,7 @@ namespace Teplo
                 );
             anLine9.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
-                    55, // Target value (KeyValue)
+                    -55, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
 
@@ -231,6 +231,30 @@ namespace Teplo
                     22, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            //                                              Анимация Line16
+            DoubleAnimationUsingKeyFrames anLine16 = new DoubleAnimationUsingKeyFrames();
+            anLine16.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine16.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    60, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line17
+            DoubleAnimationUsingKeyFrames anLine17 = new DoubleAnimationUsingKeyFrames();
+            anLine17.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine17.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    -58, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
 
             LineVM.Lines.Add(line0);
             LineVM.AnLines.Add(anLine0);
@@ -264,8 +288,10 @@ namespace Teplo
             LineVM.AnLines.Add(anLine14);
             LineVM.Lines.Add(line15);
             LineVM.AnLines.Add(anLine15);
-            //LineVM.Lines.Add(line16);
-            //LineVM.Lines.Add(line17);
+            LineVM.Lines.Add(line16);
+            LineVM.AnLines.Add(anLine16);
+            LineVM.Lines.Add(line17);
+            LineVM.AnLines.Add(anLine17);
             //LineVM.Lines.Add(line18);
             //LineVM.Lines.Add(line19);
             //LineVM.Lines.Add(line20);
