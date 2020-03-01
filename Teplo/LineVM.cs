@@ -85,7 +85,7 @@ namespace Teplo
         {
             if (AnLines[13] != null)
             {
-                //AnLines[13].Completed += new EventHandler(AnLines13_Completed);
+                //AnLines[13].Completed += new EventHandler(AnLines13_Completed);123
             }
             Lines[13].Opacity = 1;
             Lines[13].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[13]);
