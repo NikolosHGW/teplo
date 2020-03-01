@@ -85,7 +85,7 @@ namespace Teplo
         {
             if (AnLines[13] != null)
             {
-                //AnLines[13].Completed += new EventHandler(AnLines13_Completed);123
+                AnLines[13].Completed += new EventHandler(AnLines13_Completed);
             }
             Lines[13].Opacity = 1;
             Lines[13].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[13]);
@@ -93,6 +93,16 @@ namespace Teplo
             Lines[14].Opacity = 1;
             Lines[14].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[14]);
             AnLines[14] = null;
+        }
+        private static void AnLines13_Completed(object sender, EventArgs e)
+        {
+            if (AnLines[15] != null)
+            {
+                //AnLines[15].Completed += new EventHandler(AnLines15_Completed);
+            }
+            Lines[15].Opacity = 1;
+            Lines[15].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[15]);
+            AnLines[15] = null;
         }
     }
 }
