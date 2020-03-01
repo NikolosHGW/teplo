@@ -92,11 +92,12 @@ namespace Teplo
         void ChangeState(Button button)
         {
             button.IsState = !button.IsState;
-            Game.StartGame();
-            for(int i = 0; i < 5; i++)
-            {
-                LineVM.Push();
-            }
+            LineVM.Push();
+            //Game.StartGame();
+            //for(int i = 0; i < 5; i++)
+            //{
+            //    LineVM.Push();
+            //}
         }
 
         //                                            ВРЕМЕННЫЙ КОД ДЛЯ ИНФО
