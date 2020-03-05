@@ -14,6 +14,7 @@ namespace Teplo
         public static ObservableCollection<DoubleAnimationUsingKeyFrames> AnLines { get; set; } = new ObservableCollection<DoubleAnimationUsingKeyFrames>();
         public static void Push()
         {
+            //                                         Начало первого этапа заполнения
             if (GetButtons.ButtonsPmpRC[0].IsState == true && GetButtons.ButtonsC[0].IsState == true)
             {
                 if (AnLines[0] != null)
@@ -24,7 +25,9 @@ namespace Teplo
                 Lines[0].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[0]);
                 AnLines[0] = null;
             }
+            //                                         Конец первого этапа заполнения
         }
+        //                                         Начало первого этапа заполнения
         private static void AnLines0_Completed(object sender, EventArgs e)
         {
             if (AnLines[1] != null)
@@ -153,5 +156,6 @@ namespace Teplo
             Lines[11].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[11]);
             AnLines[11] = null;
         }
+        //                                         Конец первого этапа заполнения
     }
 }

@@ -180,7 +180,7 @@ namespace Teplo
                 );
             anLine11.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
-                    55, // Target value (KeyValue)
+                    58, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
             //                                              Анимация Line12
