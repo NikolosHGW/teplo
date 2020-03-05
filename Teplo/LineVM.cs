@@ -14,7 +14,7 @@ namespace Teplo
         public static ObservableCollection<DoubleAnimationUsingKeyFrames> AnLines { get; set; } = new ObservableCollection<DoubleAnimationUsingKeyFrames>();
         public static void Push()
         {
-            //                                         Начало первого этапа заполнения
+            //                                         Начало заполнения обратного трубопровода
             if (GetButtons.ButtonsPmpRC[0].IsState == true && GetButtons.ButtonsC[0].IsState == true)
             {
                 if (AnLines[0] != null)
@@ -25,9 +25,35 @@ namespace Teplo
                 Lines[0].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[0]);
                 AnLines[0] = null;
             }
-            //                                         Конец первого этапа заполнения
+            //                                         Конец заполнения обратного трубопровода
+
+            //                                         Начало заполнения подаюшего трубопровода
+            if (GetButtons.ButtonsVC[9].IsState == true && GetButtons.ButtonsVC[7].IsState == false && GetButtons.ButtonsVC[8].IsState == false && GetButtons.ButtonsC[3].IsState == true && Lines[11].Opacity == 1)
+            {
+                Lines[17].Opacity = 0;
+                Lines[16].Opacity = 0;
+                Lines[15].Opacity = 0;
+            }
+            if (GetButtons.ButtonsVC[6].IsState == true && GetButtons.ButtonsVC[7].IsState == false && GetButtons.ButtonsVC[8].IsState == false && GetButtons.ButtonsC[3].IsState == true && Lines[11].Opacity == 1)
+            {
+                Lines[12].Opacity = 0;
+                Lines[13].Opacity = 0;
+                Lines[14].Opacity = 0;
+            }
+            if (GetButtons.ButtonsVC[2].IsState == true && GetButtons.ButtonsVC[0].IsState == true && GetButtons.ButtonsVC[9].IsState == true && GetButtons.ButtonsVC[6].IsState == true && GetButtons.ButtonsSmlC[2].IsState == true && Lines[11].Opacity == 1)
+            {
+                if (AnLines[18] != null)
+                {
+                    AnLines[18].Completed += new EventHandler(AnLines18_Completed);
+                }
+                Lines[18].Opacity = 1;
+                Lines[18].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[18]);
+                AnLines[18] = null;
+            }
+            //                                         Конец заполнения подающего трубопровода
+
         }
-        //                                         Начало первого этапа заполнения
+        //                                         Начало заполнения обратного трубопровода
         private static void AnLines0_Completed(object sender, EventArgs e)
         {
             if (AnLines[1] != null)
@@ -156,6 +182,58 @@ namespace Teplo
             Lines[11].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[11]);
             AnLines[11] = null;
         }
-        //                                         Конец первого этапа заполнения
+        //                                         Конец заполнения обратного трубопровода
+
+        //                                         Начало заполнения подаюшего трубопровода
+        private static void AnLines18_Completed(object sender, EventArgs e)
+        {
+            Lines[19].Opacity = 1;
+            Lines[19].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[19]);
+            AnLines[19] = null;
+            if (AnLines[20] != null)
+            {
+                AnLines[20].Completed += new EventHandler(AnLines20_Completed);
+            }
+            Lines[20].Opacity = 1;
+            Lines[20].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[20]);
+            AnLines[20] = null;
+        }
+        private static void AnLines20_Completed(object sender, EventArgs e)
+        {
+            if (AnLines[21] != null)
+            {
+                AnLines[21].Completed += new EventHandler(AnLines21_Completed);
+            }
+            Lines[21].Opacity = 1;
+            Lines[21].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[21]);
+            AnLines[21] = null;
+        }
+        private static void AnLines21_Completed(object sender, EventArgs e)
+        {
+            Lines[23].Opacity = 1;
+            Lines[23].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[23]);
+            AnLines[23] = null;
+            if (AnLines[22] != null)
+            {
+                AnLines[22].Completed += new EventHandler(AnLines22_Completed);
+            }
+            Lines[22].Opacity = 1;
+            Lines[22].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[22]);
+            AnLines[22] = null;
+        }
+        private static void AnLines22_Completed(object sender, EventArgs e)
+        {
+            Lines[24].Opacity = 1;
+            Lines[24].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[24]);
+            AnLines[24] = null;
+            if (AnLines[25] != null)
+            {
+                //AnLines[25].Completed += new EventHandler(AnLines25_Completed);
+            }
+            Lines[25].Opacity = 1;
+            Lines[25].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[25]);
+            AnLines[25] = null;
+        }
+        //                                         Конец заполнения подающего трубопровода
     }
 }

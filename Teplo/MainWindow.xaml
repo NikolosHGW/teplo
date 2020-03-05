@@ -27,6 +27,14 @@
             <Line x:Name="line15" X1="0" Y1="0" X2="22" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="699" Canvas.Top="387"/>
             <Line x:Name="line16" X1="0" Y1="0" X2="0" Y2="60" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="386"/>
             <Line x:Name="line17" X1="0" Y1="0" X2="0" Y2="-58" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="386"/>
+            <Line x:Name="line18" X1="0" Y1="0" X2="0" Y2="43" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="869" Canvas.Top="344"/>
+            <Line x:Name="line19" X1="0" Y1="0" X2="18" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="386"/>
+            <Line x:Name="line20" X1="0" Y1="0" X2="0" Y2="54" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="869" Canvas.Top="387"/>
+            <Line x:Name="line21" X1="0" Y1="0" X2="0" Y2="56" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="869" Canvas.Top="466"/>
+            <Line x:Name="line22" X1="0" Y1="0" X2="-148" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="869" Canvas.Top="521"/>
+            <Line x:Name="line23" X1="0" Y1="0" X2="8" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="521"/>
+            <Line x:Name="line24" X1="0" Y1="0" X2="-8" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="521"/>
+            <Line x:Name="line25" X1="0" Y1="0" X2="0" Y2="-57" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="521"/>
             <!--
             <Line x:Name="line16" X1="0" Y1="0" X2="0" Y2="96" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="344"/>
             <Line x:Name="line17" X1="0" Y1="0" X2="18" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="386"/>
@@ -48,6 +56,10 @@
             <Line x:Name="line33" X1="0" Y1="0" X2="0" Y2="59" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="464"/>
             <Line x:Name="line34" X1="0" Y1="0" X2="160" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="715" Canvas.Top="521"/>
             <Line x:Name="line35" X1="0" Y1="0" X2="0" Y2="57" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="869" Canvas.Top="466"/>-->
+            <Line x:Name="line1230" X1="0" Y1="0" X2="0" Y2="133" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="180" Canvas.Top="387"/>
+            <Line x:Name="line331" X1="0" Y1="0" X2="0" Y2="24" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="180" Canvas.Top="261"/>
+            <Line x:Name="line232" X1="0" Y1="0" X2="92" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="6" Canvas.Left="180" Canvas.Top="262"/>
+            <Line x:Name="line3425" X1="0" Y1="0" X2="0" Y2="59" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="464"/>
             <!--ЗАДВИЖКИ ГОРИЗОНТАЛЬНЫЕ-->
             <ItemsControl ItemsSource="{Binding Buttons}">
                 <ItemsControl.ItemsPanel>
