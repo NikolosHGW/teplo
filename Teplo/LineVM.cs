@@ -228,11 +228,90 @@ namespace Teplo
             AnLines[24] = null;
             if (AnLines[25] != null)
             {
-                //AnLines[25].Completed += new EventHandler(AnLines25_Completed);
+                AnLines[25].Completed += new EventHandler(AnLines25_Completed);
             }
             Lines[25].Opacity = 1;
             Lines[25].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[25]);
             AnLines[25] = null;
+        }
+        private static void AnLines25_Completed(object sender, EventArgs e)
+        {
+            if (AnLines[26] != null)
+            {
+                AnLines[26].Completed += new EventHandler(AnLines26_Completed);
+            }
+            Lines[26].Opacity = 1;
+            Lines[26].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[26]);
+            AnLines[26] = null;
+        }
+        private static void AnLines26_Completed(object sender, EventArgs e)
+        {
+            Lines[27].Opacity = 1;
+            Lines[27].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[27]);
+            AnLines[27] = null;
+            if (AnLines[28] != null)
+            {
+                AnLines[28].Completed += new EventHandler(AnLines28_Completed);
+            }
+            Lines[28].Opacity = 1;
+            Lines[28].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[28]);
+            AnLines[28] = null;
+        }
+        private static void AnLines28_Completed(object sender, EventArgs e)
+        {
+            if (AnLines[29] != null)
+            {
+                AnLines[29].Completed += new EventHandler(AnLines29_Completed);
+            }
+            Lines[29].Opacity = 1;
+            Lines[29].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[29]);
+            AnLines[29] = null;
+        }
+        private static void AnLines29_Completed(object sender, EventArgs e)
+        {
+            Lines[30].Opacity = 1;
+            Lines[30].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[30]);
+            AnLines[30] = null;
+            if (AnLines[31] != null)
+            {
+                AnLines[31].Completed += new EventHandler(AnLines31_Completed);
+            }
+            Lines[31].Opacity = 1;
+            Lines[31].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[31]);
+            AnLines[31] = null;
+        }
+        private static void AnLines31_Completed(object sender, EventArgs e)
+        {
+            if (AnLines[32] != null)
+            {
+                AnLines[32].Completed += new EventHandler(AnLines32_Completed);
+            }
+            Lines[32].Opacity = 1;
+            Lines[32].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[32]);
+            AnLines[32] = null;
+        }
+        private static void AnLines32_Completed(object sender, EventArgs e)
+        {
+            Lines[34].Opacity = 1;
+            Lines[34].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[34]);
+            AnLines[34] = null;
+            if (AnLines[33] != null)
+            {
+                AnLines[33].Completed += new EventHandler(AnLines33_Completed);
+            }
+            Lines[33].Opacity = 1;
+            Lines[33].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLines[33]);
+            AnLines[33] = null;
+        }
+        private static void AnLines33_Completed(object sender, EventArgs e)
+        {
+            if (AnLines[35] != null)
+            {
+                //AnLines[35].Completed += new EventHandler(AnLines32_Completed);
+            }
+            Lines[35].Opacity = 1;
+            Lines[35].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLines[35]);
+            AnLines[35] = null;
         }
         //                                         Конец заполнения подающего трубопровода
     }
