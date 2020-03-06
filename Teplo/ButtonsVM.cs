@@ -92,7 +92,8 @@ namespace Teplo
         void ChangeState(Button button)
         {
             button.IsState = !button.IsState;
-            LineVM.Push();
+            WaterVM.Start();
+            PumpAnimVM.Start();
             //Game.StartGame();
             //for(int i = 0; i < 5; i++)
             //{

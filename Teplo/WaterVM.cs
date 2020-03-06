@@ -8,11 +8,11 @@ using Core;
 
 namespace Teplo
 {
-    class LineVM
+    class WaterVM
     {
         public static ObservableCollection<Line> Lines { get; set; } = new ObservableCollection<Line>();
         public static ObservableCollection<DoubleAnimationUsingKeyFrames> AnLines { get; set; } = new ObservableCollection<DoubleAnimationUsingKeyFrames>();
-        public static void Push()
+        public static void Start()
         {
             //                                         Начало заполнения обратного трубопровода
             if (GetButtons.ButtonsPmpRC[0].IsState == true && GetButtons.ButtonsC[0].IsState == true)

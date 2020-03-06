@@ -12,8 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Resources\123.png" />
+    <None Remove="Resources\blade.png" />
+    <None Remove="Resources\blades.png" />
     <None Remove="Resources\nasos.png" />
     <None Remove="Resources\nasos_green.png" />
+    <None Remove="Resources\Start.mp3" />
     <None Remove="Resources\tps.png" />
     <None Remove="Resources\valveCLS%28v%29.png" />
     <None Remove="Resources\valveCLS.png" />
@@ -26,7 +30,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\blades.png" />
     <Resource Include="Resources\nasos_green.png" />
+    <Resource Include="Resources\Start.mp3" />
     <Resource Include="Resources\tps.png" />
     <Resource Include="Resources\nasos.png" />
     <Resource Include="Resources\valveCLS(v).png" />

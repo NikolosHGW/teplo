@@ -9,6 +9,18 @@
     <Border>
         <Canvas>
             <Image Source="Resources/tps.png" Stretch="Uniform"/>
+            <!--<Image x:Name="bladesImage" Source="Resources/blades.png" Canvas.Left="365" Canvas.Top="127" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Image.RenderTransform>
+            </Image>-->
+            <!--<Button x:Name="button1" Click="butt" Width="41" Height="38" Opacity="1" Canvas.Left="100" Canvas.Top="146" RenderTransformOrigin="0.537,0.569">
+                <Image x:Name="pumpImage" Source="Resources/blades.png" Width="34" Height="35" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <RotateTransform Angle="0"/>
+                    </Image.RenderTransform>
+                </Image>
+            </Button>-->
             <Line x:Name="line0" X1="0" Y1="0" X2="0" Y2="25" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="168"/>
             <Line x:Name="line1" X1="0" Y1="0" X2="0" Y2="40" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="222"/>
             <Line x:Name="line2" X1="0" Y1="0" X2="-65" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="490" Canvas.Top="262"/>
@@ -68,6 +80,16 @@
             <Line x:Name="line35" X1="0" Y1="0" X2="0" Y2="57" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="869" Canvas.Top="466"/>-->
             <Line x:Name="line331" X1="0" Y1="0" X2="0" Y2="24" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="180" Canvas.Top="261"/>
             <Line x:Name="line232" X1="0" Y1="0" X2="92" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="6" Canvas.Left="180" Canvas.Top="262"/>
+            <Line x:Name="blade1" X1="0" Y1="0" X2="60" Y2="0" Opacity="1" Stroke="Blue" StrokeThickness="2" Canvas.Left="372" Canvas.Top="164" RenderTransformOrigin="0.5,0.5">
+                <Line.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Line.RenderTransform>
+            </Line>
+            <Line x:Name="blade2" X1="0" Y1="0" X2="0" Y2="60" Opacity="1" Stroke="Blue" StrokeThickness="2" Canvas.Left="401" Canvas.Top="135" RenderTransformOrigin="0.5,0.5">
+                <Line.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Line.RenderTransform>
+            </Line>
             <!--ЗАДВИЖКИ ГОРИЗОНТАЛЬНЫЕ-->
             <ItemsControl ItemsSource="{Binding Buttons}">
                 <ItemsControl.ItemsPanel>
