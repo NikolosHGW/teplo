@@ -93,7 +93,10 @@ namespace Teplo
         {
             button.IsState = !button.IsState;
             WaterVM.Start();
-            PumpAnimVM.Start();
+            if (button.Left == 380 && button.Top == 146)
+                PumpAnimVM.StartPmpR();
+            if (button.Left == 349 && button.Top == 246)
+                PumpAnimVM.StartPmpL();
             //Game.StartGame();
             //for(int i = 0; i < 5; i++)
             //{

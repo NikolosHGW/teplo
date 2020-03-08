@@ -18,6 +18,50 @@ namespace Teplo
             InitializeComponent();
             DataContext = new ButtonsVM();
 
+            //                                              Анимация насоса
+            MediaPlayer mediaStart = new MediaPlayer();
+            //mediaStart.Open(new Uri("C:/Users/Николос/source/repos/teplo/Teplo/Resources/Start.mp3"/*@"Resources/Start.mp3"*/, UriKind.RelativeOrAbsolute)); /*C:/Users/Nikolos/Downloads/Запуск.mp3*/
+            PumpAnimVM.MStart = mediaStart;
+            MediaPlayer mediaStop = new MediaPlayer();
+            //mediaStop.Open(new Uri("C:/Users/Николос/Downloads/Останов.mp3", UriKind.RelativeOrAbsolute));
+            PumpAnimVM.MStop = mediaStop;
+
+            DoubleAnimation blade1Anim = new DoubleAnimation();
+            PumpAnimVM.Blade1Anim = blade1Anim;
+            PumpAnimVM.Blade1 = blade1;
+            DoubleAnimation blade2Anim = new DoubleAnimation();
+            PumpAnimVM.Blade2Anim = blade2Anim;
+            PumpAnimVM.Blade2 = blade2;
+
+            blade1Anim.From = 0;
+            blade1Anim.To = 360;
+            blade1Anim.BeginTime = TimeSpan.FromSeconds(1);
+            blade1Anim.Duration = TimeSpan.FromSeconds(0.3);
+            blade1Anim.RepeatBehavior = RepeatBehavior.Forever;
+            blade2Anim.From = 0;
+            blade2Anim.To = 360;
+            blade2Anim.BeginTime = TimeSpan.FromSeconds(1);
+            blade2Anim.Duration = TimeSpan.FromSeconds(0.3);
+            blade2Anim.RepeatBehavior = RepeatBehavior.Forever;
+
+            DoubleAnimation blade21Anim = new DoubleAnimation();
+            PumpAnimVM.Blade21Anim = blade21Anim;
+            PumpAnimVM.Blade21 = blade21;
+            DoubleAnimation blade22Anim = new DoubleAnimation();
+            PumpAnimVM.Blade22Anim = blade22Anim;
+            PumpAnimVM.Blade22 = blade22;
+
+            blade21Anim.From = 0;
+            blade21Anim.To = -360;
+            blade21Anim.BeginTime = TimeSpan.FromSeconds(1);
+            blade21Anim.Duration = TimeSpan.FromSeconds(0.3);
+            blade21Anim.RepeatBehavior = RepeatBehavior.Forever;
+            blade22Anim.From = 0;
+            blade22Anim.To = -360;
+            blade22Anim.BeginTime = TimeSpan.FromSeconds(1);
+            blade22Anim.Duration = TimeSpan.FromSeconds(0.3);
+            blade22Anim.RepeatBehavior = RepeatBehavior.Forever;
+
             //                                              Анимация Line0
             DoubleAnimationUsingKeyFrames anLine0 = new DoubleAnimationUsingKeyFrames();
             anLine0.KeyFrames.Add(

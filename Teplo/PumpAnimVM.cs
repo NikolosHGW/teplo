@@ -16,26 +16,44 @@ namespace Teplo
         public static MediaPlayer MStop { get; set; } = new MediaPlayer();
         public static Line Blade1 { get; set; }
         public static Line Blade2 { get; set; }
-        static DoubleAnimation blade1Anim = new DoubleAnimation();
-        static DoubleAnimation blade2Anim = new DoubleAnimation();
-        public static void Start()
+        public static DoubleAnimation Blade1Anim { get; set; }
+        public static DoubleAnimation Blade2Anim { get; set; }
+        public static Line Blade21 { get; set; }
+        public static Line Blade22 { get; set; }
+        public static DoubleAnimation Blade21Anim { get; set; }
+        public static DoubleAnimation Blade22Anim { get; set; }
+        public static void StartPmpR()
         {
             if (GetButtons.ButtonsPmpRC[0].IsState == true)
             {
-                //MStart.Open(new Uri("C:/Users/Nikolos/Downloads/Запуск.mp3"/*@"Resources/Start.mp3"*/, UriKind.RelativeOrAbsolute));
-                blade1Anim.From = 0;
-                blade1Anim.To = 360;
-                blade1Anim.BeginTime = TimeSpan.FromSeconds(1);
-                blade1Anim.Duration = TimeSpan.FromSeconds(0.3);
-                blade1Anim.RepeatBehavior = RepeatBehavior.Forever;
-                blade2Anim.From = 0;
-                blade2Anim.To = 360;
-                blade2Anim.BeginTime = TimeSpan.FromSeconds(1);
-                blade2Anim.Duration = TimeSpan.FromSeconds(0.3);
-                blade2Anim.RepeatBehavior = RepeatBehavior.Forever;
+                MStart.Open(new Uri("C:/Users/Николос/source/repos/teplo/Teplo/Resources/Start.mp3"/*@"Resources/Start.mp3"*/, UriKind.RelativeOrAbsolute));
                 MStart.Play();
-                Blade1.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, blade1Anim);
-                Blade2.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, blade2Anim);
+                Blade1.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, Blade1Anim);
+                Blade2.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, Blade2Anim);
+            }
+            if (GetButtons.ButtonsPmpRC[0].IsState == false)
+            {
+                MStop.Open(new Uri("C:/Users/Николос/Downloads/Останов.mp3", UriKind.RelativeOrAbsolute));
+                MStop.Play();
+                Blade1.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, null);
+                Blade2.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, null);
+            }
+        }
+        public static void StartPmpL()
+        {
+            if (GetButtons.ButtonsPmpLC[0].IsState == true)
+            {
+                MStart.Open(new Uri("C:/Users/Николос/source/repos/teplo/Teplo/Resources/Start.mp3"/*@"Resources/Start.mp3"*/, UriKind.RelativeOrAbsolute));
+                MStart.Play();
+                Blade21.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, Blade21Anim);
+                Blade22.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, Blade22Anim);
+            }
+            if (GetButtons.ButtonsPmpLC[0].IsState == false)
+            {
+                MStop.Open(new Uri("C:/Users/Николос/Downloads/Останов.mp3", UriKind.RelativeOrAbsolute));
+                MStop.Play();
+                Blade21.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, null);
+                Blade22.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, null);
             }
         }
     }
