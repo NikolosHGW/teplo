@@ -80,22 +80,22 @@
             <Line x:Name="line35" X1="0" Y1="0" X2="0" Y2="57" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="869" Canvas.Top="466"/>-->
             <Line x:Name="line331" X1="0" Y1="0" X2="0" Y2="24" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="180" Canvas.Top="261"/>
             <Line x:Name="line232" X1="0" Y1="0" X2="92" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="6" Canvas.Left="180" Canvas.Top="262"/>
-            <Line x:Name="blade1" X1="0" Y1="0" X2="60" Y2="0" Opacity="1" Stroke="Blue" StrokeThickness="2" Canvas.Left="372" Canvas.Top="164" RenderTransformOrigin="0.5,0.5">
+            <Line x:Name="blade1" X1="0" Y1="0" X2="60" Y2="0" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="372" Canvas.Top="164" RenderTransformOrigin="0.5,0.5">
                 <Line.RenderTransform>
                     <RotateTransform Angle="0"/>
                 </Line.RenderTransform>
             </Line>
-            <Line x:Name="blade2" X1="0" Y1="0" X2="0" Y2="60" Opacity="1" Stroke="Blue" StrokeThickness="2" Canvas.Left="401" Canvas.Top="135" RenderTransformOrigin="0.5,0.5">
+            <Line x:Name="blade2" X1="0" Y1="0" X2="0" Y2="60" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="401" Canvas.Top="135" RenderTransformOrigin="0.5,0.5">
                 <Line.RenderTransform>
                     <RotateTransform Angle="0"/>
                 </Line.RenderTransform>
             </Line>
-            <Line x:Name="blade21" X1="0" Y1="0" X2="50" Y2="0" Opacity="1" Stroke="Blue" StrokeThickness="2" Canvas.Left="340" Canvas.Top="261" RenderTransformOrigin="0.5,0.5">
+            <Line x:Name="blade21" X1="0" Y1="0" X2="50" Y2="0" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="340" Canvas.Top="261" RenderTransformOrigin="0.5,0.5">
                 <Line.RenderTransform>
                     <RotateTransform Angle="0"/>
                 </Line.RenderTransform>
             </Line>
-            <Line x:Name="blade22" X1="0" Y1="0" X2="0" Y2="50" Opacity="1" Stroke="Blue" StrokeThickness="2" Canvas.Left="366" Canvas.Top="238" RenderTransformOrigin="0.5,0.5">
+            <Line x:Name="blade22" X1="0" Y1="0" X2="0" Y2="50" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="366" Canvas.Top="238" RenderTransformOrigin="0.5,0.5">
                 <Line.RenderTransform>
                     <RotateTransform Angle="0"/>
                 </Line.RenderTransform>

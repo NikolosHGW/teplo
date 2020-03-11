@@ -590,39 +590,6 @@ namespace Teplo
             WaterVM.Lines.Add(line35);
             WaterVM.AnLines.Add(anLine35);
 
-            //DoubleAnimation blade1Anim = new DoubleAnimation();
-            //blade1Anim.From = 0;
-            //blade1Anim.To = 360;
-            //blade1Anim.Duration = TimeSpan.FromSeconds(0.3);
-            //blade1Anim.RepeatBehavior = RepeatBehavior.Forever;
-            //blade1.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, blade1Anim);
-            //DoubleAnimation blade2Anim = new DoubleAnimation();
-            //blade2Anim.From = 0;
-            //blade2Anim.To = 360;
-            //blade2Anim.Duration = TimeSpan.FromSeconds(0.3);
-            //blade2Anim.RepeatBehavior = RepeatBehavior.Forever;
-            //blade2.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, blade2Anim);
-            PumpAnimVM.Blade1 = blade1;
-            PumpAnimVM.Blade2 = blade2;
-
         }
-        //private void butt(object sender, RoutedEventArgs e)
-        //{
-        //    //DoubleAnimation pumpAnim = new DoubleAnimation();
-        //    //pumpAnim.From = 0;
-        //    //pumpAnim.To = 360;
-        //    //pumpAnim.Duration = TimeSpan.FromSeconds(0.3);
-        //    //pumpAnim.RepeatBehavior = RepeatBehavior.Forever;
-        //    //Pro.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, pumpAnim);
-        //    //mediaPlayer.Open(new Uri("C:/Users/Nikolos/Downloads/Запуск.mp3", UriKind.RelativeOrAbsolute));
-        //    //mediaPlayer.Play();
-        //    //DoubleAnimation pumpAnim = new DoubleAnimation();
-        //    //pumpAnim.From = 0;
-        //    //pumpAnim.To = 360;
-        //    //pumpAnim.BeginTime = TimeSpan.FromSeconds(1);
-        //    //pumpAnim.Duration = TimeSpan.FromSeconds(0.3);
-        //    //pumpAnim.RepeatBehavior = RepeatBehavior.Forever;
-        //    //pumpImage.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, pumpAnim);
-        //}
     }
 }
