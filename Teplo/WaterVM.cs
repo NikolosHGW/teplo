@@ -15,20 +15,20 @@ namespace Teplo
 
         public static ObservableCollection<Line> LinesA { get; set; } = new ObservableCollection<Line>();
         public static ObservableCollection<DoubleAnimationUsingKeyFrames> AnLinesA { get; set; } = new ObservableCollection<DoubleAnimationUsingKeyFrames>();
-        public static DoubleAnimationUsingKeyFrames Animation { get; set; } = new DoubleAnimationUsingKeyFrames();
-        private static void SwitchAnim(int i, string b)
-        {
-            if (b == "off")
-                AnLinesA[i] = Animation;
-            if (b == "on")
-                AnLinesA[i] = AnLines[i];
-        }
+        //public static DoubleAnimationUsingKeyFrames Animation { get; set; } = new DoubleAnimationUsingKeyFrames();
+        //private static void SwitchAnim(int i, string b)
+        //{
+        //    if (b == "off")
+        //        AnLinesA[i] = Animation;
+        //    if (b == "on")
+        //        AnLinesA[i] = AnLines[i];
+        //}
 
         public static void ResetAnim()
         {
             for (int i = 0; i < AnLines.Count; i++)
             {
-                SwitchAnim(i, "on");
+                AnLinesA[i].Name = null;
             }
         }
 
@@ -82,8 +82,11 @@ namespace Teplo
                     AnLinesA[0].Completed += new EventHandler(AnLines0_Completed);
                 }
                 LinesA[0].Opacity = 1;
-                LinesA[0].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[0]);
-                SwitchAnim(0, "off");
+                if (AnLinesA[0].Name == null)
+                {
+                    LinesA[0].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[0]);
+                }
+                AnLinesA[0].Name = "off";
             }
             //                                         Конец заполнения обратного трубопровода
 
@@ -107,8 +110,11 @@ namespace Teplo
                     AnLinesA[18].Completed += new EventHandler(AnLines18_Completed);
                 }
                 LinesA[18].Opacity = 1;
-                LinesA[18].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[18]);
-                SwitchAnim(18, "off");
+                if (AnLinesA[18].Name == null)
+                {
+                    LinesA[18].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[18]);
+                }
+                AnLinesA[18].Name = "off";
             }
             //                                         Конец заполнения подающего трубопровода
 
@@ -123,8 +129,11 @@ namespace Teplo
                     AnLinesA[1].Completed += new EventHandler(AnLines1_Completed);
                 }
                 LinesA[1].Opacity = 1;
-                LinesA[1].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[1]);
-                SwitchAnim(1, "off");
+                if (AnLinesA[1].Name == null)
+                {
+                    LinesA[1].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[1]);
+                }
+                AnLinesA[1].Name = "off";
             }
         }
         private static void AnLines1_Completed(object sender, EventArgs e)
@@ -132,15 +141,21 @@ namespace Teplo
             if (PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[2].Opacity = 1;
-                LinesA[2].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[2]);
-                SwitchAnim(2, "off");
+                if (AnLinesA[2].Name == null)
+                {
+                    LinesA[2].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[2]);
+                }
+                AnLinesA[2].Name = "off";
                 if (AnLinesA[3] != null)
                 {
                     AnLinesA[3].Completed += new EventHandler(AnLines3_Completed);
                 }
                 LinesA[3].Opacity = 1;
-                LinesA[3].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[3]);
-                SwitchAnim(3, "off");
+                if (AnLinesA[3].Name == null)
+                {
+                    LinesA[3].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[3]);
+                }
+                AnLinesA[3].Name = "off";
             }
         }
         private static void AnLines3_Completed(object sender, EventArgs e)
@@ -152,8 +167,11 @@ namespace Teplo
                     AnLinesA[4].Completed += new EventHandler(AnLines4_Completed);
                 }
                 LinesA[4].Opacity = 1;
-                LinesA[4].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[4]);
-                SwitchAnim(4, "off");
+                if (AnLinesA[4].Name == null)
+                {
+                    LinesA[4].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[4]);
+                }
+                AnLinesA[4].Name = "off";
             }
         }
         private static void AnLines4_Completed(object sender, EventArgs e)
@@ -161,15 +179,21 @@ namespace Teplo
             if (PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[5].Opacity = 1;
-                LinesA[5].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[5]);
-                SwitchAnim(5, "off");
+                if (AnLinesA[5].Name == null)
+                {
+                    LinesA[5].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[5]);
+                }
+                AnLinesA[5].Name = "off";
                 if (AnLinesA[6] != null)
                 {
                     AnLinesA[6].Completed += new EventHandler(AnLines6_Completed);
                 }
                 LinesA[6].Opacity = 1;
-                LinesA[6].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[6]);
-                SwitchAnim(6, "off");
+                if (AnLinesA[6].Name == null)
+                {
+                    LinesA[6].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[6]);
+                }
+                AnLinesA[6].Name = "off";
             }
         }
         private static void AnLines6_Completed(object sender, EventArgs e)
@@ -181,8 +205,11 @@ namespace Teplo
                     AnLinesA[12].Completed += new EventHandler(AnLines12_Completed);
                 }
                 LinesA[12].Opacity = 1;
-                LinesA[12].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[12]);
-                SwitchAnim(12, "off");
+                if (AnLinesA[12].Name == null)
+                {
+                    LinesA[12].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[12]);
+                }
+                AnLinesA[12].Name = "off";
             }
         }
         private static void AnLines12_Completed(object sender, EventArgs e)
@@ -194,11 +221,17 @@ namespace Teplo
                     AnLinesA[13].Completed += new EventHandler(AnLines13_Completed);
                 }
                 LinesA[13].Opacity = 1;
-                LinesA[13].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[13]);
-                SwitchAnim(13, "off");
+                if (AnLinesA[13].Name == null)
+                {
+                    LinesA[13].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[13]);
+                }
+                AnLinesA[13].Name = "off";
                 LinesA[14].Opacity = 1;
-                LinesA[14].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[14]);
-                SwitchAnim(14, "off");
+                if (AnLinesA[14].Name == null)
+                {
+                    LinesA[14].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[14]);
+                }
+                AnLinesA[14].Name = "off";
             }
         }
         private static void AnLines13_Completed(object sender, EventArgs e)
@@ -210,8 +243,11 @@ namespace Teplo
                     AnLinesA[15].Completed += new EventHandler(AnLines15_Completed);
                 }
                 LinesA[15].Opacity = 1;
-                LinesA[15].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[15]);
-                SwitchAnim(15, "off");
+                if (AnLinesA[15].Name == null)
+                {
+                    LinesA[15].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[15]);
+                }
+                AnLinesA[15].Name = "off";
             }
         }
         private static void AnLines15_Completed(object sender, EventArgs e)
@@ -219,15 +255,21 @@ namespace Teplo
             if (PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[16].Opacity = 1;
-                LinesA[16].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[16]);
-                SwitchAnim(16, "off");
+                if (AnLinesA[16].Name == null)
+                {
+                    LinesA[16].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[16]);
+                }
+                AnLinesA[16].Name = "off";
                 if (AnLinesA[17] != null)
                 {
                     AnLinesA[17].Completed += new EventHandler(AnLines17_Completed);
                 }
                 LinesA[17].Opacity = 1;
-                LinesA[17].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[17]);
-                SwitchAnim(17, "off");
+                if (AnLinesA[17].Name == null)
+                {
+                    LinesA[17].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[17]);
+                }
+                AnLinesA[17].Name = "off";
             }
         }
         private static void AnLines17_Completed(object sender, EventArgs e)
@@ -239,8 +281,11 @@ namespace Teplo
                     AnLinesA[9].Completed += new EventHandler(AnLines9_Completed);
                 }
                 LinesA[9].Opacity = 1;
-                LinesA[9].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[9]);
-                SwitchAnim(9, "off");
+                if (AnLinesA[9].Name == null)
+                {
+                    LinesA[9].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[9]);
+                }
+                AnLinesA[9].Name = "off";
             }
         }
         private static void AnLines9_Completed(object sender, EventArgs e)
@@ -248,15 +293,21 @@ namespace Teplo
             if (PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[7].Opacity = 1;
-                LinesA[7].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[7]);
-                SwitchAnim(7, "off");
+                if (AnLinesA[7].Name == null)
+                {
+                    LinesA[7].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[7]);
+                }
+                AnLinesA[7].Name = "off";
                 if (AnLinesA[8] != null)
                 {
                     AnLinesA[8].Completed += new EventHandler(AnLines8_Completed);
                 }
                 LinesA[8].Opacity = 1;
-                LinesA[8].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[8]);
-                SwitchAnim(8, "off");
+                if (AnLinesA[8].Name == null)
+                {
+                    LinesA[8].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[8]);
+                }
+                AnLinesA[8].Name = "off";
             }
         }
         private static void AnLines8_Completed(object sender, EventArgs e)
@@ -264,15 +315,21 @@ namespace Teplo
             if (PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[10].Opacity = 1;
-                LinesA[10].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[10]);
-                SwitchAnim(10, "off");
+                if (AnLinesA[10].Name == null)
+                {
+                    LinesA[10].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[10]);
+                }
+                AnLinesA[10].Name = "off";
                 if (AnLinesA[11] != null)
                 {
                     //AnLinesA[11].Completed += new EventHandler(AnLines11_Completed);
                 }
                 LinesA[11].Opacity = 1;
-                LinesA[11].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[11]);
-                SwitchAnim(11, "off");
+                if (AnLinesA[11].Name == null)
+                {
+                    LinesA[11].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[11]);
+                }
+                AnLinesA[11].Name = "off";
             }
         }
         //                                         Конец заполнения обратного трубопровода
@@ -283,15 +340,21 @@ namespace Teplo
             if (PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[19].Opacity = 1;
-                LinesA[19].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[19]);
-                SwitchAnim(19, "off");
+                if (AnLinesA[19].Name == null)
+                {
+                    LinesA[19].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[19]);
+                }
+                AnLinesA[19].Name = "off";
                 if (AnLinesA[20] != null)
                 {
                     AnLinesA[20].Completed += new EventHandler(AnLines20_Completed);
                 }
                 LinesA[20].Opacity = 1;
-                LinesA[20].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[20]);
-                SwitchAnim(20, "off");
+                if (AnLinesA[20].Name == null)
+                {
+                    LinesA[20].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[20]);
+                }
+                AnLinesA[20].Name = "off";
             }
         }
         private static void AnLines20_Completed(object sender, EventArgs e)
@@ -303,8 +366,11 @@ namespace Teplo
                     AnLinesA[21].Completed += new EventHandler(AnLines21_Completed);
                 }
                 LinesA[21].Opacity = 1;
-                LinesA[21].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[21]);
-                SwitchAnim(21, "off");
+                if (AnLinesA[21].Name == null)
+                {
+                    LinesA[21].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[21]);
+                }
+                AnLinesA[21].Name = "off";
             }
         }
         private static void AnLines21_Completed(object sender, EventArgs e)
@@ -312,15 +378,21 @@ namespace Teplo
             if (PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[23].Opacity = 1;
-                LinesA[23].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[23]);
-                SwitchAnim(23, "off");
+                if (AnLinesA[23].Name == null)
+                {
+                    LinesA[23].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[23]);
+                }
+                AnLinesA[23].Name = "off";
                 if (AnLinesA[22] != null)
                 {
                     AnLinesA[22].Completed += new EventHandler(AnLines22_Completed);
                 }
                 LinesA[22].Opacity = 1;
-                LinesA[22].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[22]);
-                SwitchAnim(22, "off");
+                if (AnLinesA[22].Name == null)
+                {
+                    LinesA[22].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[22]);
+                }
+                AnLinesA[22].Name = "off";
             }
         }
         private static void AnLines22_Completed(object sender, EventArgs e)
@@ -328,15 +400,21 @@ namespace Teplo
             if (PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[24].Opacity = 1;
-                LinesA[24].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[24]);
-                SwitchAnim(24, "off");
+                if (AnLinesA[24].Name == null)
+                {
+                    LinesA[24].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[24]);
+                }
+                AnLinesA[24].Name = "off";
                 if (AnLinesA[25] != null)
                 {
                     AnLinesA[25].Completed += new EventHandler(AnLines25_Completed);
                 }
                 LinesA[25].Opacity = 1;
-                LinesA[25].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[25]);
-                SwitchAnim(25, "off");
+                if (AnLinesA[25].Name == null)
+                {
+                    LinesA[25].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[25]);
+                }
+                AnLinesA[25].Name = "off";
             }
         }
         private static void AnLines25_Completed(object sender, EventArgs e)
@@ -348,8 +426,11 @@ namespace Teplo
                     AnLinesA[26].Completed += new EventHandler(AnLines26_Completed);
                 }
                 LinesA[26].Opacity = 1;
-                LinesA[26].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[26]);
-                SwitchAnim(26, "off");
+                if (AnLinesA[26].Name == null)
+                {
+                    LinesA[26].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[26]);
+                }
+                AnLinesA[26].Name = "off";
             }
         }
         private static void AnLines26_Completed(object sender, EventArgs e)
@@ -357,15 +438,21 @@ namespace Teplo
             if (PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[27].Opacity = 1;
-                LinesA[27].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[27]);
-                SwitchAnim(27, "off");
+                if (AnLinesA[27].Name == null)
+                {
+                    LinesA[27].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[27]);
+                }
+                AnLinesA[27].Name = "off";
                 if (AnLinesA[28] != null)
                 {
                     AnLinesA[28].Completed += new EventHandler(AnLines28_Completed);
                 }
                 LinesA[28].Opacity = 1;
-                LinesA[28].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[28]);
-                SwitchAnim(28, "off");
+                if (AnLinesA[28].Name == null)
+                {
+                    LinesA[28].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[28]);
+                }
+                AnLinesA[28].Name = "off";
             }
         }
         private static void AnLines28_Completed(object sender, EventArgs e)
@@ -377,8 +464,11 @@ namespace Teplo
                     AnLinesA[29].Completed += new EventHandler(AnLines29_Completed);
                 }
                 LinesA[29].Opacity = 1;
-                LinesA[29].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[29]);
-                SwitchAnim(29, "off");
+                if (AnLinesA[29].Name == null)
+                {
+                    LinesA[29].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[29]);
+                }
+                AnLinesA[29].Name = "off";
             }
         }
         private static void AnLines29_Completed(object sender, EventArgs e)
@@ -386,15 +476,21 @@ namespace Teplo
             if (PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[30].Opacity = 1;
-                LinesA[30].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[30]);
-                SwitchAnim(30, "off");
+                if (AnLinesA[30].Name == null)
+                {
+                    LinesA[30].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[30]);
+                }
+                AnLinesA[30].Name = "off";
                 if (AnLinesA[31] != null)
                 {
                     AnLinesA[31].Completed += new EventHandler(AnLines31_Completed);
                 }
                 LinesA[31].Opacity = 1;
-                LinesA[31].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[31]);
-                SwitchAnim(31, "off");
+                if (AnLinesA[31].Name == null)
+                {
+                    LinesA[31].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[31]);
+                }
+                AnLinesA[31].Name = "off";
             }
         }
         private static void AnLines31_Completed(object sender, EventArgs e)
@@ -406,8 +502,11 @@ namespace Teplo
                     AnLinesA[32].Completed += new EventHandler(AnLines32_Completed);
                 }
                 LinesA[32].Opacity = 1;
-                LinesA[32].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[32]);
-                SwitchAnim(32, "off");
+                if (AnLinesA[32].Name == null)
+                {
+                    LinesA[32].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[32]);
+                }
+                AnLinesA[32].Name = "off";
             }
         }
         private static void AnLines32_Completed(object sender, EventArgs e)
@@ -415,15 +514,21 @@ namespace Teplo
             if (PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[34].Opacity = 1;
-                LinesA[34].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[34]);
-                SwitchAnim(34, "off");
+                if (AnLinesA[34].Name == null)
+                {
+                    LinesA[34].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[34]);
+                }
+                AnLinesA[34].Name = "off";
                 if (AnLinesA[33] != null)
                 {
                     AnLinesA[33].Completed += new EventHandler(AnLines33_Completed);
                 }
                 LinesA[33].Opacity = 1;
-                LinesA[33].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[33]);
-                SwitchAnim(33, "off");
+                if (AnLinesA[33].Name == null)
+                {
+                    LinesA[33].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[33]);
+                }
+                AnLinesA[33].Name = "off";
             }
         }
         private static void AnLines33_Completed(object sender, EventArgs e)
@@ -435,8 +540,11 @@ namespace Teplo
                     //AnLines[35].Completed += new EventHandler(AnLines32_Completed);
                 }
                 LinesA[35].Opacity = 1;
-                LinesA[35].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[35]);
-                SwitchAnim(35, "off");
+                if (AnLinesA[35].Name == null)
+                {
+                    LinesA[35].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[35]);
+                }
+                AnLinesA[35].Name = "off";
             }
         }
         //                                         Конец заполнения подающего трубопровода
