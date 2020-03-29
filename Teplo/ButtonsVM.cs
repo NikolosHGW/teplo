@@ -140,5 +140,19 @@ namespace Teplo
                   }));
             }
         }
+        //Кнопка сброса
+        private RelayCommand resetCommand;
+        public RelayCommand ResetCommand
+        {
+            get
+            {
+                return resetCommand ??
+                  (resetCommand = new RelayCommand(obj =>
+                  {
+                      WaterVM.ResetAnim();
+                      WaterVM.ElementsNull();
+                  }));
+            }
+        }
     }
 }

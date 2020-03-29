@@ -266,6 +266,7 @@
             <TextBlock Text="ButtonV[13]" Opacity="{Binding Opa}" Canvas.Left="677" Canvas.Top="639"/>
             <Button x:Name="INFO" Content="Info" Command="{Binding InfoCommand}" Canvas.Left="279" Canvas.Top="72"/>
             <!--ВРЕМЕННЫЙ КОД ИНФО-->
+            <Button x:Name="Reset" Content="Reset" Command="{Binding ResetCommand}" Canvas.Left="926" Canvas.Top="112"/>
         </Canvas>
     </Border>
 </Window>
