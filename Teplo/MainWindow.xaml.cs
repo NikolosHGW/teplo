@@ -516,19 +516,6 @@ namespace Teplo
                     -133, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
-            //                                              Анимация for test
-            DoubleAnimationUsingKeyFrames animall = new DoubleAnimationUsingKeyFrames();
-            animall.KeyFrames.Add(
-                new LinearDoubleKeyFrame(
-                    0, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
-                );
-            animall.KeyFrames.Add(
-                new LinearDoubleKeyFrame(
-                    0, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
-                );
-            WaterVM.Animation = animall;
 
             WaterVM.Lines.Add(line0);
             WaterVM.AnLines.Add(anLine0);

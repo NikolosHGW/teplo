@@ -15,14 +15,6 @@ namespace Teplo
 
         public static ObservableCollection<Line> LinesA { get; set; } = new ObservableCollection<Line>();
         public static ObservableCollection<DoubleAnimationUsingKeyFrames> AnLinesA { get; set; } = new ObservableCollection<DoubleAnimationUsingKeyFrames>();
-        //public static DoubleAnimationUsingKeyFrames Animation { get; set; } = new DoubleAnimationUsingKeyFrames();
-        //private static void SwitchAnim(int i, string b)
-        //{
-        //    if (b == "off")
-        //        AnLinesA[i] = Animation;
-        //    if (b == "on")
-        //        AnLinesA[i] = AnLines[i];
-        //}
 
         public static void ResetAnim()
         {
@@ -42,14 +34,6 @@ namespace Teplo
             {
                 AnLinesA.Add(item);
             }
-            //for (int i = 0; i < Lines.Count; i++)
-            //{
-            //    LinesA[i] = Lines[i];
-            //}
-            //for (int i = 0; i < AnLines.Count; i++)
-            //{
-            //    AnLinesA[i] = AnLines[i];
-            //}
         }
 
         public static void ElementsNull()
