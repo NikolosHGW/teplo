@@ -101,8 +101,34 @@ namespace Teplo
                 AnLinesA[18].Name = "off";
             }
             //                                         Конец заполнения подающего трубопровода
+            if (GetButtons.ButtonsVC[4].IsState == false)
+            {
+                GetButtons.ButtonsVC[5].IsState = false;
+            }
+            if (GetButtons.ButtonsVC[4].IsState == true && GetButtons.ButtonsVC[5].IsState == true && LinesA[35].Opacity == 1)
+            {
+                AnLinesA[36].Completed += new EventHandler(AnLines36_Completed);
+                LinesA[36].Opacity = 1;
+                if (AnLinesA[36].Name == null)
+                {
+                    LinesA[36].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[36]);
+                }
+                AnLinesA[36].Name = "off";
+            }
 
         }
+
+        private static void AnLines36_Completed(object sender, EventArgs e)
+        {
+            //AnLinesA[37].Completed += new EventHandler(AnLines37_Completed);
+            LinesA[37].Opacity = 1;
+            if (AnLinesA[37].Name == null)
+            {
+                LinesA[37].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[37]);
+            }
+            AnLinesA[37].Name = "off";
+        }
+
         //                                         Начало заполнения обратного трубопровода
         private static void AnLines0_Completed(object sender, EventArgs e)
         {

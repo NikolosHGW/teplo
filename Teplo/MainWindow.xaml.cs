@@ -516,6 +516,30 @@ namespace Teplo
                     -133, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            //                                              Анимация Line36
+            DoubleAnimationUsingKeyFrames anLine36 = new DoubleAnimationUsingKeyFrames();
+            anLine36.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine36.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    24, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line37
+            DoubleAnimationUsingKeyFrames anLine37 = new DoubleAnimationUsingKeyFrames();
+            anLine37.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine37.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    92, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
 
             WaterVM.Lines.Add(line0);
             WaterVM.AnLines.Add(anLine0);
@@ -589,6 +613,10 @@ namespace Teplo
             WaterVM.AnLines.Add(anLine34);
             WaterVM.Lines.Add(line35);
             WaterVM.AnLines.Add(anLine35);
+            WaterVM.Lines.Add(line36);
+            WaterVM.AnLines.Add(anLine36);
+            WaterVM.Lines.Add(line37);
+            WaterVM.AnLines.Add(anLine37);
             WaterVM.FillUp();
 
         }
