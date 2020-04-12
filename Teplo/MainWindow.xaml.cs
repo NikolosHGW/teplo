@@ -525,7 +525,7 @@ namespace Teplo
                 );
             anLine36.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
-                    24, // Target value (KeyValue)
+                    -28, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
             //                                              Анимация Line37

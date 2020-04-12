@@ -1,5 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 using System.Runtime.CompilerServices;
 using Core;
 
@@ -106,6 +107,7 @@ namespace Teplo
 
         //                                            ВРЕМЕННЫЙ КОД ДЛЯ ИНФО
 
+        
         private int opa;
         public int Opa
         {
