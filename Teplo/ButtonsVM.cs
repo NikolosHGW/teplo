@@ -94,6 +94,7 @@ namespace Teplo
         {
             button.IsState = !button.IsState;
             WaterVM.Start();
+            CirculationVM.StartCirc();
             if (button.Left == 380 && button.Top == 146)
                 PumpAnimVM.StartPmpR();
             if (button.Left == 349 && button.Top == 246)

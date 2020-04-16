@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Teplo"
         mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance {x:Type local:ButtonsVM}, IsDesignTimeCreatable=True}"
         Title="TEPLO" Name="mainWindow" Height="700" Width="1200">
     <Border>
         <Canvas>
@@ -80,6 +81,19 @@
             <Line x:Name="line33" X1="0" Y1="0" X2="0" Y2="59" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="464"/>
             <Line x:Name="line34" X1="0" Y1="0" X2="160" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="715" Canvas.Top="521"/>
             <Line x:Name="line35" X1="0" Y1="0" X2="0" Y2="57" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="869" Canvas.Top="466"/>-->
+            <!--ЛИНИИ ЦИРКУЛЯЦИИ-->
+            <Line x:Name="line0a2" X1="0" Y1="0" X2="-114" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="558" Canvas.Top="262"/>
+            <Line x:Name="line1a5" X1="0" Y1="0" X2="-55" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="661" Canvas.Top="262"/>
+            <Line x:Name="line2a7" X1="0" Y1="0" X2="-164" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="873" Canvas.Top="262"/>
+            <Line x:Name="line3a11" X1="0" Y1="0" X2="0" Y2="-59" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="869" Canvas.Top="318"/>
+            <Line x:Name="line4a20" X1="0" Y1="0" X2="0" Y2="-95" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="869" Canvas.Top="440"/>
+            <Line x:Name="line5a21" X1="0" Y1="0" X2="0" Y2="-55" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="869" Canvas.Top="522"/>
+            <Line x:Name="line6a22" X1="0" Y1="0" X2="160" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="715" Canvas.Top="521"/>
+            <Line x:Name="line7a33" X1="0" Y1="0" X2="489" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="178" Canvas.Top="520"/>
+            <Line x:Name="line8a35" X1="0" Y1="0" X2="0" Y2="134" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="180" Canvas.Top="388"/>
+            <Line x:Name="line9a36" X1="0" Y1="0" X2="0" Y2="29" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="180" Canvas.Top="259"/>
+            <Line x:Name="line10a37" X1="0" Y1="0" X2="-89" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="267" Canvas.Top="262"/>
+            <!--ЛОПАСТИ НАСОСОВ-->
             <Line x:Name="blade1" X1="0" Y1="0" X2="60" Y2="0" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="372" Canvas.Top="164" RenderTransformOrigin="0.5,0.5">
                 <Line.RenderTransform>
                     <RotateTransform Angle="0"/>
