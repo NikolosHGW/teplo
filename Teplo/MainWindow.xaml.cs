@@ -540,6 +540,138 @@ namespace Teplo
                     92, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            //                                              Анимация Line38
+            DoubleAnimationUsingKeyFrames anLine38 = new DoubleAnimationUsingKeyFrames();
+            anLine38.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine38.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    15, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line39
+            DoubleAnimationUsingKeyFrames anLine39 = new DoubleAnimationUsingKeyFrames();
+            anLine39.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine39.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    -46, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line40
+            DoubleAnimationUsingKeyFrames anLine40 = new DoubleAnimationUsingKeyFrames();
+            anLine40.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine40.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    50, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line41
+            DoubleAnimationUsingKeyFrames anLine41 = new DoubleAnimationUsingKeyFrames();
+            anLine41.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine41.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    -58, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line42
+            DoubleAnimationUsingKeyFrames anLine42 = new DoubleAnimationUsingKeyFrames();
+            anLine42.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine42.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    150, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line43
+            DoubleAnimationUsingKeyFrames anLine43 = new DoubleAnimationUsingKeyFrames();
+            anLine43.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine43.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    412, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line44
+            DoubleAnimationUsingKeyFrames anLine44 = new DoubleAnimationUsingKeyFrames();
+            anLine44.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine44.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    -276, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line45
+            DoubleAnimationUsingKeyFrames anLine45 = new DoubleAnimationUsingKeyFrames();
+            anLine45.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine45.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    174, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line46
+            DoubleAnimationUsingKeyFrames anLine46 = new DoubleAnimationUsingKeyFrames();
+            anLine46.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine46.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    -75, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line47
+            DoubleAnimationUsingKeyFrames anLine47 = new DoubleAnimationUsingKeyFrames();
+            anLine47.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine47.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    -44, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            //                                              Анимация Line48
+            DoubleAnimationUsingKeyFrames anLine48 = new DoubleAnimationUsingKeyFrames();
+            anLine48.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine48.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    -56, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
 
             WaterVM.Lines.Add(line0);
             WaterVM.AnLines.Add(anLine0);
@@ -617,6 +749,28 @@ namespace Teplo
             WaterVM.AnLines.Add(anLine36);
             WaterVM.Lines.Add(line37);
             WaterVM.AnLines.Add(anLine37);
+            WaterVM.Lines.Add(line38);
+            WaterVM.AnLines.Add(anLine38);
+            WaterVM.Lines.Add(line39);
+            WaterVM.AnLines.Add(anLine39);
+            WaterVM.Lines.Add(line40);
+            WaterVM.AnLines.Add(anLine40);
+            WaterVM.Lines.Add(line41);
+            WaterVM.AnLines.Add(anLine41);
+            WaterVM.Lines.Add(line42);
+            WaterVM.AnLines.Add(anLine42);
+            WaterVM.Lines.Add(line43);
+            WaterVM.AnLines.Add(anLine43);
+            WaterVM.Lines.Add(line44);
+            WaterVM.AnLines.Add(anLine44);
+            WaterVM.Lines.Add(line45);
+            WaterVM.AnLines.Add(anLine45);
+            WaterVM.Lines.Add(line46);
+            WaterVM.AnLines.Add(anLine46);
+            WaterVM.Lines.Add(line47);
+            WaterVM.AnLines.Add(anLine47);
+            WaterVM.Lines.Add(line48);
+            WaterVM.AnLines.Add(anLine48);
             WaterVM.FillUp();
 
             // Линии для циркуляции

@@ -58,7 +58,7 @@ namespace Teplo
 
         public static void Start()
         {
-            //                                         Начало заполнения обратного трубопровода
+            //                                         Начало заполнения обратного т\м трубопровода
             if (GetButtons.ButtonsPmpRC[0].IsState == true && GetButtons.ButtonsC[0].IsState == true && PumpAnimVM.RotationPmpR == true)
             {
                 if (AnLinesA[0] != null)
@@ -72,9 +72,9 @@ namespace Teplo
                 }
                 AnLinesA[0].Name = "off";
             }
-            //                                         Конец заполнения обратного трубопровода
+            //                                         Конец заполнения обратного т\м трубопровода
 
-            //                                         Начало заполнения подаюшего трубопровода
+            //                                         Начало заполнения подаюшего т\м трубопровода
             if (GetButtons.ButtonsVC[9].IsState == true && GetButtons.ButtonsVC[7].IsState == false && GetButtons.ButtonsVC[8].IsState == false && GetButtons.ButtonsC[3].IsState == true && LinesA[11].Opacity == 1 && PumpAnimVM.RotationPmpR == true)
             {
                 LinesA[17].Opacity = 0;
@@ -100,7 +100,7 @@ namespace Teplo
                 }
                 AnLinesA[18].Name = "off";
             }
-            //                                         Конец заполнения подающего трубопровода
+            //                                         Конец заполнения подающего т\м трубопровода
             if (GetButtons.ButtonsVC[4].IsState == false)
             {
                 GetButtons.ButtonsVC[5].IsState = false;
@@ -116,6 +116,114 @@ namespace Teplo
                 AnLinesA[36].Name = "off";
             }
 
+            if (GetButtons.ButtonsVC[3].IsState == true && GetButtons.ButtonsSmlC[3].IsState == true && LinesA[37].Opacity == 1 && GetButtons.ButtonsVC[4].IsState == true && GetButtons.ButtonsVC[5].IsState == true && LinesA[35].Opacity == 1 && LinesA[19].Opacity == 1)
+            {
+                AnLinesA[38].Completed += new EventHandler(AnLines38_Completed);
+                LinesA[38].Opacity = 1;
+                if (AnLinesA[38].Name == null)
+                {
+                    LinesA[38].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[38]);
+                }
+                AnLinesA[38].Name = "off";
+            }
+
+        }
+
+        private static void AnLines38_Completed(object sender, EventArgs e)
+        {
+            AnLinesA[39].Completed += new EventHandler(AnLines39_Completed);
+            LinesA[39].Opacity = 1;
+            if (AnLinesA[39].Name == null)
+            {
+                LinesA[39].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[39]);
+            }
+            AnLinesA[39].Name = "off";
+            LinesA[40].Opacity = 1;
+            if (AnLinesA[40].Name == null)
+            {
+                LinesA[40].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[40]);
+            }
+            AnLinesA[40].Name = "off";
+        }
+        private static void AnLines39_Completed(object sender, EventArgs e)
+        {
+            AnLinesA[41].Completed += new EventHandler(AnLines41_Completed);
+            LinesA[41].Opacity = 1;
+            if (AnLinesA[41].Name == null)
+            {
+                LinesA[41].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[41]);
+            }
+            AnLinesA[41].Name = "off";
+        }
+        private static void AnLines41_Completed(object sender, EventArgs e)
+        {
+            AnLinesA[42].Completed += new EventHandler(AnLines42_Completed);
+            LinesA[42].Opacity = 1;
+            if (AnLinesA[42].Name == null)
+            {
+                LinesA[42].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[42]);
+            }
+            AnLinesA[42].Name = "off";
+        }
+        private static void AnLines42_Completed(object sender, EventArgs e)
+        {
+            AnLinesA[43].Completed += new EventHandler(AnLines43_Completed);
+            LinesA[43].Opacity = 1;
+            if (AnLinesA[43].Name == null)
+            {
+                LinesA[43].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[43]);
+            }
+            AnLinesA[43].Name = "off";
+        }
+        private static void AnLines43_Completed(object sender, EventArgs e)
+        {
+            AnLinesA[44].Completed += new EventHandler(AnLines44_Completed);
+            LinesA[44].Opacity = 1;
+            if (AnLinesA[44].Name == null)
+            {
+                LinesA[44].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[44]);
+            }
+            AnLinesA[44].Name = "off";
+        }
+        private static void AnLines44_Completed(object sender, EventArgs e)
+        {
+            AnLinesA[45].Completed += new EventHandler(AnLines45_Completed);
+            LinesA[45].Opacity = 1;
+            if (AnLinesA[45].Name == null)
+            {
+                LinesA[45].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[45]);
+            }
+            AnLinesA[45].Name = "off";
+        }
+        private static void AnLines45_Completed(object sender, EventArgs e)
+        {
+            AnLinesA[46].Completed += new EventHandler(AnLines46_Completed);
+            LinesA[46].Opacity = 1;
+            if (AnLinesA[46].Name == null)
+            {
+                LinesA[46].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[46]);
+            }
+            AnLinesA[46].Name = "off";
+        }
+        private static void AnLines46_Completed(object sender, EventArgs e)
+        {
+            AnLinesA[47].Completed += new EventHandler(AnLines47_Completed);
+            LinesA[47].Opacity = 1;
+            if (AnLinesA[47].Name == null)
+            {
+                LinesA[47].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[47]);
+            }
+            AnLinesA[47].Name = "off";
+        }
+        private static void AnLines47_Completed(object sender, EventArgs e)
+        {
+            //AnLinesA[48].Completed += new EventHandler(AnLines48_Completed);
+            LinesA[48].Opacity = 1;
+            if (AnLinesA[48].Name == null)
+            {
+                LinesA[48].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[48]);
+            }
+            AnLinesA[48].Name = "off";
         }
 
         private static void AnLines36_Completed(object sender, EventArgs e)
@@ -129,7 +237,7 @@ namespace Teplo
             AnLinesA[37].Name = "off";
         }
 
-        //                                         Начало заполнения обратного трубопровода
+        //                                         Начало заполнения обратного т\м трубопровода
         private static void AnLines0_Completed(object sender, EventArgs e)
         {
             if (PumpAnimVM.RotationPmpR == true)
@@ -342,9 +450,9 @@ namespace Teplo
                 AnLinesA[11].Name = "off";
             }
         }
-        //                                         Конец заполнения обратного трубопровода
+        //                                         Конец заполнения обратного т\м трубопровода
 
-        //                                         Начало заполнения подаюшего трубопровода
+        //                                         Начало заполнения подаюшего т\м трубопровода
         private static void AnLines18_Completed(object sender, EventArgs e)
         {
             if (PumpAnimVM.RotationPmpR == true)
@@ -557,6 +665,6 @@ namespace Teplo
                 AnLinesA[35].Name = "off";
             }
         }
-        //                                         Конец заполнения подающего трубопровода
+        //                                         Конец заполнения подающего т\м трубопровода
     }
 }

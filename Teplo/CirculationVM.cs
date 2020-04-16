@@ -15,16 +15,28 @@ namespace Teplo
 
         //public static ObservableCollection<Line> CircLinesA { get; set; } = new ObservableCollection<Line>();
         //public static ObservableCollection<DoubleAnimationUsingKeyFrames> CircAnLinesA { get; set; } = new ObservableCollection<DoubleAnimationUsingKeyFrames>();
+        public static bool StateCirc { get; set; } = true;
 
         public static void StartCirc()
         {
             if (GetButtons.ButtonsPmpLC[0].IsState == true && GetButtons.ButtonsC[1].IsState == true && WaterVM.LinesA[3].Opacity == 1 && WaterVM.LinesA[37].Opacity == 1 && GetButtons.ButtonsC[4].IsState == true || GetButtons.ButtonsSmlC[1].IsState == true)
             {
+                if (StateCirc == true)
+                {
+                    for (int i = 0; i < CircLines.Count; i++)
+                    {
+                        CircLines[i].Opacity = 1;
+                    }
+                    StartAnimation();
+                }
+            }
+            if (GetButtons.ButtonsPmpLC[0].IsState == false)
+            {
                 for (int i = 0; i < CircLines.Count; i++)
                 {
-                    CircLines[i].Opacity = 1;
+                    CircLines[i].Opacity = 0;
                 }
-                StartAnimation();
+                StopAnimation();
             }
         }
 
@@ -45,6 +57,23 @@ namespace Teplo
             CircLines[8].BeginAnimation(Line.Y2Property, CircAnLines[8]);
             CircLines[9].BeginAnimation(Line.Y2Property, CircAnLines[9]);
             CircLines[10].BeginAnimation(Line.X2Property, CircAnLines[10]);
+            StateCirc = false;
+        }
+
+        public static void StopAnimation()
+        {
+            CircLines[0].BeginAnimation(Line.X2Property, null);
+            CircLines[1].BeginAnimation(Line.X2Property, null);
+            CircLines[2].BeginAnimation(Line.X2Property, null);
+            CircLines[3].BeginAnimation(Line.Y2Property, null);
+            CircLines[4].BeginAnimation(Line.Y2Property, null);
+            CircLines[5].BeginAnimation(Line.Y2Property, null);
+            CircLines[6].BeginAnimation(Line.X2Property, null);
+            CircLines[7].BeginAnimation(Line.X2Property, null);
+            CircLines[8].BeginAnimation(Line.Y2Property, null);
+            CircLines[9].BeginAnimation(Line.Y2Property, null);
+            CircLines[10].BeginAnimation(Line.X2Property, null);
+            StateCirc = true;
         }
 
     }
