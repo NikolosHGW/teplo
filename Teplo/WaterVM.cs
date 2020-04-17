@@ -116,6 +116,7 @@ namespace Teplo
                 AnLinesA[36].Name = "off";
             }
 
+            //Заполнение обратного р\с трубопровода 
             if (GetButtons.ButtonsVC[3].IsState == true && GetButtons.ButtonsSmlC[3].IsState == true && LinesA[37].Opacity == 1 && GetButtons.ButtonsVC[4].IsState == true && GetButtons.ButtonsVC[5].IsState == true && LinesA[35].Opacity == 1 && LinesA[19].Opacity == 1)
             {
                 AnLinesA[38].Completed += new EventHandler(AnLines38_Completed);
@@ -126,9 +127,22 @@ namespace Teplo
                 }
                 AnLinesA[38].Name = "off";
             }
+            
+            //Заполнение подающего р\с трубопровода
+            if (LinesA[44].Opacity == 1 && GetButtons.ButtonsVC[11].IsState == true && GetButtons.ButtonsVC[12].IsState == true)
+            {
+                AnLinesA[45].Completed += new EventHandler(AnLines45_Completed);
+                LinesA[45].Opacity = 1;
+                if (AnLinesA[45].Name == null)
+                {
+                    LinesA[45].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[45]);
+                }
+                AnLinesA[45].Name = "off";
+            }
 
         }
 
+        //Заполнение обртаного р\с трубопровода
         private static void AnLines38_Completed(object sender, EventArgs e)
         {
             AnLinesA[39].Completed += new EventHandler(AnLines39_Completed);
@@ -177,7 +191,7 @@ namespace Teplo
         }
         private static void AnLines43_Completed(object sender, EventArgs e)
         {
-            AnLinesA[44].Completed += new EventHandler(AnLines44_Completed);
+            //AnLinesA[44].Completed += new EventHandler(AnLines44_Completed);
             LinesA[44].Opacity = 1;
             if (AnLinesA[44].Name == null)
             {
@@ -185,16 +199,18 @@ namespace Teplo
             }
             AnLinesA[44].Name = "off";
         }
-        private static void AnLines44_Completed(object sender, EventArgs e)
-        {
-            AnLinesA[45].Completed += new EventHandler(AnLines45_Completed);
-            LinesA[45].Opacity = 1;
-            if (AnLinesA[45].Name == null)
-            {
-                LinesA[45].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[45]);
-            }
-            AnLinesA[45].Name = "off";
-        }
+        //Конец заполнения обратного р\с трубопровода
+
+        //private static void AnLines44_Completed(object sender, EventArgs e)
+        //{
+        //    AnLinesA[45].Completed += new EventHandler(AnLines45_Completed);
+        //    LinesA[45].Opacity = 1;
+        //    if (AnLinesA[45].Name == null)
+        //    {
+        //        LinesA[45].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[45]);
+        //    }
+        //    AnLinesA[45].Name = "off";
+        //}
         private static void AnLines45_Completed(object sender, EventArgs e)
         {
             AnLinesA[46].Completed += new EventHandler(AnLines46_Completed);

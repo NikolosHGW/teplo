@@ -105,6 +105,12 @@
             <Line x:Name="line8a35" X1="0" Y1="0" X2="0" Y2="134" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="180" Canvas.Top="388"/>
             <Line x:Name="line9a36" X1="0" Y1="0" X2="0" Y2="29" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="180" Canvas.Top="259"/>
             <Line x:Name="line10a37" X1="0" Y1="0" X2="-89" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="267" Canvas.Top="262"/>
+            <Line x:Name="line11a47" X1="0" Y1="0" X2="45" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="923" Canvas.Top="521"/>
+            <Line x:Name="line12a46" X1="0" Y1="0" X2="0" Y2="77" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="966" Canvas.Top="518"/>
+            <Line x:Name="line13a45" X1="0" Y1="0" X2="-174" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="968" Canvas.Top="593"/>
+            <Line x:Name="line14a44" X1="0" Y1="0" X2="276" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="794" Canvas.Top="672"/>
+            <Line x:Name="line15a43" X1="0" Y1="0" X2="0" Y2="-415" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="1069" Canvas.Top="675"/>
+            <Line x:Name="line16a42" X1="0" Y1="0" X2="-153" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="1073" Canvas.Top="262"/>
             <!--ЛОПАСТИ НАСОСОВ-->
             <Line x:Name="blade1" X1="0" Y1="0" X2="60" Y2="0" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="372" Canvas.Top="164" RenderTransformOrigin="0.5,0.5">
                 <Line.RenderTransform>
