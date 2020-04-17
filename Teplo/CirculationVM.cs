@@ -74,14 +74,20 @@ namespace Teplo
             CircLines[0].BeginAnimation(Line.X2Property, null);
             CircLines[1].BeginAnimation(Line.X2Property, null);
             CircLines[2].BeginAnimation(Line.X2Property, null);
-            CircLines[3].BeginAnimation(Line.Y2Property, null);
-            CircLines[4].BeginAnimation(Line.Y2Property, null);
-            CircLines[5].BeginAnimation(Line.Y2Property, null);
+            //CircLines[3].BeginAnimation(Line.Y2Property, null);
+            //CircLines[4].BeginAnimation(Line.Y2Property, null);
+            //CircLines[5].BeginAnimation(Line.Y2Property, null);
             CircLines[6].BeginAnimation(Line.X2Property, null);
             CircLines[7].BeginAnimation(Line.X2Property, null);
             CircLines[8].BeginAnimation(Line.Y2Property, null);
             CircLines[9].BeginAnimation(Line.Y2Property, null);
             CircLines[10].BeginAnimation(Line.X2Property, null);
+            CircLines[11].BeginAnimation(Line.X2Property, null);
+            CircLines[12].BeginAnimation(Line.Y2Property, null);
+            CircLines[13].BeginAnimation(Line.X2Property, null);
+            CircLines[14].BeginAnimation(Line.X2Property, null);
+            CircLines[15].BeginAnimation(Line.Y2Property, null);
+            CircLines[16].BeginAnimation(Line.X2Property, null);
             StateCirc = true;
         }
 
