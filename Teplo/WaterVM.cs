@@ -140,6 +140,41 @@ namespace Teplo
                 AnLinesA[45].Name = "off";
             }
 
+            if (GetButtons.ButtonsVC[4].IsState == true && GetButtons.ButtonsVC[5].IsState == true && CirculationVM.CircLines[9].Opacity == 1 && CirculationVM.CircLines[8].Opacity == 1 && GetButtons.ButtonsSmlC[0].IsState == true)
+            {
+                CirculationVM.CircLines[8].Stroke = System.Windows.Media.Brushes.Red;
+                LinesA[35].Stroke = System.Windows.Media.Brushes.Red;
+                CirculationVM.CircLines[7].Stroke = System.Windows.Media.Brushes.Red;
+                LinesA[33].Stroke = System.Windows.Media.Brushes.Red;
+                CirculationVM.CircLines[6].Stroke = System.Windows.Media.Brushes.Red;
+                LinesA[22].Stroke = System.Windows.Media.Brushes.Red;
+                CirculationVM.CircLines[11].Stroke = System.Windows.Media.Brushes.Red;
+                LinesA[47].Stroke = System.Windows.Media.Brushes.Red;
+                CirculationVM.CircLines[12].Stroke = System.Windows.Media.Brushes.Red;
+                LinesA[46].Stroke = System.Windows.Media.Brushes.Red;
+                CirculationVM.CircLines[13].Stroke = System.Windows.Media.Brushes.Red;
+                LinesA[45].Stroke = System.Windows.Media.Brushes.Red;
+                LinesA[34].Stroke = System.Windows.Media.Brushes.Red;
+                LinesA[23].Stroke = System.Windows.Media.Brushes.Red;
+            }
+            else
+            {
+                CirculationVM.CircLines[8].Stroke = System.Windows.Media.Brushes.Blue;
+                LinesA[35].Stroke = System.Windows.Media.Brushes.Blue;
+                CirculationVM.CircLines[7].Stroke = System.Windows.Media.Brushes.Blue;
+                LinesA[33].Stroke = System.Windows.Media.Brushes.Blue;
+                CirculationVM.CircLines[6].Stroke = System.Windows.Media.Brushes.Blue;
+                LinesA[22].Stroke = System.Windows.Media.Brushes.Blue;
+                CirculationVM.CircLines[11].Stroke = System.Windows.Media.Brushes.Blue;
+                LinesA[47].Stroke = System.Windows.Media.Brushes.Blue;
+                CirculationVM.CircLines[12].Stroke = System.Windows.Media.Brushes.Blue;
+                LinesA[46].Stroke = System.Windows.Media.Brushes.Blue;
+                CirculationVM.CircLines[13].Stroke = System.Windows.Media.Brushes.Blue;
+                LinesA[45].Stroke = System.Windows.Media.Brushes.Blue;
+                LinesA[34].Stroke = System.Windows.Media.Brushes.Blue;
+                LinesA[23].Stroke = System.Windows.Media.Brushes.Blue;
+            }
+
         }
 
         //Заполнение обртаного р\с трубопровода
