@@ -24,9 +24,10 @@ namespace Teplo
         public static DoubleAnimation Blade21Anim { get; set; }
         public static DoubleAnimation Blade22Anim { get; set; }
         public static bool RotationPmpR { get; private set; }
-        public static void StartPmpR()
+
+        public static void StartPmpR(int l, int t)
         {
-            if (GetButtons.ButtonsPmpRC[0].IsState == true)
+            if (GetButtons.ButtonsPmpRC[0].IsState == true && l == 380 && t == 146)
             {
                 MStart.Open(new Uri("../../../Resources/Zapusk.mp3", UriKind.RelativeOrAbsolute)); /*C:/Users/Николос/source/repos/teplo/Teplo/Resources/Start.mp3" */ //дома /*C:/Users/Nikolos/Desktop/All/Новая папка/Картинки для проекта/Запуск.mp3*/ запасной метод Directory.GetCurrentDirectory() + "/Sounds/Zapusk.mp3"
                 MStart.Play();
@@ -34,7 +35,7 @@ namespace Teplo
                 Blade2.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, Blade2Anim);
                 RotationPmpR = true;
             }
-            if (GetButtons.ButtonsPmpRC[0].IsState == false)
+            if (GetButtons.ButtonsPmpRC[0].IsState == false && l == 380 && t == 146)
             {
                 MStop.Open(new Uri("../../../Resources/Ostanov.mp3", UriKind.RelativeOrAbsolute)); //C:/Users/Николос/Downloads/Останов.mp3   дома C:/Users/Nikolos/Desktop/All/Новая папка/Картинки для проекта/Останов.mp3 запасной метод Directory.GetCurrentDirectory() + "/Sounds/Ostanov.mp3"
                 MStop.Play();
@@ -43,16 +44,16 @@ namespace Teplo
                 RotationPmpR = false;
             }
         }
-        public static void StartPmpL()
+        public static void StartPmpL(int l, int t)
         {
-            if (GetButtons.ButtonsPmpLC[0].IsState == true)
+            if (GetButtons.ButtonsPmpLC[0].IsState == true && l == 349 && t == 246)
             {
                 MStart.Open(new Uri("../../../Resources/Zapusk.mp3", UriKind.RelativeOrAbsolute));
                 MStart.Play();
                 Blade21.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, Blade21Anim);
                 Blade22.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, Blade22Anim);
             }
-            if (GetButtons.ButtonsPmpLC[0].IsState == false)
+            if (GetButtons.ButtonsPmpLC[0].IsState == false && l == 349 && t == 246)
             {
                 MStop.Open(new Uri("../../../Resources/Ostanov.mp3", UriKind.RelativeOrAbsolute)); /*C:/Users/Николос/Downloads/Останов.mp3*/
                 MStop.Play();

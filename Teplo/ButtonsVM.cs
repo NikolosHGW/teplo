@@ -76,7 +76,9 @@ namespace Teplo
         };
         public ObservableCollection<Button> ButtonsPmpL { get; } = new ObservableCollection<Button>
         {
-            new Button(349, 246) // pump 2 // ButtonPmpL[0]
+            new Button(349, 246), // pump 2 // ButtonPmpL[0]
+            new Button(349, 310), // ButtonPmpL[1]
+            new Button(349, 374) // ButtonPmpL[2]
         };
         private RelayCommand stateCommand;
         public RelayCommand StateCommand
@@ -95,10 +97,8 @@ namespace Teplo
             button.IsState = !button.IsState;
             WaterVM.Start();
             CirculationVM.StartCirc();
-            if (button.Left == 380 && button.Top == 146)
-                PumpAnimVM.StartPmpR();
-            if (button.Left == 349 && button.Top == 246)
-                PumpAnimVM.StartPmpL();
+            PumpAnimVM.StartPmpR(button.Left, button.Top);
+            PumpAnimVM.StartPmpL(button.Left, button.Top);
             //Game.StartGame();
             //for(int i = 0; i < 5; i++)
             //{

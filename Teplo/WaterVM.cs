@@ -140,6 +140,7 @@ namespace Teplo
                 AnLinesA[45].Name = "off";
             }
 
+            //Подача пара. Подсвечивание прямого трубопровода
             if (GetButtons.ButtonsVC[4].IsState == true && GetButtons.ButtonsVC[5].IsState == true && CirculationVM.CircLines[9].Opacity == 1 && CirculationVM.CircLines[8].Opacity == 1 && GetButtons.ButtonsSmlC[0].IsState == true)
             {
                 CirculationVM.CircLines[8].Stroke = System.Windows.Media.Brushes.Red;
