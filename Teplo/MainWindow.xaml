@@ -71,7 +71,7 @@
             <Line x:Name="line46" X1="0" Y1="0" X2="0" Y2="-75" Opacity="0" Stroke="Blue" StrokeThickness="2" Canvas.Left="966" Canvas.Top="595"/>
             <Line x:Name="line47" X1="0" Y1="0" X2="-44" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="2" Canvas.Left="967" Canvas.Top="521"/>
             <Line x:Name="line48" X1="0" Y1="0" X2="0" Y2="-56" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="926" Canvas.Top="523"/>
-            
+
             <!--
             <Line x:Name="line16" X1="0" Y1="0" X2="0" Y2="96" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="344"/>
             <Line x:Name="line17" X1="0" Y1="0" X2="18" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="870" Canvas.Top="386"/>
@@ -93,6 +93,12 @@
             <Line x:Name="line33" X1="0" Y1="0" X2="0" Y2="59" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="723" Canvas.Top="464"/>
             <Line x:Name="line34" X1="0" Y1="0" X2="160" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="715" Canvas.Top="521"/>
             <Line x:Name="line35" X1="0" Y1="0" X2="0" Y2="57" Opacity="0" Stroke="Blue" StrokeThickness="4" Canvas.Left="869" Canvas.Top="466"/>-->
+            <!--ВРЕМЕННЫЕ ЛИНИИ ДЛЯ ДОПОЛНЕНИЯ СХЕМЫ-->
+            <Line X1="0" Y1="0" X2="220" Y2="0" Stroke="Black" Canvas.Left="239" Canvas.Top="325" StrokeThickness="5"/>
+            <Line X1="0" Y1="0" X2="220" Y2="0" Stroke="Black" Canvas.Left="239" Canvas.Top="389" StrokeThickness="5"/>
+            <Line X1="0" Y1="0" X2="0" Y2="131" Stroke="Black" Canvas.Left="237" Canvas.Top="261" StrokeThickness="5"/>
+            <Line X1="0" Y1="0" X2="0" Y2="131" Stroke="Black" Canvas.Left="459" Canvas.Top="262" StrokeThickness="5"/>
+            <!--ВРЕМЕННЫЕ ЛИНИИ ДЛЯ ДОПОЛНЕНИЯ СХЕМЫ-->
             <!--ЛИНИИ ЦИРКУЛЯЦИИ-->
             <Line x:Name="line0a2" X1="0" Y1="0" X2="-114" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="558" Canvas.Top="262"/>
             <Line x:Name="line1a5" X1="0" Y1="0" X2="-55" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="661" Canvas.Top="262"/>
@@ -128,6 +134,26 @@
                 </Line.RenderTransform>
             </Line>
             <Line x:Name="blade22" X1="0" Y1="0" X2="0" Y2="50" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="366" Canvas.Top="238" RenderTransformOrigin="0.5,0.5">
+                <Line.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Line.RenderTransform>
+            </Line>
+            <Line x:Name="blade31" X1="0" Y1="0" X2="50" Y2="0" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="340" Canvas.Top="325" RenderTransformOrigin="0.5,0.5">
+                <Line.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Line.RenderTransform>
+            </Line>
+            <Line x:Name="blade32" X1="0" Y1="0" X2="0" Y2="50" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="366" Canvas.Top="302" RenderTransformOrigin="0.5,0.5">
+                <Line.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Line.RenderTransform>
+            </Line>
+            <Line x:Name="blade41" X1="0" Y1="0" X2="50" Y2="0" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="340" Canvas.Top="389" RenderTransformOrigin="0.5,0.5">
+                <Line.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Line.RenderTransform>
+            </Line>
+            <Line x:Name="blade42" X1="0" Y1="0" X2="0" Y2="50" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="366" Canvas.Top="366" RenderTransformOrigin="0.5,0.5">
                 <Line.RenderTransform>
                     <RotateTransform Angle="0"/>
                 </Line.RenderTransform>
@@ -267,6 +293,8 @@
             <!--ВРЕМЕННЫЙ КОД ИНФО-->
             <TextBlock Text="ButtonPmpR[0]" Opacity="{Binding Opa}" Canvas.Left="365" Canvas.Top="117"/>
             <TextBlock Text="ButtonPmpL[0]" Opacity="{Binding Opa}" Canvas.Left="322" Canvas.Top="206"/>
+            <TextBlock Text="PmpL[1]" Opacity="{Binding Opa}" Canvas.Left="345" Canvas.Top="289"/>
+            <TextBlock Text="PmpL[2]" Opacity="{Binding Opa}" Canvas.Left="345" Canvas.Top="353"/>
             <TextBlock Text="Button[0]" Opacity="{Binding Opa}" Canvas.Left="443" Canvas.Top="132"/>
             <TextBlock Text="Button[1]" Opacity="{Binding Opa}" Canvas.Left="395" Canvas.Top="222"/>
             <TextBlock Text="Button[2]" Opacity="{Binding Opa}" Canvas.Left="556" Canvas.Top="223"/>
@@ -275,11 +303,17 @@
             <TextBlock Text="Button[5]" Opacity="{Binding Opa}" Canvas.Left="873" Canvas.Top="221"/>
             <TextBlock Text="Button[6]" Opacity="{Binding Opa}" Canvas.Left="662" Canvas.Top="480"/>
             <TextBlock Text="Button[7]" Opacity="{Binding Opa}" Canvas.Left="875" Canvas.Top="483"/>
+            <TextBlock Text="Button[8]" Opacity="{Binding Opa}" Canvas.Left="395" Canvas.Top="292"/>
+            <TextBlock Text="Button[9]" Opacity="{Binding Opa}" Canvas.Left="395" Canvas.Top="356"/>
+            <TextBlock Text="Button[10]" Opacity="{Binding Opa}" Canvas.Left="265" Canvas.Top="290"/>
+            <TextBlock Text="Button[11]" Opacity="{Binding Opa}" Canvas.Left="265" Canvas.Top="353"/>
             <TextBlock Text="ButtonV[0]" Opacity="{Binding Opa}" Canvas.Left="798" Canvas.Top="443"/>
             <TextBlock Text="ButtonV[1]" Opacity="{Binding Opa}" Canvas.Left="942" Canvas.Top="445"/>
             <TextBlock Text="ButtonSml[2]" Opacity="{Binding Opa}" Canvas.Left="651" Canvas.Top="352"/>
             <TextBlock Text="ButtonSml[3]" Opacity="{Binding Opa}" Canvas.Left="873" Canvas.Top="354"/>
-            <TextBlock Text="ButtonSml[1]" Opacity="{Binding Opa}" Canvas.Left="255" Canvas.Top="306"/>
+            <TextBlock Text="ButtonSml[1]" Opacity="{Binding Opa}" Canvas.Left="199" Canvas.Top="274"/>
+            <TextBlock Text="ButtonSml[7]" Opacity="{Binding Opa}" Canvas.Left="199" Canvas.Top="341"/>
+            <TextBlock Text="ButtonSml[8]" Opacity="{Binding Opa}" Canvas.Left="199" Canvas.Top="401"/>
             <TextBlock Text="ButtonV[2]" Opacity="{Binding Opa}" Canvas.Left="800" Canvas.Top="322"/>
             <TextBlock Text="ButtonV[3]" Opacity="{Binding Opa}" Canvas.Left="941" Canvas.Top="319"/>
             <TextBlock Text="ButtonV[4]" Opacity="{Binding Opa}" Canvas.Left="98" Canvas.Top="291"/>

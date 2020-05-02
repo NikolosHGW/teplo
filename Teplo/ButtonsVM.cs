@@ -42,6 +42,10 @@ namespace Teplo
             new Button(873, 252), // valve 6 // Button[5]
             new Button(667, 505), // valve 7 // Button[6]
             new Button(875, 506), // valve 8 // Button[7]
+            new Button(396, 312), // Button[8]
+            new Button(396, 376), // Button[9]
+            new Button(267, 310), // Button[10]
+            new Button(267, 374), // Button[11]
         };
         public ObservableCollection<Button> ButtonsV { get; } = new ObservableCollection<Button>
         {
@@ -68,7 +72,9 @@ namespace Teplo
             new Button(887, 378), // valve 12 // ButtonSml[3]
             new Button(767, 585), // valve 23 // ButtonSml[4]
             new Button(767, 665), // valve 24 // ButtonSml[5]
-            new Button(768, 625)  // valve 25 // ButtonSml[6]
+            new Button(768, 625), // valve 25 // ButtonSml[6]
+            new Button(277, 339), // ButtonSml[7]
+            new Button(277, 403), // ButtonSml[8]
         };
         public ObservableCollection<Button> ButtonsPmpR { get; } = new ObservableCollection<Button>
         {

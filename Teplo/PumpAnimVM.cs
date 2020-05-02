@@ -23,6 +23,14 @@ namespace Teplo
         public static Line Blade22 { get; set; }
         public static DoubleAnimation Blade21Anim { get; set; }
         public static DoubleAnimation Blade22Anim { get; set; }
+        public static Line Blade31 { get; set; }
+        public static Line Blade32 { get; set; }
+        public static DoubleAnimation Blade31Anim { get; set; }
+        public static DoubleAnimation Blade32Anim { get; set; }
+        public static Line Blade41 { get; set; }
+        public static Line Blade42 { get; set; }
+        public static DoubleAnimation Blade41Anim { get; set; }
+        public static DoubleAnimation Blade42Anim { get; set; }
         public static bool RotationPmpR { get; private set; }
 
         public static void StartPmpR(int l, int t)
@@ -46,6 +54,7 @@ namespace Teplo
         }
         public static void StartPmpL(int l, int t)
         {
+            //Насос номер 0
             if (GetButtons.ButtonsPmpLC[0].IsState == true && l == 349 && t == 246)
             {
                 MStart.Open(new Uri("../../../Resources/Zapusk.mp3", UriKind.RelativeOrAbsolute));
@@ -59,6 +68,36 @@ namespace Teplo
                 MStop.Play();
                 Blade21.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, null);
                 Blade22.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, null);
+            }
+            //Насос номер 1
+            if (GetButtons.ButtonsPmpLC[1].IsState == true && l == 349 && t == 310)
+            {
+                MStart.Open(new Uri("../../../Resources/Zapusk.mp3", UriKind.RelativeOrAbsolute));
+                MStart.Play();
+                Blade31.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, Blade31Anim);
+                Blade32.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, Blade32Anim);
+            }
+            if (GetButtons.ButtonsPmpLC[1].IsState == false && l == 349 && t == 310)
+            {
+                MStop.Open(new Uri("../../../Resources/Ostanov.mp3", UriKind.RelativeOrAbsolute));
+                MStop.Play();
+                Blade31.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, null);
+                Blade32.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, null);
+            }
+            //Насос номер 2
+            if (GetButtons.ButtonsPmpLC[2].IsState == true && l == 349 && t == 374)
+            {
+                MStart.Open(new Uri("../../../Resources/Zapusk.mp3", UriKind.RelativeOrAbsolute));
+                MStart.Play();
+                Blade41.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, Blade41Anim);
+                Blade42.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, Blade42Anim);
+            }
+            if (GetButtons.ButtonsPmpLC[2].IsState == false && l == 349 && t == 374)
+            {
+                MStop.Open(new Uri("../../../Resources/Ostanov.mp3", UriKind.RelativeOrAbsolute));
+                MStop.Play();
+                Blade41.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, null);
+                Blade42.RenderTransform.BeginAnimation(RotateTransform.AngleProperty, null);
             }
         }
     }

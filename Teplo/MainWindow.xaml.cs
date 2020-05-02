@@ -62,6 +62,42 @@ namespace Teplo
             blade22Anim.Duration = TimeSpan.FromSeconds(0.3);
             blade22Anim.RepeatBehavior = RepeatBehavior.Forever;
 
+            DoubleAnimation blade31Anim = new DoubleAnimation();
+            PumpAnimVM.Blade31Anim = blade31Anim;
+            PumpAnimVM.Blade31 = blade31;
+            DoubleAnimation blade32Anim = new DoubleAnimation();
+            PumpAnimVM.Blade32Anim = blade32Anim;
+            PumpAnimVM.Blade32 = blade32;
+
+            blade31Anim.From = 0;
+            blade31Anim.To = -360;
+            blade31Anim.BeginTime = TimeSpan.FromSeconds(1);
+            blade31Anim.Duration = TimeSpan.FromSeconds(0.3);
+            blade31Anim.RepeatBehavior = RepeatBehavior.Forever;
+            blade32Anim.From = 0;
+            blade32Anim.To = -360;
+            blade32Anim.BeginTime = TimeSpan.FromSeconds(1);
+            blade32Anim.Duration = TimeSpan.FromSeconds(0.3);
+            blade32Anim.RepeatBehavior = RepeatBehavior.Forever;
+
+            DoubleAnimation blade41Anim = new DoubleAnimation();
+            PumpAnimVM.Blade41Anim = blade41Anim;
+            PumpAnimVM.Blade41 = blade41;
+            DoubleAnimation blade42Anim = new DoubleAnimation();
+            PumpAnimVM.Blade42Anim = blade42Anim;
+            PumpAnimVM.Blade42 = blade42;
+
+            blade41Anim.From = 0;
+            blade41Anim.To = -360;
+            blade41Anim.BeginTime = TimeSpan.FromSeconds(1);
+            blade41Anim.Duration = TimeSpan.FromSeconds(0.3);
+            blade41Anim.RepeatBehavior = RepeatBehavior.Forever;
+            blade42Anim.From = 0;
+            blade42Anim.To = -360;
+            blade42Anim.BeginTime = TimeSpan.FromSeconds(1);
+            blade42Anim.Duration = TimeSpan.FromSeconds(0.3);
+            blade42Anim.RepeatBehavior = RepeatBehavior.Forever;
+
             //                                              Анимация Line0
             DoubleAnimationUsingKeyFrames anLine0 = new DoubleAnimationUsingKeyFrames();
             anLine0.KeyFrames.Add(
