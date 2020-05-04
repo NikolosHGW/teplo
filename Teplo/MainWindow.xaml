@@ -330,13 +330,13 @@
             <TextBlock Text="ButtonV[7]" Opacity="{Binding Opa}" Canvas.Left="568" Canvas.Top="318"/>
             <TextBlock Text="ButtonV[8]" Opacity="{Binding Opa}" Canvas.Left="741" Canvas.Top="319"/>
             <TextBlock Text="ButtonV[9]" Opacity="{Binding Opa}" Canvas.Left="740" Canvas.Top="442"/>
-            <TextBlock Text="ButtonSml[4]" Opacity="{Binding Opa}" Canvas.Left="746" Canvas.Top="557"/>
-            <TextBlock Text="ButtonSml[5]" Opacity="{Binding Opa}" Canvas.Left="751" Canvas.Top="681"/>
-            <TextBlock Text="Sml[6]" Opacity="{Binding Opa}" Canvas.Left="764" Canvas.Top="606"/>
-            <TextBlock Text="ButtonV[10]" Opacity="{Binding Opa}" Canvas.Left="676" Canvas.Top="604"/>
-            <TextBlock Text="ButtonV[11]" Opacity="{Binding Opa}" Canvas.Left="815" Canvas.Top="608"/>
-            <TextBlock Text="ButtonV[12]" Opacity="{Binding Opa}" Canvas.Left="813" Canvas.Top="638"/>
-            <TextBlock Text="ButtonV[13]" Opacity="{Binding Opa}" Canvas.Left="677" Canvas.Top="639"/>
+            <TextBlock Text="ButtonSml[4]" Opacity="{Binding Opa}" Canvas.Left="1020" Canvas.Top="381"/>
+            <TextBlock Text="ButtonSml[5]" Opacity="{Binding Opa}" Canvas.Left="1161" Canvas.Top="530"/>
+            <TextBlock Text="Sml[6]" Opacity="{Binding Opa}" Canvas.Left="1179" Canvas.Top="238"/>
+            <TextBlock Text="ButtonV[10]" Opacity="{Binding Opa}" Canvas.Left="1246" Canvas.Top="229"/>
+            <TextBlock Text="ButtonV[11]" Opacity="{Binding Opa}" Canvas.Left="1073" Canvas.Top="327"/>
+            <TextBlock Text="ButtonV[12]" Opacity="{Binding Opa}" Canvas.Left="1074" Canvas.Top="447"/>
+            <TextBlock Text="ButtonV[13]" Opacity="{Binding Opa}" Canvas.Left="1245" Canvas.Top="528"/>
             <TextBlock Text="ButtonV[14]" Opacity="{Binding Opa}" Canvas.Left="454" Canvas.Top="394"/>
             <Button x:Name="INFO" Content="Info" Command="{Binding InfoCommand}" Canvas.Left="279" Canvas.Top="72"/>
             <!--ВРЕМЕННЫЙ КОД ИНФО-->
@@ -353,7 +353,7 @@
                 </Button.RenderTransform>
                 <Image x:Name="valveImage9" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
             </Button>-->
-            <!--<Button x:Name="valve11" Opacity="1" Canvas.Left="952" Canvas.Top="349" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+            <!--<Button x:Name="valve11" Opacity="1" Canvas.Left="1220" Canvas.Top="528" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
                 <Image x:Name="valveImage11" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
             </Button>-->
         </Canvas>
