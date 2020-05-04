@@ -321,6 +321,7 @@
             <TextBlock Text="ButtonSml[12]" Opacity="{Binding Opa}" Canvas.Left="729" Canvas.Top="380"/>
             <TextBlock Text="ButtonSml[13]" Opacity="{Binding Opa}" Canvas.Left="792" Canvas.Top="367"/>
             <TextBlock Text="ButtonSml[14]" Opacity="{Binding Opa}" Canvas.Left="936" Canvas.Top="367"/>
+            <TextBlock Text="ButtonSml[15]" Opacity="{Binding Opa}" Canvas.Left="1210" Canvas.Top="280"/>
             <TextBlock Text="ButtonV[2]" Opacity="{Binding Opa}" Canvas.Left="800" Canvas.Top="322"/>
             <TextBlock Text="ButtonV[3]" Opacity="{Binding Opa}" Canvas.Left="941" Canvas.Top="319"/>
             <TextBlock Text="ButtonV[4]" Opacity="{Binding Opa}" Canvas.Left="98" Canvas.Top="291"/>
