@@ -297,7 +297,7 @@
             <TextBlock Text="PmpL[2]" Opacity="{Binding Opa}" Canvas.Left="345" Canvas.Top="353"/>
             <TextBlock Text="Button[0]" Opacity="{Binding Opa}" Canvas.Left="443" Canvas.Top="132"/>
             <TextBlock Text="Button[1]" Opacity="{Binding Opa}" Canvas.Left="395" Canvas.Top="222"/>
-            <TextBlock Text="Button[2]" Opacity="{Binding Opa}" Canvas.Left="556" Canvas.Top="223"/>
+            <TextBlock Text="Button[2]" Opacity="{Binding Opa}" Canvas.Left="552" Canvas.Top="281"/>
             <TextBlock Text="Button[3]" Opacity="{Binding Opa}" Canvas.Left="660" Canvas.Top="224"/>
             <TextBlock Text="Button[4]" Opacity="{Binding Opa}" Canvas.Left="265" Canvas.Top="220"/>
             <TextBlock Text="Button[5]" Opacity="{Binding Opa}" Canvas.Left="873" Canvas.Top="221"/>
@@ -307,6 +307,7 @@
             <TextBlock Text="Button[9]" Opacity="{Binding Opa}" Canvas.Left="395" Canvas.Top="356"/>
             <TextBlock Text="Button[10]" Opacity="{Binding Opa}" Canvas.Left="265" Canvas.Top="290"/>
             <TextBlock Text="Button[11]" Opacity="{Binding Opa}" Canvas.Left="265" Canvas.Top="353"/>
+            <TextBlock Text="Button[12]" Opacity="{Binding Opa}" Canvas.Left="549" Canvas.Top="487"/>
             <TextBlock Text="ButtonV[0]" Opacity="{Binding Opa}" Canvas.Left="798" Canvas.Top="443"/>
             <TextBlock Text="ButtonV[1]" Opacity="{Binding Opa}" Canvas.Left="942" Canvas.Top="445"/>
             <TextBlock Text="ButtonSml[2]" Opacity="{Binding Opa}" Canvas.Left="651" Canvas.Top="352"/>
@@ -314,6 +315,12 @@
             <TextBlock Text="ButtonSml[1]" Opacity="{Binding Opa}" Canvas.Left="199" Canvas.Top="274"/>
             <TextBlock Text="ButtonSml[7]" Opacity="{Binding Opa}" Canvas.Left="199" Canvas.Top="341"/>
             <TextBlock Text="ButtonSml[8]" Opacity="{Binding Opa}" Canvas.Left="199" Canvas.Top="401"/>
+            <TextBlock Text="ButtonSml[9]" Opacity="{Binding Opa}" Canvas.Left="544" Canvas.Top="199"/>
+            <TextBlock Text="ButtonSml[10]" Opacity="{Binding Opa}" Canvas.Left="540" Canvas.Top="570"/>
+            <TextBlock Text="ButtonSml[11]" Opacity="{Binding Opa}" Canvas.Left="557" Canvas.Top="381"/>
+            <TextBlock Text="ButtonSml[12]" Opacity="{Binding Opa}" Canvas.Left="729" Canvas.Top="380"/>
+            <TextBlock Text="ButtonSml[13]" Opacity="{Binding Opa}" Canvas.Left="792" Canvas.Top="367"/>
+            <TextBlock Text="ButtonSml[14]" Opacity="{Binding Opa}" Canvas.Left="936" Canvas.Top="367"/>
             <TextBlock Text="ButtonV[2]" Opacity="{Binding Opa}" Canvas.Left="800" Canvas.Top="322"/>
             <TextBlock Text="ButtonV[3]" Opacity="{Binding Opa}" Canvas.Left="941" Canvas.Top="319"/>
             <TextBlock Text="ButtonV[4]" Opacity="{Binding Opa}" Canvas.Left="98" Canvas.Top="291"/>
@@ -330,9 +337,25 @@
             <TextBlock Text="ButtonV[11]" Opacity="{Binding Opa}" Canvas.Left="815" Canvas.Top="608"/>
             <TextBlock Text="ButtonV[12]" Opacity="{Binding Opa}" Canvas.Left="813" Canvas.Top="638"/>
             <TextBlock Text="ButtonV[13]" Opacity="{Binding Opa}" Canvas.Left="677" Canvas.Top="639"/>
+            <TextBlock Text="ButtonV[14]" Opacity="{Binding Opa}" Canvas.Left="454" Canvas.Top="394"/>
             <Button x:Name="INFO" Content="Info" Command="{Binding InfoCommand}" Canvas.Left="279" Canvas.Top="72"/>
             <!--ВРЕМЕННЫЙ КОД ИНФО-->
             <Button x:Name="Reset" Content="Reset" Command="{Binding ResetCommand}" Canvas.Left="926" Canvas.Top="112"/>
+            <!--ДЛЯ КНОПОК-->
+            <!--<Button x:Name="valve9" Opacity="1" Click="Button_ClickValve9" Canvas.Left="100" Canvas.Top="444" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-88.81"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Image x:Name="valveImage9" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="22"/>
+            </Button>-->
+            <!--<Button x:Name="valve11" Opacity="1" Canvas.Left="952" Canvas.Top="349" RenderTransformOrigin="0.537,0.569" Width="27" Height="15">
+                <Image x:Name="valveImage11" Source="Resources/valveCLS.png" RenderTransformOrigin="0.532,0.489" Height="13"/>
+            </Button>-->
         </Canvas>
     </Border>
 </Window>

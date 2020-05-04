@@ -36,7 +36,7 @@ namespace Teplo
         {
             new Button(437, 153), // valve 1 // Button[0]
             new Button(396, 248), // valve 2 // Button[1]
-            new Button(558, 250), // valve 3 // Button[2]
+            new Button(553, 250), // valve 3 // Button[2]
             new Button(661, 253), // valve 4 // Button[3]
             new Button(267, 246), // valve 5 // Button[4]
             new Button(873, 252), // valve 6 // Button[5]
@@ -46,6 +46,7 @@ namespace Teplo
             new Button(396, 376), // Button[9]
             new Button(267, 310), // Button[10]
             new Button(267, 374), // Button[11]
+            new Button(553, 508), // Button[12]
         };
         public ObservableCollection<Button> ButtonsV { get; } = new ObservableCollection<Button>
         {
@@ -62,7 +63,8 @@ namespace Teplo
             new Button(745, 607), // valve 26 // ButtonV[10]
             new Button(790, 607), // valve 27 // ButtonV[11]
             new Button(790, 636), // valve 28 // ButtonV[12]
-            new Button(745, 636)  // valve 29 // ButtonV[13]
+            new Button(745, 636), // valve 29 // ButtonV[13]
+            new Button(514, 379), // valve 20 // ButtonV[14]
         };
         public ObservableCollection<Button> ButtonsSml { get; } = new ObservableCollection<Button>
         {
@@ -75,6 +77,12 @@ namespace Teplo
             new Button(768, 625), // valve 25 // ButtonSml[6]
             new Button(277, 339), // ButtonSml[7]
             new Button(277, 403), // ButtonSml[8]
+            new Button(564, 220), // valve 11 // ButtonSml[9]
+            new Button(564, 550), // valve 11 // ButtonSml[10]
+            new Button(588, 401), // valve 11 // ButtonSml[11]
+            new Button(754, 400), // valve 11 // ButtonSml[12]
+            new Button(815, 351), // valve 11 // ButtonSml[13]
+            new Button(952, 349), // valve 11 // ButtonSml[14]
         };
         public ObservableCollection<Button> ButtonsPmpR { get; } = new ObservableCollection<Button>
         {
@@ -101,7 +109,7 @@ namespace Teplo
         void ChangeState(Button button)
         {
             button.IsState = !button.IsState;
-            WaterVM.Start();
+            //WaterVM.Start();
             CirculationVM.StartCirc();
             PumpAnimVM.StartPmpR(button.Left, button.Top);
             PumpAnimVM.StartPmpL(button.Left, button.Top);
@@ -150,18 +158,18 @@ namespace Teplo
             }
         }
         //Кнопка сброса
-        private RelayCommand resetCommand;
-        public RelayCommand ResetCommand
-        {
-            get
-            {
-                return resetCommand ??
-                  (resetCommand = new RelayCommand(obj =>
-                  {
-                      WaterVM.ResetAnim();
-                      WaterVM.ElementsNull();
-                  }));
-            }
-        }
+        //private RelayCommand resetCommand;
+        //public RelayCommand ResetCommand
+        //{
+        //    get
+        //    {
+        //        return resetCommand ??
+        //          (resetCommand = new RelayCommand(obj =>
+        //          {
+        //              WaterVM.ResetAnim();
+        //              WaterVM.ElementsNull();
+        //          }));
+        //    }
+        //}
     }
 }
