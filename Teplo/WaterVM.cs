@@ -16,6 +16,16 @@ namespace Teplo
         public static ObservableCollection<Line> LinesA { get; set; } = new ObservableCollection<Line>();
         public static ObservableCollection<DoubleAnimationUsingKeyFrames> AnLinesA { get; set; } = new ObservableCollection<DoubleAnimationUsingKeyFrames>();
 
-        
+        public static void FillUp()
+        {
+            foreach (var item in Lines)
+            {
+                LinesA.Add(item);
+            }
+            foreach (var item in AnLines)
+            {
+                AnLinesA.Add(item);
+            }
+        }
     }
 }
