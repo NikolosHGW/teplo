@@ -8,7 +8,6 @@ namespace Teplo
 {
     class ButtonsVM : INotifyPropertyChanged
     {
-        public Game Game { get; set; } = new Game();
         public ButtonsVM()
         {
             foreach (var item in Buttons)
@@ -122,9 +121,106 @@ namespace Teplo
             //}
         }
 
-        //                                            ВРЕМЕННЫЙ КОД ДЛЯ ИНФО
+        //ПАРАМЕТРЫ
+        private int p1;
+        public int P1
+        {
+            get
+            {
+                return p1;
+            }
+            set
+            {
+                p1 = value;
+                OnPropertyChanged("P1");
+            }
+        }
 
-        
+        private int p2;
+        public int P2
+        {
+            get
+            {
+                return p2;
+            }
+            set
+            {
+                p2 = value;
+                OnPropertyChanged("P2");
+            }
+        }
+
+        private int t1;
+        public int T1
+        {
+            get
+            {
+                return t1;
+            }
+            set
+            {
+                t1 = value;
+                OnPropertyChanged("T1");
+            }
+        }
+
+        private int t2;
+        public int T2
+        {
+            get
+            {
+                return t2;
+            }
+            set
+            {
+                t2 = value;
+                OnPropertyChanged("T2");
+            }
+        }
+
+        private int g1;
+        public int G1
+        {
+            get
+            {
+                return g1;
+            }
+            set
+            {
+                g1 = value;
+                OnPropertyChanged("G1");
+            }
+        }
+
+        private int g2;
+        public int G2
+        {
+            get
+            {
+                return g2;
+            }
+            set
+            {
+                g2 = value;
+                OnPropertyChanged("G2");
+            }
+        }
+
+        private int gp;
+        public int Gp
+        {
+            get
+            {
+                return gp;
+            }
+            set
+            {
+                gp = value;
+                OnPropertyChanged("Gp");
+            }
+        }
+
+        //                                            ВРЕМЕННЫЙ КОД ДЛЯ ИНФО
         private int opa;
         public int Opa
         {
