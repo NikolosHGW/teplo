@@ -110,6 +110,7 @@ namespace Teplo
         void ChangeState(Button button)
         {
             button.IsState = !button.IsState;
+            Parameters.Calc();
             //WaterVM.Start();
             CirculationVM.StartCirc();
             PumpAnimVM.StartPmpR(button.Left, button.Top);

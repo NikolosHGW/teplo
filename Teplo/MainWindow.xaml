@@ -10,6 +10,15 @@
     <Border>
         <Canvas>
             <Image Source="Resources/tps.png" Stretch="Uniform"/>
+            <!--ПАРАМЕТРЫ-->
+            <TextBlock x:Name="P1" Text="{Binding P1}" Canvas.Left="348" Canvas.Top="78" FontSize="20" TextAlignment="Center" Width="58" Height="33"/>
+            <TextBlock x:Name="P2" Text="{Binding P2}" Canvas.Left="407" Canvas.Top="78" FontSize="20" TextAlignment="Center" Width="58" Height="33"/>
+            <TextBlock x:Name="T1" Text="{Binding T1}" Canvas.Left="466" Canvas.Top="78" FontSize="20" TextAlignment="Center" Width="58" Height="33"/>
+            <TextBlock x:Name="T2" Text="{Binding T2}" Canvas.Left="525" Canvas.Top="78" FontSize="20" TextAlignment="Center" Width="57" Height="33"/>
+            <TextBlock x:Name="G1" Text="{Binding G1}" Canvas.Left="583" Canvas.Top="78" FontSize="20" TextAlignment="Center" Width="89" Height="33"/>
+            <TextBlock x:Name="G2" Text="{Binding G2}" Canvas.Left="673" Canvas.Top="78" FontSize="20" TextAlignment="Center" Width="90" Height="33"/>
+            <TextBlock x:Name="Gp" Text="{Binding Gp}" Canvas.Left="764" Canvas.Top="78" FontSize="20" TextAlignment="Center" Width="91" Height="33"/>
+            <!--ПАРАМЕТРЫ-->
             <!--<Image x:Name="bladesImage" Source="Resources/blades.png" Canvas.Left="365" Canvas.Top="127" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <RotateTransform Angle="0"/>
