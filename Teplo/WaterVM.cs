@@ -49,6 +49,7 @@ namespace Teplo
                     LinesA[0].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[0]);
                 }
                 AnLinesA[0].Name = "off";
+                Parameters.NumberGp = 1;
                 Filling();
             }
         }
@@ -57,10 +58,6 @@ namespace Teplo
         {
             await Task.Delay(ms);
             LinesA[i].Opacity = 1;
-            if (i == 35)
-            {
-                Parameters.Calc();
-            }
         }
         private static void Filling()
         {
@@ -95,11 +92,16 @@ namespace Teplo
             }
             AnLinesA[33].Name = "off";
             MethodWithDelayAsync(1500, 35);
+            AnLinesA[35].Completed += new EventHandler(AnLines35_Completed);
             if (AnLinesA[35].Name == null)
             {
                 LinesA[35].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[35]);
             }
             AnLinesA[35].Name = "off";
+        }
+        private static void AnLines35_Completed(object sender, EventArgs e)
+        {
+            Parameters.NumberGp = 2;
         }
     }
 }

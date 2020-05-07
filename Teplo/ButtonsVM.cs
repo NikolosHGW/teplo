@@ -1,7 +1,10 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
+using System.Windows.Threading;
 using Core;
 
 namespace Teplo
@@ -219,7 +222,23 @@ namespace Teplo
                 OnPropertyChanged("Gp");
             }
         }
+        private bool forTimer = true;
         void ChangeParam()
+        {
+            Parameters.Calc();
+            Gp = Parameters.Gp;
+            if (forTimer == true)
+                StartTimerTick();
+        }
+        private void StartTimerTick()
+        {
+            forTimer = false;
+            DispatcherTimer timer = new DispatcherTimer();  // если надо, то в скобках указываем приоритет, например DispatcherPriority.Render
+            timer.Tick += new EventHandler(TimerTick);
+            timer.Interval = new TimeSpan(0, 0, 0, 0, 300);
+            timer.Start();
+        }
+        private void TimerTick(object sender, EventArgs e)
         {
             Parameters.Calc();
             Gp = Parameters.Gp;

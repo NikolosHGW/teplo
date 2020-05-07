@@ -24,10 +24,10 @@ namespace Core
         public static bool Chck { get; set; }
         public static void Calc()
         {
-            if (GetButtons.ButtonsC[0].IsState == true && GetButtons.ButtonsPmpRC[0].IsState == true && Chck == true && GetButtons.ButtonsVC[14].IsState == true)
-            {
+            if (NumberGp == 1)
                 Gp = 350;
-            }
+            if (NumberGp == 2)
+                Gp = 1000;
         }
     }
 }
