@@ -241,6 +241,12 @@ namespace Teplo
         private void TimerTick(object sender, EventArgs e)
         {
             Parameters.Calc();
+            P1 = Parameters.P1;
+            P2 = Parameters.P2;
+            T1 = Parameters.T1;
+            T2 = Parameters.T2;
+            G1 = Parameters.G1;
+            G2 = Parameters.G2;
             Gp = Parameters.Gp;
         }
 
