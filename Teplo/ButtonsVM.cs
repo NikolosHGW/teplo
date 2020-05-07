@@ -109,8 +109,8 @@ namespace Teplo
         void ChangeState(Button button)
         {
             button.IsState = !button.IsState;
-            Parameters.Calc();
-            //WaterVM.Start();
+            WaterVM.Start();
+            ChangeParam();
             CirculationVM.StartCirc();
             PumpAnimVM.StartPmpR(button.Left, button.Top);
             PumpAnimVM.StartPmpL(button.Left, button.Top);
@@ -218,6 +218,11 @@ namespace Teplo
                 gp = value;
                 OnPropertyChanged("Gp");
             }
+        }
+        void ChangeParam()
+        {
+            Parameters.Calc();
+            Gp = Parameters.Gp;
         }
 
         //                                            ВРЕМЕННЫЙ КОД ДЛЯ ИНФО
