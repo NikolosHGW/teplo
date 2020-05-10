@@ -51,8 +51,9 @@ namespace Teplo
                 AnLinesA[0].Name = "off";
                 if (Parameters.NumberGp == 0)
                     Parameters.NumberGp = 1;
-                Filling();
             }
+            if (GetButtons.ButtonsPmpRC[0].IsState == true && GetButtons.ButtonsC[0].IsState == true && Parameters.Chck == true && PumpAnimVM.RotationPmpR == true)
+                Filling();
         }
 
         public static async Task ForParamDelayAsync(int ms, int i)
