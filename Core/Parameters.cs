@@ -22,6 +22,7 @@ namespace Core
         public static int NumberGp { get; set; } = 0;
 
         public static bool Chck { get; set; }
+        public static bool ChckF12 { get; set; }
         public static void Calc()
         {
             if (NumberGp == 1)

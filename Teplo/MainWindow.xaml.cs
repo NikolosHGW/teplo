@@ -169,7 +169,7 @@ namespace Teplo
                     -46, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
-
+            anLine4.BeginTime = TimeSpan.FromSeconds(3.3);
 
             //                                              Анимация Line5
             DoubleAnimationUsingKeyFrames anLine5 = new DoubleAnimationUsingKeyFrames();
@@ -183,7 +183,7 @@ namespace Teplo
                     -20, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
-
+            anLine5.BeginTime = TimeSpan.FromSeconds(3.0);
 
             //                                              Анимация Line6
             DoubleAnimationUsingKeyFrames anLine6 = new DoubleAnimationUsingKeyFrames();
@@ -197,7 +197,7 @@ namespace Teplo
                     55, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
-
+            anLine6.BeginTime = TimeSpan.FromSeconds(3.3);
 
             //                                              Анимация Line7
             DoubleAnimationUsingKeyFrames anLine7 = new DoubleAnimationUsingKeyFrames();
@@ -211,7 +211,7 @@ namespace Teplo
                     -14, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
-
+            anLine7.BeginTime = TimeSpan.FromSeconds(2.7);
 
             //                                              Анимация Line8
             DoubleAnimationUsingKeyFrames anLine8 = new DoubleAnimationUsingKeyFrames();
@@ -222,10 +222,10 @@ namespace Teplo
                 );
             anLine8.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
-                    148, // Target value (KeyValue)
+                    -148, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
-
+            anLine8.BeginTime = TimeSpan.FromSeconds(2.4);
 
             //                                              Анимация Line9
             DoubleAnimationUsingKeyFrames anLine9 = new DoubleAnimationUsingKeyFrames();
@@ -239,7 +239,7 @@ namespace Teplo
                     56, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
-
+            anLine9.BeginTime = TimeSpan.FromSeconds(2.7);
 
             //                                              Анимация Line10
             DoubleAnimationUsingKeyFrames anLine10 = new DoubleAnimationUsingKeyFrames();
@@ -267,6 +267,8 @@ namespace Teplo
                     58, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine11.BeginTime = TimeSpan.FromSeconds(2.4);
+
             //                                              Анимация Line12
             DoubleAnimationUsingKeyFrames anLine12 = new DoubleAnimationUsingKeyFrames();
             anLine12.KeyFrames.Add(
@@ -387,6 +389,8 @@ namespace Teplo
                     -56, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine21.BeginTime = TimeSpan.FromSeconds(0.9);
+
             //                                              Анимация Line22
             DoubleAnimationUsingKeyFrames anLine22 = new DoubleAnimationUsingKeyFrames();
             anLine22.KeyFrames.Add(
@@ -399,6 +403,8 @@ namespace Teplo
                     160, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine22.BeginTime = TimeSpan.FromSeconds(0.6);
+
             //                                              Анимация Line23
             DoubleAnimationUsingKeyFrames anLine23 = new DoubleAnimationUsingKeyFrames();
             anLine23.KeyFrames.Add(
@@ -435,6 +441,8 @@ namespace Teplo
                     -57, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine25.BeginTime = TimeSpan.FromSeconds(0.6);
+
             //                                              Анимация Line26
             DoubleAnimationUsingKeyFrames anLine26 = new DoubleAnimationUsingKeyFrames();
             anLine26.KeyFrames.Add(
@@ -516,9 +524,11 @@ namespace Teplo
                 );
             anLine32.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
-                    58, // Target value (KeyValue)
+                    -58, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine32.BeginTime = TimeSpan.FromSeconds(0.3);
+
             //                                              Анимация Line33
             DoubleAnimationUsingKeyFrames anLine33 = new DoubleAnimationUsingKeyFrames();
             anLine33.KeyFrames.Add(
@@ -545,6 +555,7 @@ namespace Teplo
                     66, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+
             //                                              Анимация Line35
             DoubleAnimationUsingKeyFrames anLine35 = new DoubleAnimationUsingKeyFrames();
             anLine35.KeyFrames.Add(
@@ -631,6 +642,8 @@ namespace Teplo
                     58, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine41.BeginTime = TimeSpan.FromSeconds(2.1);
+
             //                                              Анимация Line42
             DoubleAnimationUsingKeyFrames anLine42 = new DoubleAnimationUsingKeyFrames();
             anLine42.KeyFrames.Add(
@@ -643,6 +656,8 @@ namespace Teplo
                     -229, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine42.BeginTime = TimeSpan.FromSeconds(1.8);
+
             //                                              Анимация Line43
             DoubleAnimationUsingKeyFrames anLine43 = new DoubleAnimationUsingKeyFrames();
             anLine43.KeyFrames.Add(
@@ -693,6 +708,8 @@ namespace Teplo
                     -261, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine46.BeginTime = TimeSpan.FromSeconds(1.5);
+
             //                                              Анимация Line47
             DoubleAnimationUsingKeyFrames anLine47 = new DoubleAnimationUsingKeyFrames();
             anLine47.KeyFrames.Add(
@@ -705,6 +722,8 @@ namespace Teplo
                     227, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine47.BeginTime = TimeSpan.FromSeconds(1.2);
+
             //                                              Анимация Line48
             DoubleAnimationUsingKeyFrames anLine48 = new DoubleAnimationUsingKeyFrames();
             anLine48.KeyFrames.Add(
@@ -717,6 +736,7 @@ namespace Teplo
                     -56, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine48.BeginTime = TimeSpan.FromSeconds(1.2);
 
             WaterVM.Lines.Add(line0);
             WaterVM.AnLines.Add(anLine0);
