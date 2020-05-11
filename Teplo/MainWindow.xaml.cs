@@ -488,9 +488,11 @@ namespace Teplo
                 );
             anLine29.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
-                    -22, // Target value (KeyValue)
+                    22, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine29.BeginTime = TimeSpan.FromSeconds(0.3);
+
             //                                              Анимация Line30
             DoubleAnimationUsingKeyFrames anLine30 = new DoubleAnimationUsingKeyFrames();
             anLine30.KeyFrames.Add(
@@ -500,7 +502,7 @@ namespace Teplo
                 );
             anLine30.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
-                    -50, // Target value (KeyValue)
+                    50, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
             //                                              Анимация Line31
@@ -515,6 +517,8 @@ namespace Teplo
                     58, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
                 );
+            anLine31.BeginTime = TimeSpan.FromSeconds(0.3);
+
             //                                              Анимация Line32
             DoubleAnimationUsingKeyFrames anLine32 = new DoubleAnimationUsingKeyFrames();
             anLine32.KeyFrames.Add(
@@ -738,6 +742,20 @@ namespace Teplo
                 );
             anLine48.BeginTime = TimeSpan.FromSeconds(1.2);
 
+            //                                              Анимация Line49
+            DoubleAnimationUsingKeyFrames anLine49 = new DoubleAnimationUsingKeyFrames();
+            anLine49.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    0, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0))) // KeyTime
+                );
+            anLine49.KeyFrames.Add(
+                new LinearDoubleKeyFrame(
+                    -36, // Target value (KeyValue)
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(0.3))) // KeyTime
+                );
+            anLine49.BeginTime = TimeSpan.FromSeconds(0.6);
+
             WaterVM.Lines.Add(line0);
             WaterVM.AnLines.Add(anLine0);
             WaterVM.Lines.Add(line1);
@@ -836,6 +854,8 @@ namespace Teplo
             WaterVM.AnLines.Add(anLine47);
             WaterVM.Lines.Add(line48);
             WaterVM.AnLines.Add(anLine48);
+            WaterVM.Lines.Add(line49);
+            WaterVM.AnLines.Add(anLine49);
             WaterVM.FillUp();
 
             // Линии для циркуляции

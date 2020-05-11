@@ -26,12 +26,37 @@ namespace Core
         public static void Calc()
         {
             if (NumberGp == 1)
+            {
+                G1 = 350;
                 Gp = 350;
+            }
             if (NumberGp == 2)
             {
                 P1 = 3;
                 P2 = 3;
+                G1 = 0;
                 Gp = 0;
+            }
+            if (NumberGp == 3)
+            {
+                P1 = 0;
+                P2 = 0;
+                G1 = 350;
+                Gp = 350;
+            }
+            if (NumberGp == 4)
+            {
+                P1 = 3;
+                P2 = 3;
+                G1 = 0;
+                Gp = 0;
+            }
+            if (NumberGp == 5)
+            {
+                P1 = 0;
+                P2 = 0;
+                G1 = 350;
+                Gp = 350;
             }
         }
     }

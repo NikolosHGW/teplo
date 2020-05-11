@@ -111,6 +111,8 @@ namespace Teplo
             }
             if (LinesA[35].Opacity == 1 && GetButtons.ButtonsC[6].IsState == true && GetButtons.ButtonsC[7].IsState == true && GetButtons.ButtonsVC[12].IsState == true && GetButtons.ButtonsVC[11].IsState == true && GetButtons.ButtonsC[5].IsState == true && GetButtons.ButtonsC[3].IsState == true && GetButtons.ButtonsC[12].IsState == true)
             {
+                if (Parameters.NumberGp == 2)
+                    Parameters.NumberGp = 3;
                 LinesA[34].Opacity = 1;
                 if (AnLinesA[34].Name == null)
                 {
@@ -208,11 +210,41 @@ namespace Teplo
                 }
                 AnLinesA[6].Name = "off";
                 ForOpacityDelayAsync(3300, 4);
+                ForParamDelayAsync(3500, 4);
                 if (AnLinesA[4].Name == null)
                 {
                     LinesA[4].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[4]);
                 }
                 AnLinesA[4].Name = "off";
+            }
+            if (GetButtons.ButtonsVC[7].IsState == true && GetButtons.ButtonsSmlC[11].IsState == true && LinesA[4].Opacity == 1)
+            {
+                if (Parameters.NumberGp == 4)
+                    Parameters.NumberGp = 5;
+                LinesA[30].Opacity = 1;
+                if (AnLinesA[30].Name == null)
+                {
+                    LinesA[30].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[30]);
+                }
+                AnLinesA[30].Name = "off";
+                ForOpacityDelayAsync(300, 29);
+                if (AnLinesA[29].Name == null)
+                {
+                    LinesA[29].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[29]);
+                }
+                AnLinesA[29].Name = "off";
+                ForOpacityDelayAsync(300, 31);
+                if (AnLinesA[31].Name == null)
+                {
+                    LinesA[31].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[31]);
+                }
+                AnLinesA[31].Name = "off";
+                ForOpacityDelayAsync(600, 49);
+                if (AnLinesA[49].Name == null)
+                {
+                    LinesA[49].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[49]);
+                }
+                AnLinesA[49].Name = "off";
             }
         }
     }
