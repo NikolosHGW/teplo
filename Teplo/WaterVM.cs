@@ -109,7 +109,15 @@ namespace Teplo
                 }
                 AnLinesA[35].Name = "off";
             }
-            if (LinesA[35].Opacity == 1 && GetButtons.ButtonsC[6].IsState == true && GetButtons.ButtonsC[7].IsState == true && GetButtons.ButtonsVC[12].IsState == true && GetButtons.ButtonsVC[11].IsState == true && GetButtons.ButtonsC[5].IsState == true && GetButtons.ButtonsC[3].IsState == true && GetButtons.ButtonsC[12].IsState == true)
+            if (GetButtons.ButtonsC[6].IsState == false && GetButtons.ButtonsC[7].IsState == false && GetButtons.ButtonsC[5].IsState == false && GetButtons.ButtonsC[3].IsState == false && GetButtons.ButtonsC[12].IsState == true)
+            {
+                Parameters.ChckF12 = false;
+            }
+            if (GetButtons.ButtonsC[6].IsState == false && GetButtons.ButtonsC[7].IsState == false && GetButtons.ButtonsC[5].IsState == false && GetButtons.ButtonsC[3].IsState == false && GetButtons.ButtonsC[12].IsState == false)
+            {
+                Parameters.ChckF12 = true;
+            }
+            if (Parameters.ChckF12 == true && LinesA[35].Opacity == 1 && GetButtons.ButtonsC[6].IsState == true && GetButtons.ButtonsC[7].IsState == true && GetButtons.ButtonsVC[12].IsState == true && GetButtons.ButtonsVC[11].IsState == true && GetButtons.ButtonsC[5].IsState == true && GetButtons.ButtonsC[3].IsState == true && GetButtons.ButtonsC[12].IsState == true)
             {
                 if (Parameters.NumberGp == 2)
                     Parameters.NumberGp = 3;
