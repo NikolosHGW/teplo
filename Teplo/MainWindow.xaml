@@ -110,7 +110,17 @@
             <Line X1="0" Y1="0" X2="0" Y2="131" Stroke="Black" Canvas.Left="459" Canvas.Top="262" StrokeThickness="5"/>
             <!--ВРЕМЕННЫЕ ЛИНИИ ДЛЯ ДОПОЛНЕНИЯ СХЕМЫ-->
             <!--ЛИНИИ ЦИРКУЛЯЦИИ-->
-            <Line x:Name="line0a2" X1="0" Y1="0" X2="-114" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="558" Canvas.Top="262"/>
+            <Line x:Name="line0a34" X1="0" Y1="0" X2="66" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="601" Canvas.Top="520"/>
+            <Line x:Name="line1a22" X1="0" Y1="0" X2="160" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="715" Canvas.Top="521"/>
+            <Line x:Name="line2a47" X1="0" Y1="0" X2="231" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="923" Canvas.Top="521"/>
+            <Line x:Name="line3a46" X1="0" Y1="0" X2="0" Y2="-263" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="1150" Canvas.Top="522"/>
+            <Line x:Name="line4a42" X1="0" Y1="0" X2="-229" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="1150" Canvas.Top="262"/>
+            <Line x:Name="line5a8" X1="0" Y1="0" X2="-165" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="874" Canvas.Top="262"/>
+            <Line x:Name="line6a5" X1="0" Y1="0" X2="-17" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="662" Canvas.Top="262"/>
+            <Line x:Name="line7a6" X1="0" Y1="0" X2="0" Y2="55" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="648" Canvas.Top="262"/>
+            <Line x:Name="line8a30" X1="0" Y1="0" X2="0" Y2="69" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="648" Canvas.Top="341"/>
+            <Line x:Name="line9a49" X1="0" Y1="0" X2="-36" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="5" Canvas.Left="651" Canvas.Top="409"/>
+            <!--<Line x:Name="line0a2" X1="0" Y1="0" X2="-114" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="558" Canvas.Top="262"/>
             <Line x:Name="line1a5" X1="0" Y1="0" X2="-55" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="661" Canvas.Top="262"/>
             <Line x:Name="line2a7" X1="0" Y1="0" X2="-164" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="873" Canvas.Top="262"/>
             <Line x:Name="line3a11" X1="0" Y1="0" X2="0" Y2="-59" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="869" Canvas.Top="318"/>
@@ -126,7 +136,7 @@
             <Line x:Name="line13a45" X1="0" Y1="0" X2="-174" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="968" Canvas.Top="593"/>
             <Line x:Name="line14a44" X1="0" Y1="0" X2="276" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="794" Canvas.Top="672"/>
             <Line x:Name="line15a43" X1="0" Y1="0" X2="0" Y2="-415" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="1069" Canvas.Top="675"/>
-            <Line x:Name="line16a42" X1="0" Y1="0" X2="-153" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="1073" Canvas.Top="262"/>
+            <Line x:Name="line16a42" X1="0" Y1="0" X2="-153" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="1073" Canvas.Top="262"/>-->
             <!--ЛОПАСТИ НАСОСОВ-->
             <Line x:Name="blade1" X1="0" Y1="0" X2="60" Y2="0" Opacity="1" Stroke="Gray" StrokeThickness="2" Canvas.Left="372" Canvas.Top="164" RenderTransformOrigin="0.5,0.5">
                 <Line.RenderTransform>
