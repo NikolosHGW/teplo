@@ -15,6 +15,10 @@ namespace Teplo
 
         public static bool StateCirc { get; set; } = true;
         
+        public static void StartCirc()
+        {
+
+        }
         public static void FlushingFst()
         {
             for (int i = 0; i < CircLines.Count; i++)

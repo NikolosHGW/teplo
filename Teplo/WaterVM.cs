@@ -251,9 +251,9 @@ namespace Teplo
                 if (AnLinesA[49].Name == null)
                 {
                     LinesA[49].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[49]);
+                    CirculationVM.FlushingFst();
                 }
                 AnLinesA[49].Name = "off";
-                CirculationVM.FlushingFst();
             }
         }
     }
