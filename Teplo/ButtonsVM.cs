@@ -114,7 +114,7 @@ namespace Teplo
             button.IsState = !button.IsState;
             WaterVM.Start();
             ChangeParam();
-            //CirculationVM.StartCirc();
+            CirculationVM.StartCirc();
             PumpAnimVM.StartPmpR(button.Left, button.Top);
             PumpAnimVM.StartPmpL(button.Left, button.Top);
             //Game.StartGame();

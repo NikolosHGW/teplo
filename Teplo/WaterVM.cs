@@ -66,6 +66,8 @@ namespace Teplo
         {
             await Task.Delay(ms);
             LinesA[i].Opacity = 1;
+            if (i == 49)
+                CirculationVM.StartCirc();
         }
         private static void Filling()
         {
@@ -251,7 +253,6 @@ namespace Teplo
                 if (AnLinesA[49].Name == null)
                 {
                     LinesA[49].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[49]);
-                    CirculationVM.FlushingFst();
                 }
                 AnLinesA[49].Name = "off";
             }
