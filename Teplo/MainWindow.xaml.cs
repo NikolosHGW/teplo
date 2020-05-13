@@ -869,7 +869,7 @@ namespace Teplo
             anLine0a34.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     66, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2/*была 1*/))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(4/*была 1*/))) // KeyTime
                 );
             anLine0a34.RepeatBehavior = RepeatBehavior.Forever;
 
@@ -883,9 +883,8 @@ namespace Teplo
             anLine1a22.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     160, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2/*была 1*/))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(4/*была 1*/))) // KeyTime
                 );
-            anLine1a22.BeginTime = TimeSpan.FromSeconds(2);
             anLine1a22.RepeatBehavior = RepeatBehavior.Forever;
 
             //                                              Анимация Line2a47
@@ -898,9 +897,8 @@ namespace Teplo
             anLine2a47.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     231, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2/*была 1*/))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(4/*была 1*/))) // KeyTime
                 );
-            anLine2a47.BeginTime = TimeSpan.FromSeconds(4);
             anLine2a47.RepeatBehavior = RepeatBehavior.Forever;
 
             //                                              Анимация Line3a46
@@ -913,9 +911,8 @@ namespace Teplo
             anLine3a46.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     -263, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2/*была 1*/))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(4/*была 1*/))) // KeyTime
                 );
-            anLine3a46.BeginTime = TimeSpan.FromSeconds(6);
             anLine3a46.RepeatBehavior = RepeatBehavior.Forever;
 
             //                                              Анимация Line4a42
@@ -928,9 +925,8 @@ namespace Teplo
             anLine4a42.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     -229, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2/*была 1*/))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(4/*была 1*/))) // KeyTime
                 );
-            anLine4a42.BeginTime = TimeSpan.FromSeconds(8);
             anLine4a42.RepeatBehavior = RepeatBehavior.Forever;
 
             //                                              Анимация Line5a8
@@ -943,9 +939,8 @@ namespace Teplo
             anLine5a8.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     -165, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2/*была 1*/))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(4/*была 1*/))) // KeyTime
                 );
-            anLine5a8.BeginTime = TimeSpan.FromSeconds(10);
             anLine5a8.RepeatBehavior = RepeatBehavior.Forever;
 
             //                                              Анимация Line6a5
@@ -958,9 +953,8 @@ namespace Teplo
             anLine6a5.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     -17, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2/*была 1*/))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(4/*была 1*/))) // KeyTime
                 );
-            anLine6a5.BeginTime = TimeSpan.FromSeconds(12);
             anLine6a5.RepeatBehavior = RepeatBehavior.Forever;
 
             //                                              Анимация Line7a6
@@ -973,9 +967,8 @@ namespace Teplo
             anLine7a6.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     55, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2/*была 1*/))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(4/*была 1*/))) // KeyTime
                 );
-            anLine7a6.BeginTime = TimeSpan.FromSeconds(14);
             anLine7a6.RepeatBehavior = RepeatBehavior.Forever;
 
             //                                              Анимация Line8a30
@@ -988,9 +981,8 @@ namespace Teplo
             anLine8a30.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     69, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2/*была 1*/))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(4/*была 1*/))) // KeyTime
                 );
-            anLine8a30.BeginTime = TimeSpan.FromSeconds(16);
             anLine8a30.RepeatBehavior = RepeatBehavior.Forever;
 
             //                                              Анимация Line9a49
@@ -1003,9 +995,8 @@ namespace Teplo
             anLine9a49.KeyFrames.Add(
                 new LinearDoubleKeyFrame(
                     -36, // Target value (KeyValue)
-                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2/*была 1*/))) // KeyTime
+                    KeyTime.FromTimeSpan(TimeSpan.FromSeconds(4/*была 1*/))) // KeyTime
                 );
-            anLine9a49.BeginTime = TimeSpan.FromSeconds(18);
             anLine9a49.RepeatBehavior = RepeatBehavior.Forever;
 
             ////                                              Анимация Line10a37
