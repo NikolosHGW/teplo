@@ -21,7 +21,7 @@ namespace Teplo
             {
                 FlushingFst();
             }
-            if (GetButtons.ButtonsPmpRC[0].IsState == false && StateCirc == false)
+            if (GetButtons.ButtonsPmpRC[0].IsState == false || GetButtons.ButtonsSmlC[11].IsState == false)
             {
                 StopFlushingFst();
             }

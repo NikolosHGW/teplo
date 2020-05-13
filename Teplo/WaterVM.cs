@@ -73,40 +73,40 @@ namespace Teplo
         {
             if (LinesA[0].Opacity == 1)
             {
-                ForOpacityDelayAsync(300, 1);
                 if (AnLinesA[1].Name == null)
                 {
+                    ForOpacityDelayAsync(300, 1);
                     LinesA[1].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[1]);
                 }
                 AnLinesA[1].Name = "off";
-                ForOpacityDelayAsync(600, 2);
                 if (AnLinesA[2].Name == null)
                 {
+                    ForOpacityDelayAsync(600, 2);
                     LinesA[2].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[2]);
                 }
                 AnLinesA[2].Name = "off";
-                ForOpacityDelayAsync(600, 3);
                 if (AnLinesA[3].Name == null)
                 {
+                    ForOpacityDelayAsync(600, 3);
                     LinesA[3].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[3]);
                 }
                 AnLinesA[3].Name = "off";
-                ForOpacityDelayAsync(900, 43);
                 if (AnLinesA[43].Name == null)
                 {
+                    ForOpacityDelayAsync(900, 43);
                     LinesA[43].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[43]);
                 }
                 AnLinesA[43].Name = "off";
-                ForOpacityDelayAsync(1200, 33);
                 if (AnLinesA[33].Name == null)
                 {
+                    ForOpacityDelayAsync(1200, 33);
                     LinesA[33].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[33]);
                 }
                 AnLinesA[33].Name = "off";
-                ForOpacityDelayAsync(1500, 35);
-                ForParamDelayAsync(1800, 2);
                 if (AnLinesA[35].Name == null)
                 {
+                    ForOpacityDelayAsync(1500, 35);
+                    ForParamDelayAsync(1800, 2);
                     LinesA[35].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[35]);
                 }
                 AnLinesA[35].Name = "off";
@@ -129,100 +129,100 @@ namespace Teplo
                     LinesA[34].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[34]);
                 }
                 AnLinesA[34].Name = "off";
-                ForOpacityDelayAsync(300, 32);
                 if (AnLinesA[32].Name == null)
                 {
+                    ForOpacityDelayAsync(300, 32);
                     LinesA[32].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[32]);
                 }
                 AnLinesA[32].Name = "off";
-                ForOpacityDelayAsync(600, 22);
                 if (AnLinesA[22].Name == null)
                 {
+                    ForOpacityDelayAsync(600, 22);
                     LinesA[22].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[22]);
                 }
                 AnLinesA[22].Name = "off";
-                ForOpacityDelayAsync(600, 25);
                 if (AnLinesA[25].Name == null)
                 {
+                    ForOpacityDelayAsync(600, 25);
                     LinesA[25].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[25]);
                 }
                 AnLinesA[25].Name = "off";
-                ForOpacityDelayAsync(900, 21);
                 if (AnLinesA[21].Name == null)
                 {
+                    ForOpacityDelayAsync(900, 21);
                     LinesA[21].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[21]);
                 }
                 AnLinesA[21].Name = "off";
-                ForOpacityDelayAsync(1200, 48);
                 if (AnLinesA[48].Name == null)
                 {
+                    ForOpacityDelayAsync(1200, 48);
                     LinesA[48].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[48]);
                 }
                 AnLinesA[48].Name = "off";
-                ForOpacityDelayAsync(1200, 47);
                 if (AnLinesA[47].Name == null)
                 {
+                    ForOpacityDelayAsync(1200, 47);
                     LinesA[47].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[47]);
                 }
                 AnLinesA[47].Name = "off";
-                ForOpacityDelayAsync(1500, 46);
                 if (AnLinesA[46].Name == null)
                 {
+                    ForOpacityDelayAsync(1500, 46);
                     LinesA[46].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[46]);
                 }
                 AnLinesA[46].Name = "off";
-                ForOpacityDelayAsync(1800, 42);
                 if (AnLinesA[42].Name == null)
                 {
+                    ForOpacityDelayAsync(1800, 42);
                     LinesA[42].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[42]);
                 }
                 AnLinesA[42].Name = "off";
-                ForOpacityDelayAsync(2100, 41);
                 if (AnLinesA[41].Name == null)
                 {
+                    ForOpacityDelayAsync(2100, 41);
                     LinesA[41].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[41]);
                 }
                 AnLinesA[41].Name = "off";
-                ForOpacityDelayAsync(2400, 11);
                 if (AnLinesA[11].Name == null)
                 {
+                    ForOpacityDelayAsync(2400, 11);
                     LinesA[11].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[11]);
                 }
                 AnLinesA[11].Name = "off";
-                ForOpacityDelayAsync(2400, 8);
                 if (AnLinesA[8].Name == null)
                 {
+                    ForOpacityDelayAsync(2400, 8);
                     LinesA[8].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[8]);
                 }
                 AnLinesA[8].Name = "off";
-                ForOpacityDelayAsync(2700, 7);
                 if (AnLinesA[7].Name == null)
                 {
+                    ForOpacityDelayAsync(2700, 7);
                     LinesA[7].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[7]);
                 }
                 AnLinesA[7].Name = "off";
-                ForOpacityDelayAsync(2700, 9);
                 if (AnLinesA[9].Name == null)
                 {
+                    ForOpacityDelayAsync(2700, 9);
                     LinesA[9].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[9]);
                 }
                 AnLinesA[9].Name = "off";
-                ForOpacityDelayAsync(3000, 5);
                 if (AnLinesA[5].Name == null)
                 {
+                    ForOpacityDelayAsync(3000, 5);
                     LinesA[5].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[5]);
                 }
                 AnLinesA[5].Name = "off";
-                ForOpacityDelayAsync(3300, 6);
                 if (AnLinesA[6].Name == null)
                 {
+                    ForOpacityDelayAsync(3300, 6);
                     LinesA[6].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[6]);
                 }
                 AnLinesA[6].Name = "off";
-                ForOpacityDelayAsync(3300, 4);
-                ForParamDelayAsync(3500, 4);
                 if (AnLinesA[4].Name == null)
                 {
+                    ForOpacityDelayAsync(3300, 4);
+                    ForParamDelayAsync(3500, 4);
                     LinesA[4].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[4]);
                 }
                 AnLinesA[4].Name = "off";
@@ -237,21 +237,21 @@ namespace Teplo
                     LinesA[30].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[30]);
                 }
                 AnLinesA[30].Name = "off";
-                ForOpacityDelayAsync(300, 29);
                 if (AnLinesA[29].Name == null)
                 {
+                    ForOpacityDelayAsync(300, 29);
                     LinesA[29].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[29]);
                 }
                 AnLinesA[29].Name = "off";
-                ForOpacityDelayAsync(300, 31);
                 if (AnLinesA[31].Name == null)
                 {
+                    ForOpacityDelayAsync(300, 31);
                     LinesA[31].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[31]);
                 }
                 AnLinesA[31].Name = "off";
-                ForOpacityDelayAsync(600, 49);
                 if (AnLinesA[49].Name == null)
                 {
+                    ForOpacityDelayAsync(600, 49);
                     LinesA[49].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[49]);
                 }
                 AnLinesA[49].Name = "off";
