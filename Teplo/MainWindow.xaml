@@ -120,6 +120,11 @@
             <Line x:Name="line7a6" X1="0" Y1="0" X2="0" Y2="55" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="648" Canvas.Top="262"/>
             <Line x:Name="line8a30" X1="0" Y1="0" X2="0" Y2="69" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="648" Canvas.Top="341"/>
             <Line x:Name="line9a49" X1="0" Y1="0" X2="-36" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="5" Canvas.Left="651" Canvas.Top="409"/>
+            <Line x:Name="line10a" X1="0" Y1="0" X2="-973" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="1151" Canvas.Top="262"/>
+            <Line x:Name="line11a36" X1="0" Y1="0" X2="0" Y2="30" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="180" Canvas.Top="259"/>
+            <Line x:Name="line12a35" X1="0" Y1="0" X2="0" Y2="134" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="180" Canvas.Top="388"/>
+            <Line x:Name="line13a34" X1="0" Y1="0" X2="973" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="178" Canvas.Top="520"/>
+            <Line x:Name="line14a46" X1="0" Y1="0" X2="0" Y2="-261" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="1150" Canvas.Top="522"/>
             <!--<Line x:Name="line0a2" X1="0" Y1="0" X2="-114" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="558" Canvas.Top="262"/>
             <Line x:Name="line1a5" X1="0" Y1="0" X2="-55" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="661" Canvas.Top="262"/>
             <Line x:Name="line2a7" X1="0" Y1="0" X2="-164" Y2="0" Opacity="0" Stroke="Blue" StrokeThickness="7" Canvas.Left="873" Canvas.Top="262"/>

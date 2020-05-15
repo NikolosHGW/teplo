@@ -125,8 +125,8 @@ namespace Teplo
         }
 
         //ПАРАМЕТРЫ
-        private int p1;
-        public int P1
+        private double p1;
+        public double P1
         {
             get
             {
@@ -139,8 +139,8 @@ namespace Teplo
             }
         }
 
-        private int p2;
-        public int P2
+        private double p2;
+        public double P2
         {
             get
             {

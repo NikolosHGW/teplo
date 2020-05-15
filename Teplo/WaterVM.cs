@@ -231,9 +231,9 @@ namespace Teplo
             {
                 if (Parameters.NumberGp == 4)
                     Parameters.NumberGp = 5;
-                LinesA[30].Opacity = 1;
                 if (AnLinesA[30].Name == null)
                 {
+                    LinesA[30].Opacity = 1;
                     LinesA[30].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[30]);
                 }
                 AnLinesA[30].Name = "off";
@@ -255,6 +255,35 @@ namespace Teplo
                     LinesA[49].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[49]);
                 }
                 AnLinesA[49].Name = "off";
+            }
+
+            if (GetButtons.ButtonsVC[4].IsState == true && GetButtons.ButtonsVC[5].IsState == true && GetButtons.ButtonsC[2].IsState == true && GetButtons.ButtonsVC[14].IsState == true && Lines[35].Opacity == 1)
+            {
+                if (AnLinesA[36].Name == null)
+                {
+                    LinesA[36].Opacity = 1;
+                    LinesA[36].BeginAnimation(System.Windows.Shapes.Line.Y2Property, AnLinesA[36]);
+                }
+                AnLinesA[36].Name = "off";
+                if (AnLinesA[37].Name == null)
+                {
+                    ForOpacityDelayAsync(300, 37);
+                    LinesA[37].BeginAnimation(System.Windows.Shapes.Line.X2Property, AnLinesA[37]);
+                }
+                AnLinesA[37].Name = "off";
+            }
+            if ((GetButtons.ButtonsC[4].IsState == true && GetButtons.ButtonsPmpLC[0].IsState == false && GetButtons.ButtonsC[1].IsState == false) || (GetButtons.ButtonsC[4].IsState == false && GetButtons.ButtonsC[1].IsState == false && GetButtons.ButtonsPmpLC[0].IsState == true))
+            {
+                Parameters.ChckFPmpL = false;
+            }
+            if (GetButtons.ButtonsC[4].IsState == false && GetButtons.ButtonsPmpLC[0].IsState == false && GetButtons.ButtonsC[1].IsState == false)
+            {
+                Parameters.ChckFPmpL = true;
+            }
+            if (LinesA[37].Opacity == 1 && Parameters.ChckFPmpL == true && GetButtons.ButtonsPmpLC[0].IsState == true && LinesA[2].Opacity == 1 && GetButtons.ButtonsC[4].IsState == true && GetButtons.ButtonsC[1].IsState == true)
+            {
+                if (Parameters.NumberGp == 5)
+                    Parameters.NumberGp = 6;
             }
         }
     }
